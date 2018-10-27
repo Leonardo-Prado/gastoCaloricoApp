@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Polar dispendium - Gasto calorico</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Senha (optional)</string>
+    <string name="action_sign_in">Entre ou Registre-se</string>
+    <string name="action_sign_in_short">Entre</string>
+    <string name="error_invalid_email">Este email é invalido</string>
+    <string name="error_invalid_password">Essa senha é muito curta</string>
+    <string name="error_incorrect_password">Senha incorreta</string>
+    <string name="error_field_required">Campo necessario</string>
+    <string name="permission_rationale">"Necessario permissão para acesso aos contatos."</string>
+    <string name="title_activity_tela_principal">TelaPrincipal</string>
+</resources>
