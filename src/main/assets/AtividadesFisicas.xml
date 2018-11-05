@@ -1,0 +1,3633 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Raiz>
+	<Atividade>
+		<Id>1009</Id>
+		<MET>8.5</MET>
+		<Categoria>Ciclismo</Categoria>
+		<AtividadeEspecifica>Ciclismo, BMX ou montanha</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>1010</Id>
+		<MET>4.0</MET>
+		<Categoria>Ciclismo</Categoria>
+		<AtividadeEspecifica>Ciclismo, &lt; 16 km/h, geral, lazer, para trabalho ou prazer (cód. 115 de Taylor)</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>1015</Id>
+		<MET>8.0</MET>
+		<Categoria>Ciclismo</Categoria>
+		<AtividadeEspecifica>Ciclismo, velocidade em geral</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>1020</Id>
+		<MET>6.0</MET>
+		<Categoria>Ciclismo</Categoria>
+		<AtividadeEspecifica>Ciclismo, 16 a 19 km/h, lazer, lento, esforço leve</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>1030</Id>
+		<MET>8.0</MET>
+		<Categoria>Ciclismo</Categoria>
+		<AtividadeEspecifica>Ciclismo, 19 a 22 km/h, lazer, esforço moderado</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>1040</Id>
+		<MET>10.0</MET>
+		<Categoria>Ciclismo</Categoria>
+		<AtividadeEspecifica>Ciclismo, 22 a 25 km/h, corrida ou lazer, rápido, esforço vigoroso</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>1050</Id>
+		<MET>12.0</MET>
+		<Categoria>Ciclismo</Categoria>
+		<AtividadeEspecifica>Ciclismo, 25 a 30 km/h, corrida/sem explosão ou &gt; 30 km/h, explosivo, muito veloz, corrida em geral</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>1060</Id>
+		<MET>16.0</MET>
+		<Categoria>Ciclismo</Categoria>
+		<AtividadeEspecifica>Ciclismo, &gt; 32 km/h, corrida, sem explosão</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>1070</Id>
+		<MET>5.0</MET>
+		<Categoria>Ciclismo</Categoria>
+		<AtividadeEspecifica>Ciclismo, pedalando monociclo</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>2010</Id>
+		<MET>7.0</MET>
+		<Categoria>Exercício de Condicionamento</Categoria>
+		<AtividadeEspecifica>Ciclismo, estacionário, geral</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>2011</Id>
+		<MET>3.0</MET>
+		<Categoria>Exercício de Condicionamento</Categoria>
+		<AtividadeEspecifica>Ciclismo, estacionário, 50W, esforço muito leve</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>2012</Id>
+		<MET>5.5</MET>
+		<Categoria>Exercício de Condicionamento</Categoria>
+		<AtividadeEspecifica>Ciclismo, estacionário, 100 W, esforço leve</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>2013</Id>
+		<MET>7.0</MET>
+		<Categoria>Exercício de Condicionamento</Categoria>
+		<AtividadeEspecifica>Ciclismo, estacionário, 150 W, esforço moderado</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>2014</Id>
+		<MET>10.5</MET>
+		<Categoria>Exercício de Condicionamento</Categoria>
+		<AtividadeEspecifica>Ciclismo, estacionário, 200 W, esforço vigoroso</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>2015</Id>
+		<MET>12.5</MET>
+		<Categoria>Exercício de Condicionamento</Categoria>
+		<AtividadeEspecifica>Ciclismo, estacionário, 250 W, esforço muito vigoroso</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>2020</Id>
+		<MET>8.0</MET>
+		<Categoria>Exercício de Condicionamento</Categoria>
+		<AtividadeEspecifica>Calistenia (i.e., flexões, abdominais, puxadas), pesado, esforço vigoroso</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>2030</Id>
+		<MET>3.5</MET>
+		<Categoria>Exercício de Condicionamento</Categoria>
+		<AtividadeEspecifica>Calistenia, exercício em casa, esforço leve ou moderado, geral (ex: exercícios para as costas),levantar e deitar no chão (cód. 150 de Taylor)</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>2040</Id>
+		<MET>8.0</MET>
+		<Categoria>Exercício de Condicionamento</Categoria>
+		<AtividadeEspecifica>Treinamento em circuito, geral</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>2050</Id>
+		<MET>6.0</MET>
+		<Categoria>Exercício de Condicionamento</Categoria>
+		<AtividadeEspecifica>Levantamento de peso (pesos livres, Nautilus ou modulados universais), power-lifting ou fisicullturismo, esforço vigoroso (cód. 210 de Taylor)</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>2060</Id>
+		<MET>5.5</MET>
+		<Categoria>Exercício de Condicionamento</Categoria>
+		<AtividadeEspecifica>Exercícios em centros de saúde (fitness, academias etc.), geral (cód. 160 de Taylor)</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>2065</Id>
+		<MET>9.0</MET>
+		<Categoria>Exercício de Condicionamento</Categoria>
+		<AtividadeEspecifica>Ergômetros de esteira e escada, geral</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>2070</Id>
+		<MET>7.0</MET>
+		<Categoria>Exercício de Condicionamento</Categoria>
+		<AtividadeEspecifica>Remo, ergômetro estacionário, geral</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>2071</Id>
+		<MET>3.5</MET>
+		<Categoria>Exercício de Condicionamento</Categoria>
+		<AtividadeEspecifica>Remo, estacionário, 50 W, esforço leve</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>2072</Id>
+		<MET>7.0</MET>
+		<Categoria>Exercício de Condicionamento</Categoria>
+		<AtividadeEspecifica>Remo, estacionário, 100 W, esforço moderado</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>2073</Id>
+		<MET>8.5</MET>
+		<Categoria>Exercício de Condicionamento</Categoria>
+		<AtividadeEspecifica>Remo, estacionário, 150 W, esforço vigoroso</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>2074</Id>
+		<MET>12.0</MET>
+		<Categoria>Exercício de Condicionamento</Categoria>
+		<AtividadeEspecifica>Ski-Machine (ergômetro de esqui), geral</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>2080</Id>
+		<MET>7.0</MET>
+		<Categoria>Exercício de Condicionamento</Categoria>
+		<AtividadeEspecifica>Slimnastics, jazzercise (atividades ginásticas envolvendo movimento do jazz enquanto dança)</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>2090</Id>
+		<MET>6.0</MET>
+		<Categoria>Exercício de Condicionamento</Categoria>
+		<AtividadeEspecifica>Alongamento, Hatha-Yoga</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>2100</Id>
+		<MET>2.5</MET>
+		<Categoria>Exercício de Condicionamento</Categoria>
+		<AtividadeEspecifica>Alongamento leve</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>2101</Id>
+		<MET>2.5</MET>
+		<Categoria>Exercício de Condicionamento</Categoria>
+		<AtividadeEspecifica>Conduzir aulas de ginástica aeróbia</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>2110</Id>
+		<MET>6.0</MET>
+		<Categoria>Exercício de Condicionamento</Categoria>
+		<AtividadeEspecifica>Hidroginástica (aeróbia, calistênica/localizada)</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>2120</Id>
+		<MET>4.0</MET>
+		<Categoria>Exercício de Condicionamento</Categoria>
+		<AtividadeEspecifica>Levantamento de pesos (pesos livres, Nautilus ou modulados universais), esforço leve ou moderado,rotina leve, geral</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>2130</Id>
+		<MET>3.0</MET>
+		<Categoria>Exercício de Condicionamento</Categoria>
+		<AtividadeEspecifica>Turbilhão, sentado</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>2135</Id>
+		<MET>1.0</MET>
+		<Categoria>Exercício de Condicionamento</Categoria>
+		<AtividadeEspecifica>Balé ou dança moderna, twist, jazz, sapateado, jitterbug (dança em seis tempos, em pares,</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>3010</Id>
+		<MET>4.8</MET>
+		<Categoria>Dança</Categoria>
+		<AtividadeEspecifica>caracterizada por rodopios velozes – rockabilly)</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>3015</Id>
+		<MET>6.5</MET>
+		<Categoria>Dança</Categoria>
+		<AtividadeEspecifica>Aeróbia, geral</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>3016</Id>
+		<MET>8.5</MET>
+		<Categoria>Dança</Categoria>
+		<AtividadeEspecifica>Aeróbia, step, com step de 15-20 cm</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>3017</Id>
+		<MET>10.0</MET>
+		<Categoria>Dança</Categoria>
+		<AtividadeEspecifica>Aeróbia, step, com step de 25-30 cm</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>3020</Id>
+		<MET>5.0</MET>
+		<Categoria>Dança</Categoria>
+		<AtividadeEspecifica>Aeróbia, baixo impacto</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>3021</Id>
+		<MET>7.0</MET>
+		<Categoria>Dança</Categoria>
+		<AtividadeEspecifica>Aeróbia, alto impacto</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>3025</Id>
+		<MET>4.5</MET>
+		<Categoria>Dança</Categoria>
+		<AtividadeEspecifica>Geral, Grega, Oriente Médio, hula, flamenco, swing, dança do ventre</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>3030</Id>
+		<MET>5.5</MET>
+		<Categoria>Dança</Categoria>
+		<AtividadeEspecifica>Dança de salão, rápido (cód. 125 de Taylor)</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>3031</Id>
+		<MET>4.5</MET>
+		<Categoria>Dança</Categoria>
+		<AtividadeEspecifica>Dança de salão, rápido (disco, folk, square), line dancing (similar à quadrilha brasileira), dança irlandesa, polka, country</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>3040</Id>
+		<MET>3.0</MET>
+		<Categoria>Dança</Categoria>
+		<AtividadeEspecifica>Dança de salão, devagar (p.ex., valsa, foxtrot, dança lenta), samba, tango, séc XIX, mambo, chacha</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>3050</Id>
+		<MET>5.5</MET>
+		<Categoria>Dança</Categoria>
+		<AtividadeEspecifica>Anishinaabe ou outra dança ameríndia tradicional (danças indígenas em geral)</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>4001</Id>
+		<MET>3.0</MET>
+		<Categoria>Caça e Pesca</Categoria>
+		<AtividadeEspecifica>Pesca, geral</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>4010</Id>
+		<MET>4.0</MET>
+		<Categoria>Caça e Pesca</Categoria>
+		<AtividadeEspecifica>Cavando para procurar minhocas, com pá</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>4020</Id>
+		<MET>4.0</MET>
+		<Categoria>Caça e Pesca</Categoria>
+		<AtividadeEspecifica>Pesca em beira de rio, caminhando</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>4030</Id>
+		<MET>2.5</MET>
+		<Categoria>Caça e Pesca</Categoria>
+		<AtividadeEspecifica>Pesca de barco, sentado</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>4040</Id>
+		<MET>3.5</MET>
+		<Categoria>Caça e Pesca</Categoria>
+		<AtividadeEspecifica>Pesca de beira de rio, em pé (cód. 660 de Taylor)</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>4050</Id>
+		<MET>6.0</MET>
+		<Categoria>Caça e Pesca</Categoria>
+		<AtividadeEspecifica>Pesca em correnteza, com botas de pescador (cód. 670 de Taylor)</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>4060</Id>
+		<MET>2.0</MET>
+		<Categoria>Caça e Pesca</Categoria>
+		<AtividadeEspecifica>Pesca sentado,imóvel</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>4070</Id>
+		<MET>2.5</MET>
+		<Categoria>Caça e Pesca</Categoria>
+		<AtividadeEspecifica>Caça, arco e flecha ou arbalete</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>4080</Id>
+		<MET>6.0</MET>
+		<Categoria>Caça e Pesca</Categoria>
+		<AtividadeEspecifica>Caça, cervo, alce, animais silvestres de grande porte (cód. 170 de Taylor)</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>4090</Id>
+		<MET>2.5</MET>
+		<Categoria>Caça e Pesca</Categoria>
+		<AtividadeEspecifica>Caça, pato selvagem, em terreno pantanoso, brejo ou espelho d ́água</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>4100</Id>
+		<MET>5.0</MET>
+		<Categoria>Caça e Pesca</Categoria>
+		<AtividadeEspecifica>Caça, geral</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>4110</Id>
+		<MET>6.0</MET>
+		<Categoria>Caça e Pesca</Categoria>
+		<AtividadeEspecifica>Caça, faisão ou galo silvestre (cód. 680 de Taylor)</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>4120</Id>
+		<MET>5.0</MET>
+		<Categoria>Caça e Pesca</Categoria>
+		<AtividadeEspecifica>Caça, coelho/lebre, esquilo, aves silvestres, gambá, animais silvestres de pequeno porte (cód. 690 de Taylor)</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>4130</Id>
+		<MET>2.5</MET>
+		<Categoria>Caça e Pesca</Categoria>
+		<AtividadeEspecifica>Tiro de pistola ou tiro ao alvo imóvel, em pé</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>5010</Id>
+		<MET>3.3</MET>
+		<Categoria>Atividades Domésticas</Categoria>
+		<AtividadeEspecifica>Varrer tapetes, varrer o chão</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>5020</Id>
+		<MET>3.0</MET>
+		<Categoria>Atividades Domésticas</Categoria>
+		<AtividadeEspecifica>Limpeza, pesada (p.ex., lavar carro, lavar janelas, limpar garagem), esforço vigoroso</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>5021</Id>
+		<MET>3.5</MET>
+		<Categoria>Atividades Domésticas</Categoria>
+		<AtividadeEspecifica>Varrer o chão</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>5025</Id>
+		<MET>2.5</MET>
+		<Categoria>Atividades Domésticas</Categoria>
+		<AtividadeEspecifica>Múltiplas tarefas domésticas todas de uma vez, leve esforço</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>5026</Id>
+		<MET>3.5</MET>
+		<Categoria>Atividades Domésticas</Categoria>
+		<AtividadeEspecifica>Múltiplas tarefas domésticas todas de uma vez, esforço moderado</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>5027</Id>
+		<MET>4.0</MET>
+		<Categoria>Atividades Domésticas</Categoria>
+		<AtividadeEspecifica>Múltiplas tarefas domésticas todas de uma vez, esforço vigoroso</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>5030</Id>
+		<MET>3.0</MET>
+		<Categoria>Atividades Domésticas</Categoria>
+		<AtividadeEspecifica>Limpeza, casa ou cabana, geral</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>5040</Id>
+		<MET>2.5</MET>
+		<Categoria>Atividades Domésticas</Categoria>
+		<AtividadeEspecifica>Limpeza, leve (espanar pó, passar aspirador, mudar roupa de cama, levar lixo para fora)</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>5041</Id>
+		<MET>2.3</MET>
+		<Categoria>Atividades Domésticas</Categoria>
+		<AtividadeEspecifica>Lavar pratos de pé ou em geral (atividade não dividida em componentes de pé/caminhando)</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>5042</Id>
+		<MET>2.5</MET>
+		<Categoria>Atividades Domésticas</Categoria>
+		<AtividadeEspecifica>Lavar pratos, tirar os pratos da mesa, caminhar</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>5043</Id>
+		<MET>3.5</MET>
+		<Categoria>Atividades Domésticas</Categoria>
+		<AtividadeEspecifica>Usar o aspirador de pó</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>5045</Id>
+		<MET>6.0</MET>
+		<Categoria>Atividades Domésticas</Categoria>
+		<AtividadeEspecifica>Abatendo animais</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>5050</Id>
+		<MET>2.0</MET>
+		<Categoria>Atividades Domésticas</Categoria>
+		<AtividadeEspecifica>Cozinhar e preparar comida - de pé, sentado ou em geral (atividade não dividida em componentes de pé/caminhando)</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>5051</Id>
+		<MET>2.5</MET>
+		<Categoria>Atividades Domésticas</Categoria>
+		<AtividadeEspecifica>Servir comida, colocar a mesa - envolvendo caminhar e estar de pé</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>5052</Id>
+		<MET>2.5</MET>
+		<Categoria>Atividades Domésticas</Categoria>
+		<AtividadeEspecifica>Cozinhar ou preparar comida – caminhando</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>5053</Id>
+		<MET>2.5</MET>
+		<Categoria>Atividades Domésticas</Categoria>
+		<AtividadeEspecifica>Alimentando animais</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>5055</Id>
+		<MET>2.5</MET>
+		<Categoria>Atividades Domésticas</Categoria>
+		<AtividadeEspecifica>Descolar provisões (compras de mercado) (carregar/arrumar provisões, fazer compras sem carrinho)</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>5056</Id>
+		<MET>7.5</MET>
+		<Categoria>Atividades Domésticas</Categoria>
+		<AtividadeEspecifica>Carregar compras escada acima</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>5057</Id>
+		<MET>3.0</MET>
+		<Categoria>Atividades Domésticas</Categoria>
+		<AtividadeEspecifica>Preparando pão em forno externo (lenha, carvão etc)</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>5060</Id>
+		<MET>2.3</MET>
+		<Categoria>Atividades Domésticas</Categoria>
+		<AtividadeEspecifica>Comprar alimentos, com ou sem carrinho de supermercado, em pé ou caminhando</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>5065</Id>
+		<MET>2.3</MET>
+		<Categoria>Atividades Domésticas</Categoria>
+		<AtividadeEspecifica>Fazer compras, em pé ou caminhando (shopping)</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>5070</Id>
+		<MET>2.3</MET>
+		<Categoria>Atividades Domésticas</Categoria>
+		<AtividadeEspecifica>Passar a roupa</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>5080</Id>
+		<MET>1.5</MET>
+		<Categoria>Atividades Domésticas</Categoria>
+		<AtividadeEspecifica>Sentado, costurando, bordando, empacotamento leve (presentes)</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>5090</Id>
+		<MET>2.0</MET>
+		<Categoria>Atividades Domésticas</Categoria>
+		<AtividadeEspecifica>Lavar roupa de pé, dobrar ou pendurar roupas, colocar roupa no lavador ou secador, fazer malas</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>5095</Id>
+		<MET>2.3</MET>
+		<Categoria>Atividades Domésticas</Categoria>
+		<AtividadeEspecifica>Transportar roupas caminhando, juntar roupas para empacotar, separar roupa suja ou limpa</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>5100</Id>
+		<MET>2.0</MET>
+		<Categoria>Atividades Domésticas</Categoria>
+		<AtividadeEspecifica>Fazer a cama</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>5110</Id>
+		<MET>5.0</MET>
+		<Categoria>Atividades Domésticas</Categoria>
+		<AtividadeEspecifica>Fazer xarope, extrair essência (seiva) para fazer açúcar (incluindo carregar baldes, transportar lenha)</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>5120</Id>
+		<MET>6.0</MET>
+		<Categoria>Atividades Domésticas</Categoria>
+		<AtividadeEspecifica>Mudar móveis de lugar, faxina</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>5130</Id>
+		<MET>3.8</MET>
+		<Categoria>Atividades Domésticas</Categoria>
+		<AtividadeEspecifica>Esfregar o chão, com apoio de mãos e joelhos</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>5140</Id>
+		<MET>4.8</MET>
+		<Categoria>Atividades Domésticas</Categoria>
+		<AtividadeEspecifica>Varrer garagem, calçada ou fora de casa</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>5146</Id>
+		<MET>3.5</MET>
+		<Categoria>Atividades Domésticas</Categoria>
+		<AtividadeEspecifica>De pé, encaixotando/desencaixotando, suspensão ocasional de utensílios domésticos</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>5147</Id>
+		<MET>3.0</MET>
+		<Categoria>Atividades Domésticas</Categoria>
+		<AtividadeEspecifica>Transportando utensílios domésticos com necessidade de caminhar - esforço moderado</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>5148</Id>
+		<MET>2.5</MET>
+		<Categoria>Atividades Domésticas</Categoria>
+		<AtividadeEspecifica>Regando plantas</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>5149</Id>
+		<MET>2.5</MET>
+		<Categoria>Atividades Domésticas</Categoria>
+		<AtividadeEspecifica>Acendendo a lareira (preparação inclusive)</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>5150</Id>
+		<MET>9.0</MET>
+		<Categoria>Atividades Domésticas</Categoria>
+		<AtividadeEspecifica>Transportar utensílios domésticos escada acima, carregar caixas ou móveis</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>5160</Id>
+		<MET>2.0</MET>
+		<Categoria>Atividades Domésticas</Categoria>
+		<AtividadeEspecifica>De pé, esforço leve (trocar lâmpada etc.)</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>5165</Id>
+		<MET>3.0</MET>
+		<Categoria>Atividades Domésticas</Categoria>
+		<AtividadeEspecifica>Caminhar, esforço leve, sem limpar (aprontar-se para sair, fechar portas, janelas etc)</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>5170</Id>
+		<MET>2.5</MET>
+		<Categoria>Atividades Domésticas</Categoria>
+		<AtividadeEspecifica>Sentado, brincando com criança (s) – esforço leve (apenas períodos ativos)</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>5171</Id>
+		<MET>2.8</MET>
+		<Categoria>Atividades Domésticas</Categoria>
+		<AtividadeEspecifica>De pé, brincando com criança (s) – esforço leve (apenas períodos ativos)</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>5175</Id>
+		<MET>4.0</MET>
+		<Categoria>Atividades Domésticas</Categoria>
+		<AtividadeEspecifica>Caminhar/correr brincando com criança (s) - esforço moderado (apenas períodos ativos)</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>5180</Id>
+		<MET>5.0</MET>
+		<Categoria>Atividades Domésticas</Categoria>
+		<AtividadeEspecifica>Caminhar/correr brincando com criança (s) - esforço vigoroso (apenas períodos ativos)</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>5181</Id>
+		<MET>3.0</MET>
+		<Categoria>Atividades Domésticas</Categoria>
+		<AtividadeEspecifica>Carregando criança pequena</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>5185</Id>
+		<MET>2.5</MET>
+		<Categoria>Atividades Domésticas</Categoria>
+		<AtividadeEspecifica>Cuidar de criança - sentado ou ajoelhado: vesti-la, dar banho, enfeitá-la, alimentá-la, levantá-la ocasionalmente - esforço leve</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>5186</Id>
+		<MET>3.0</MET>
+		<Categoria>Atividades Domésticas</Categoria>
+		<AtividadeEspecifica>Cuidar de criança - de pé: vesti-la, dar banho, enfeitá-la, alimentá-la, levantá-la ocasionalmente -esforço leve</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>5187</Id>
+		<MET>4.0</MET>
+		<Categoria>Atividades Domésticas</Categoria>
+		<AtividadeEspecifica>Cuidar de idoso, adulto incapacitado (apenas períodos ativos)</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>5188</Id>
+		<MET>1.5</MET>
+		<Categoria>Atividades Domésticas</Categoria>
+		<AtividadeEspecifica>Recostar-se com um bebê no colo</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>5190</Id>
+		<MET>2.5</MET>
+		<Categoria>Atividades Domésticas</Categoria>
+		<AtividadeEspecifica>Sentado, brincando com animais, esforço leve (apenas períodos ativos)</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>5191</Id>
+		<MET>2.8</MET>
+		<Categoria>Atividades Domésticas</Categoria>
+		<AtividadeEspecifica>Em pé, brincando com animais, esforço leve (apenas períodos ativos)</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>5192</Id>
+		<MET>2.8</MET>
+		<Categoria>Atividades Domésticas</Categoria>
+		<AtividadeEspecifica>Caminhar /correr, brincando com animais, esforço leve (apenas períodos ativos)</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>5193</Id>
+		<MET>4.0</MET>
+		<Categoria>Atividades Domésticas</Categoria>
+		<AtividadeEspecifica>Caminhar/correr, brincando com animais, esforço moderado (apenas períodos ativos)</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>5194</Id>
+		<MET>5.0</MET>
+		<Categoria>Atividades Domésticas</Categoria>
+		<AtividadeEspecifica>Caminhar/correr, brincando com animais, esforço vigoroso (apenas períodos ativos)</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>5195</Id>
+		<MET>3.5</MET>
+		<Categoria>Atividades Domésticas</Categoria>
+		<AtividadeEspecifica>Em pé, dando banho no cachorro</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>6010</Id>
+		<MET>3.0</MET>
+		<Categoria>Reparos Domésticos</Categoria>
+		<AtividadeEspecifica>Conserto de aeroplanos</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>6020</Id>
+		<MET>4.0</MET>
+		<Categoria>Reparos Domésticos</Categoria>
+		<AtividadeEspecifica>Conserto de carro (pesado, com trabalho corporal)</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>6030</Id>
+		<MET>3.0</MET>
+		<Categoria>Reparos Domésticos</Categoria>
+		<AtividadeEspecifica>Conserto de carro (leve, sem trabalho corporal)</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>6040</Id>
+		<MET>3.0</MET>
+		<Categoria>Reparos Domésticos</Categoria>
+		<AtividadeEspecifica>Carpintaria, geral, em ateliê (cód. 620 de Taylor)</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>6050</Id>
+		<MET>6.0</MET>
+		<Categoria>Reparos Domésticos</Categoria>
+		<AtividadeEspecifica>Carpintaria, exterior da casa, instalar calhas, construir uma cerca (cód. 640 de Taylor)</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>6060</Id>
+		<MET>4.5</MET>
+		<Categoria>Reparos Domésticos</Categoria>
+		<AtividadeEspecifica>Carpintaria, acabamento de móveis ou cabines pequenas (closets etc)</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>6070</Id>
+		<MET>7.5</MET>
+		<Categoria>Reparos Domésticos</Categoria>
+		<AtividadeEspecifica>Carpintaria, serrando madeira dura</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>6080</Id>
+		<MET>5.0</MET>
+		<Categoria>Reparos Domésticos</Categoria>
+		<AtividadeEspecifica>Calafetagem, cabana de madeira</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>6090</Id>
+		<MET>4.5</MET>
+		<Categoria>Reparos Domésticos</Categoria>
+		<AtividadeEspecifica>Calafetagem, exceto cabana de madeira</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>6100</Id>
+		<MET>5.0</MET>
+		<Categoria>Reparos Domésticos</Categoria>
+		<AtividadeEspecifica>Limpar calhas</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>6110</Id>
+		<MET>5.0</MET>
+		<Categoria>Reparos Domésticos</Categoria>
+		<AtividadeEspecifica>Arrumar a garagem (prospectando garagem em desordem)</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>6120</Id>
+		<MET>5.0</MET>
+		<Categoria>Reparos Domésticos</Categoria>
+		<AtividadeEspecifica>Instalar janelas pesadas</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>6130</Id>
+		<MET>4.5</MET>
+		<Categoria>Reparos Domésticos</Categoria>
+		<AtividadeEspecifica>Colocar ou remover carpete</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>6140</Id>
+		<MET>4.5</MET>
+		<Categoria>Reparos Domésticos</Categoria>
+		<AtividadeEspecifica>Colocar piso ou linóleo</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>6150</Id>
+		<MET>5.0</MET>
+		<Categoria>Reparos Domésticos</Categoria>
+		<AtividadeEspecifica>Pintar, exterior da casa (cód. 650 de Taylor)</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>6160</Id>
+		<MET>3.0</MET>
+		<Categoria>Reparos Domésticos</Categoria>
+		<AtividadeEspecifica>Pintar, colocar papel de parede, revestir de gesso, raspagem, interior da casa, pendurar placas de pedra, remodelagem</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>6165</Id>
+		<MET>4.5</MET>
+		<Categoria>Reparos Domésticos</Categoria>
+		<AtividadeEspecifica>Pintar (cód. 630 de Taylor)</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>6170</Id>
+		<MET>3.0</MET>
+		<Categoria>Reparos Domésticos</Categoria>
+		<AtividadeEspecifica>Colocar e remover tela de piche em barcos (manta ou calafetagem do barco)</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>6180</Id>
+		<MET>6.0</MET>
+		<Categoria>Reparos Domésticos</Categoria>
+		<AtividadeEspecifica>Consertar telhado</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>6190</Id>
+		<MET>4.5</MET>
+		<Categoria>Reparos Domésticos</Categoria>
+		<AtividadeEspecifica>Revestir chão com areia com uso de máquina</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>6200</Id>
+		<MET>4.5</MET>
+		<Categoria>Reparos Domésticos</Categoria>
+		<AtividadeEspecifica>Raspar ou pintar um barco a vela ou motor</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>6210</Id>
+		<MET>5.0</MET>
+		<Categoria>Reparos Domésticos</Categoria>
+		<AtividadeEspecifica>Retirar terra com pá</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>6220</Id>
+		<MET>4.5</MET>
+		<Categoria>Reparos Domésticos</Categoria>
+		<AtividadeEspecifica>Lavar e encerar o casco de barco, carro, barco a motor, aeroplano</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>6230</Id>
+		<MET>4.5</MET>
+		<Categoria>Reparos Domésticos</Categoria>
+		<AtividadeEspecifica>Lavar e pintar cercas</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>6240</Id>
+		<MET>3.0</MET>
+		<Categoria>Reparos Domésticos</Categoria>
+		<AtividadeEspecifica>Reparos elétricos (fios etc) e de canos em geral</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>7010</Id>
+		<MET>1.0</MET>
+		<Categoria>Inatividade, tranquilo</Categoria>
+		<AtividadeEspecifica>Ficar deitado e quieto, assistindo televisão</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>7011</Id>
+		<MET>1.0</MET>
+		<Categoria>Inatividade, tranquilo</Categoria>
+		<AtividadeEspecifica>Ficar deitado e quieto, fazendo nada, deitado na cama acordado, escutando música (sem falar ou ler)</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>7020</Id>
+		<MET>1.0</MET>
+		<Categoria>Inatividade, tranquilo</Categoria>
+		<AtividadeEspecifica>Sentado, quieto, vendo TV</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>7021</Id>
+		<MET>1.0</MET>
+		<Categoria>Inatividade, tranquilo</Categoria>
+		<AtividadeEspecifica>Sentado e quieto, fumando, escutando música (sem falar ou ler), assistindo a um filme no cinema</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>7030</Id>
+		<MET>0.9</MET>
+		<Categoria>Inatividade, tranquilo</Categoria>
+		<AtividadeEspecifica>Dormir</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>7040</Id>
+		<MET>1.2</MET>
+		<Categoria>Inatividade, tranquilo</Categoria>
+		<AtividadeEspecifica>De pé, quieto (p.ex., esperar numa fila)</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>7050</Id>
+		<MET>1.0</MET>
+		<Categoria>Inatividade, tranquilo</Categoria>
+		<AtividadeEspecifica>Reclinado, escrevendo</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>7060</Id>
+		<MET>1.0</MET>
+		<Categoria>Inatividade, tranquilo</Categoria>
+		<AtividadeEspecifica>Reclinado, falando (com terceiros ou ao telefone)</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>7070</Id>
+		<MET>1.0</MET>
+		<Categoria>Inatividade, tranquilo</Categoria>
+		<AtividadeEspecifica>Reclinado, lendo</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>7075</Id>
+		<MET>1.0</MET>
+		<Categoria>Inatividade, tranquilo</Categoria>
+		<AtividadeEspecifica>Meditando</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>8010</Id>
+		<MET>5.0</MET>
+		<Categoria>Gramado e jardim</Categoria>
+		<AtividadeEspecifica>Transportar, carregar ou empilhar lenha, carregar ou descarregar lenha ou pranchas (madeira para construção)</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>8020</Id>
+		<MET>6.0</MET>
+		<Categoria>Gramado e jardim</Categoria>
+		<AtividadeEspecifica>Cortar lenha ou troncos</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>8030</Id>
+		<MET>5.0</MET>
+		<Categoria>Gramado e jardim</Categoria>
+		<AtividadeEspecifica>Limpar o terreno, transportar gravetos</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>8040</Id>
+		<MET>5.0</MET>
+		<Categoria>Gramado e jardim</Categoria>
+		<AtividadeEspecifica>Cavar caixa de areia</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>8050</Id>
+		<MET>5.0</MET>
+		<Categoria>Gramado e jardim</Categoria>
+		<AtividadeEspecifica>Cavar, remover terra, renovar terra do jardim (cód. 590 de Taylor)</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>8060</Id>
+		<MET>6.0</MET>
+		<Categoria>Gramado e jardim</Categoria>
+		<AtividadeEspecifica>Jardinagem com equipamentos pesados, trabalhando o jardim, operando serra elétrica</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>8080</Id>
+		<MET>5.0</MET>
+		<Categoria>Gramado e jardim</Categoria>
+		<AtividadeEspecifica>Espalhar pedra picada (cascalho)</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>8090</Id>
+		<MET>5.0</MET>
+		<Categoria>Gramado e jardim</Categoria>
+		<AtividadeEspecifica>Espalhar cal</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>8095</Id>
+		<MET>5.5</MET>
+		<Categoria>Gramado e jardim</Categoria>
+		<AtividadeEspecifica>Aparar o gramado, geral</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>8100</Id>
+		<MET>2.5</MET>
+		<Categoria>Gramado e jardim</Categoria>
+		<AtividadeEspecifica>Aparar gramado, dirigindo um aparador/cortador (cód. 550 de Taylor)</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>8110</Id>
+		<MET>6.0</MET>
+		<Categoria>Gramado e jardim</Categoria>
+		<AtividadeEspecifica>Aparar gramado, andando, aparador/cortador manual (cód. 570 de Taylor)</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>8120</Id>
+		<MET>5.5</MET>
+		<Categoria>Gramado e jardim</Categoria>
+		<AtividadeEspecifica>Aparar gramado, andando, aparador/cortador com motor</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>8125</Id>
+		<MET>4.5</MET>
+		<Categoria>Gramado e jardim</Categoria>
+		<AtividadeEspecifica>Aparar gramado, cortador com motor (cód. 590 de Taylor)</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>8130</Id>
+		<MET>4.5</MET>
+		<Categoria>Gramado e jardim</Categoria>
+		<AtividadeEspecifica>Operar soprador de neve, andando</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>8140</Id>
+		<MET>4.5</MET>
+		<Categoria>Gramado e jardim</Categoria>
+		<AtividadeEspecifica>Semear flores e arbustos</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>8150</Id>
+		<MET>4.5</MET>
+		<Categoria>Gramado e jardim</Categoria>
+		<AtividadeEspecifica>Plantar árvores</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>8160</Id>
+		<MET>4.3</MET>
+		<Categoria>Gramado e jardim</Categoria>
+		<AtividadeEspecifica>Varrer folhas com ancinho</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>8165</Id>
+		<MET>4.0</MET>
+		<Categoria>Gramado e jardim</Categoria>
+		<AtividadeEspecifica>Varrer folhas com ancinho (Taylor Code 600)</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>8170</Id>
+		<MET>4.0</MET>
+		<Categoria>Gramado e jardim</Categoria>
+		<AtividadeEspecifica>Varrer o telhado com vassoura de neve</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>8180</Id>
+		<MET>3.0</MET>
+		<Categoria>Gramado e jardim</Categoria>
+		<AtividadeEspecifica>Dirigir soprador de neve</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>8190</Id>
+		<MET>4.0</MET>
+		<Categoria>Gramado e jardim</Categoria>
+		<AtividadeEspecifica>Ensacar grama ou folhas</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>8200</Id>
+		<MET>6.0</MET>
+		<Categoria>Gramado e jardim</Categoria>
+		<AtividadeEspecifica>Cavando, neve, com as mãos (cód. 610 de Taylor)</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>8210</Id>
+		<MET>4.5</MET>
+		<Categoria>Gramado e jardim</Categoria>
+		<AtividadeEspecifica>Aparar arbustos ou árvores, cortador manual</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>8215</Id>
+		<MET>3.5</MET>
+		<Categoria>Gramado e jardim</Categoria>
+		<AtividadeEspecifica>Aparar arbustos ou árvores, cortador com motor</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>8220</Id>
+		<MET>2.5</MET>
+		<Categoria>Gramado e jardim</Categoria>
+		<AtividadeEspecifica>Andar, aplicar fertilizante ou semear gramado</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>8230</Id>
+		<MET>1.5</MET>
+		<Categoria>Gramado e jardim</Categoria>
+		<AtividadeEspecifica>Regar gramado ou jardim, de pé ou andando</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>8240</Id>
+		<MET>4.5</MET>
+		<Categoria>Gramado e jardim</Categoria>
+		<AtividadeEspecifica>Retirar erva daninha, cultivar jardim (cód. 580 de Taylor)</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>8245</Id>
+		<MET>4.0</MET>
+		<Categoria>Gramado e jardim</Categoria>
+		<AtividadeEspecifica>Jardinagem, geral</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>8046</Id>
+		<MET>3.0</MET>
+		<Categoria>Gramado e jardim</Categoria>
+		<AtividadeEspecifica>Pegar frutas de árvores, pegar frutas ou vegetais, esforço moderado</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>8250</Id>
+		<MET>3.0</MET>
+		<Categoria>Gramado e jardim</Categoria>
+		<AtividadeEspecifica>Recolher/colher folhas, gravetos ou vegetais, andando ou em pé</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>8251</Id>
+		<MET>3.0</MET>
+		<Categoria>Gramado e jardim</Categoria>
+		<AtividadeEspecifica>Caminhando, juntando as ferramentas de jardinagem</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>9010</Id>
+		<MET>1.5</MET>
+		<Categoria>Miscelânea</Categoria>
+		<AtividadeEspecifica>Sentado, jogando cartas ou jogos de mesa</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>9020</Id>
+		<MET>2.3</MET>
+		<Categoria>Miscelânea</Categoria>
+		<AtividadeEspecifica>De pé, desenhando (escrevendo), jogando em cassinos, operando máquinas copiadoras</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>9030</Id>
+		<MET>1.3</MET>
+		<Categoria>Miscelânea</Categoria>
+		<AtividadeEspecifica>Sentado, lendo, livro, jornal etc.</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>9040</Id>
+		<MET>1.8</MET>
+		<Categoria>Miscelânea</Categoria>
+		<AtividadeEspecifica>Sentado, escrevendo, trabalho de escritório</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>9050</Id>
+		<MET>1.8</MET>
+		<Categoria>Miscelânea</Categoria>
+		<AtividadeEspecifica>De pé, conversando ou falando ao telefone</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>9055</Id>
+		<MET>1.5</MET>
+		<Categoria>Miscelânea</Categoria>
+		<AtividadeEspecifica>Sentado, conversando ou falando ao telefone</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>9060</Id>
+		<MET>1.8</MET>
+		<Categoria>Miscelânea</Categoria>
+		<AtividadeEspecifica>Sentado, estudando, geral, incluindo ler e/ou escrever</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>9065</Id>
+		<MET>1.8</MET>
+		<Categoria>Miscelânea</Categoria>
+		<AtividadeEspecifica>Sentado em sala de aula, geral, incluindo tomar notar e discussões em classe</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>9070</Id>
+		<MET>1.8</MET>
+		<Categoria>Miscelânea</Categoria>
+		<AtividadeEspecifica>De pé, lendo</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>9071</Id>
+		<MET>2.0</MET>
+		<Categoria>Miscelânea</Categoria>
+		<AtividadeEspecifica>Em pé, miscelânea</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>9075</Id>
+		<MET>1.5</MET>
+		<Categoria>Miscelânea</Categoria>
+		<AtividadeEspecifica>Sentado, artes e artesanatos, esforço leve</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>9080</Id>
+		<MET>2.0</MET>
+		<Categoria>Miscelânea</Categoria>
+		<AtividadeEspecifica>Sentado, artes e artesanatos, esforço moderado</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>9085</Id>
+		<MET>1.8</MET>
+		<Categoria>Miscelânea</Categoria>
+		<AtividadeEspecifica>Em pé, artes e artesanatos, esforço leve</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>9090</Id>
+		<MET>3.0</MET>
+		<Categoria>Miscelânea</Categoria>
+		<AtividadeEspecifica>Em pé, artes e artesanatos, esforço moderado</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>9095</Id>
+		<MET>3.5</MET>
+		<Categoria>Miscelânea</Categoria>
+		<AtividadeEspecifica>Em pé, artes e artesanatos, esforço vigoroso</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>9100</Id>
+		<MET>1.5</MET>
+		<Categoria>Miscelânea</Categoria>
+		<AtividadeEspecifica>Retiro/ reunião familiar envolvendo atividades sentado, relaxando, falando e comendo</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>9105</Id>
+		<MET>2.0</MET>
+		<Categoria>Miscelânea</Categoria>
+		<AtividadeEspecifica>Fazer viagem, viajar/  férias envolvendo caminhadas e andar a cavalo</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>9110</Id>
+		<MET>2.5</MET>
+		<Categoria>Miscelânea</Categoria>
+		<AtividadeEspecifica>Acampar envolvendo atividades em pé, sentado, andando, esforço de leve a moderado</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>9115</Id>
+		<MET>1.5</MET>
+		<Categoria>Miscelânea</Categoria>
+		<AtividadeEspecifica>Sentado em evento desportivo, como espectador</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>10010</Id>
+		<MET>1.8</MET>
+		<Categoria>Tocar Música/ Instrumentos</Categoria>
+		<AtividadeEspecifica>Acordeão, sanfona</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>10020</Id>
+		<MET>2.0</MET>
+		<Categoria>Tocar Música/ Instrumentos</Categoria>
+		<AtividadeEspecifica>Violoncelo</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>10030</Id>
+		<MET>2.5</MET>
+		<Categoria>Tocar Música/ Instrumentos</Categoria>
+		<AtividadeEspecifica>Regência</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>10040</Id>
+		<MET>4.0</MET>
+		<Categoria>Tocar Música/ Instrumentos</Categoria>
+		<AtividadeEspecifica>Bateria</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>10050</Id>
+		<MET>2.0</MET>
+		<Categoria>Tocar Música/ Instrumentos</Categoria>
+		<AtividadeEspecifica>Flauta (sentado)</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>10060</Id>
+		<MET>2.0</MET>
+		<Categoria>Tocar Música/ Instrumentos</Categoria>
+		<AtividadeEspecifica>Corneta</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>10070</Id>
+		<MET>2.5</MET>
+		<Categoria>Tocar Música/ Instrumentos</Categoria>
+		<AtividadeEspecifica>Piano ou órgão</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>10080</Id>
+		<MET>3.5</MET>
+		<Categoria>Tocar Música/ Instrumentos</Categoria>
+		<AtividadeEspecifica>Trombone</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>10090</Id>
+		<MET>2.5</MET>
+		<Categoria>Tocar Música/ Instrumentos</Categoria>
+		<AtividadeEspecifica>Trompete</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>10100</Id>
+		<MET>2.5</MET>
+		<Categoria>Tocar Música/ Instrumentos</Categoria>
+		<AtividadeEspecifica>Violino</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>10110</Id>
+		<MET>2.0</MET>
+		<Categoria>Tocar Música/ Instrumentos</Categoria>
+		<AtividadeEspecifica>Instrumentos de sopro de madeira de forma geral</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>10120</Id>
+		<MET>2.0</MET>
+		<Categoria>Tocar Música/ Instrumentos</Categoria>
+		<AtividadeEspecifica>Violão/ guitarra, clássico, folk (sentado)</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>10125</Id>
+		<MET>3.0</MET>
+		<Categoria>Tocar Música/ Instrumentos</Categoria>
+		<AtividadeEspecifica>Guitarra, banda de rock em roll (em pé)</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>10130</Id>
+		<MET>4.0</MET>
+		<Categoria>Tocar Música/ Instrumentos</Categoria>
+		<AtividadeEspecifica>Fanfarra, tocando instrumento, rodadndo bastão (andando)</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>10135</Id>
+		<MET>3.5</MET>
+		<Categoria>Tocar Música/ Instrumentos</Categoria>
+		<AtividadeEspecifica>Fanfarra, percurssão (andando)</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>11010</Id>
+		<MET>4.0</MET>
+		<Categoria>Atividades Ocupacionais</Categoria>
+		<AtividadeEspecifica>Confeitaria, geral, esforço moderado</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>11015</Id>
+		<MET>2.5</MET>
+		<Categoria>Atividades Ocupacionais</Categoria>
+		<AtividadeEspecifica>Confeitaria, esforço leve</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>11020</Id>
+		<MET>2.3</MET>
+		<Categoria>Atividades Ocupacionais</Categoria>
+		<AtividadeEspecifica>Encadernação de livros</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>11030</Id>
+		<MET>6.0</MET>
+		<Categoria>Atividades Ocupacionais</Categoria>
+		<AtividadeEspecifica>Construção de estradas (incluindo recolhimento de entulho, direção de máquinas pesadas)</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>11035</Id>
+		<MET>2.0</MET>
+		<Categoria>Atividades Ocupacionais</Categoria>
+		<AtividadeEspecifica>Construção de estradas , controlando o tráfico (em pé)</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>11040</Id>
+		<MET>3.5</MET>
+		<Categoria>Atividades Ocupacionais</Categoria>
+		<AtividadeEspecifica>Carpintar, geral</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>11050</Id>
+		<MET>8.0</MET>
+		<Categoria>Atividades Ocupacionais</Categoria>
+		<AtividadeEspecifica>Transporte de cargas pesadas, como tijolos</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>11060</Id>
+		<MET>8.0</MET>
+		<Categoria>Atividades Ocupacionais</Categoria>
+		<AtividadeEspecifica>Transpore cargas moderadas subindo escadas, mover caixas (7 a 18 Kg)</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>11070</Id>
+		<MET>2.5</MET>
+		<Categoria>Atividades Ocupacionais</Categoria>
+		<AtividadeEspecifica>Camareira, fazendo a cama (enfermeiras inclusive)</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>11080</Id>
+		<MET>6.5</MET>
+		<Categoria>Atividades Ocupacionais</Categoria>
+		<AtividadeEspecifica>Mineração de carvão, prospectando</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>11090</Id>
+		<MET>6.5</MET>
+		<Categoria>Atividades Ocupacionais</Categoria>
+		<AtividadeEspecifica>Mineração de carvão, erigindo suportes</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>11100</Id>
+		<MET>6.0</MET>
+		<Categoria>Atividades Ocupacionais</Categoria>
+		<AtividadeEspecifica>Mineração de carvão, geral</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>11110</Id>
+		<MET>7.0</MET>
+		<Categoria>Atividades Ocupacionais</Categoria>
+		<AtividadeEspecifica>Mineração de carvão, peneirando</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>11120</Id>
+		<MET>5.5</MET>
+		<Categoria>Atividades Ocupacionais</Categoria>
+		<AtividadeEspecifica>Construção civil, a céu aberto, remodelagem</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>11121</Id>
+		<MET>3.0</MET>
+		<Categoria>Atividades Ocupacionais</Categoria>
+		<AtividadeEspecifica>Manutenção - encerando o chão com enceradeira</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>11122</Id>
+		<MET>2.5</MET>
+		<Categoria>Atividades Ocupacionais</Categoria>
+		<AtividadeEspecifica>Manutenção - limpando pia e banheiro, esforço leve</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>11123</Id>
+		<MET>2.5</MET>
+		<Categoria>Atividades Ocupacionais</Categoria>
+		<AtividadeEspecifica>Manutenção - tirando o pó, esforço leve</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>11124</Id>
+		<MET>4.0</MET>
+		<Categoria>Atividades Ocupacionais</Categoria>
+		<AtividadeEspecifica>Manutenção - cobrindo/ limpando piso de ginásio (arena), esforço moderado</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>11125</Id>
+		<MET>3.5</MET>
+		<Categoria>Atividades Ocupacionais</Categoria>
+		<AtividadeEspecifica>Manutenção - limpeza geral, esforço moderado</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>11126</Id>
+		<MET>3.5</MET>
+		<Categoria>Atividades Ocupacionais</Categoria>
+		<AtividadeEspecifica>Manutenção - varrendo, esforço moderado</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>11127</Id>
+		<MET>3.0</MET>
+		<Categoria>Atividades Ocupacionais</Categoria>
+		<AtividadeEspecifica>Manutenção - levar o lixo para fora, esforço moderado</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>11128</Id>
+		<MET>2.5</MET>
+		<Categoria>Atividades Ocupacionais</Categoria>
+		<AtividadeEspecifica>Manutenção - utilizar aspirador de pó, esforço leve</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>11129</Id>
+		<MET>3.0</MET>
+		<Categoria>Atividades Ocupacionais</Categoria>
+		<AtividadeEspecifica>Manutenção - utilizar aspirador de pó, esforço moderado</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>11130</Id>
+		<MET>3.5</MET>
+		<Categoria>Atividades Ocupacionais</Categoria>
+		<AtividadeEspecifica>Eletricista, bombeiro hidráulico</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>11140</Id>
+		<MET>8.0</MET>
+		<Categoria>Atividades Ocupacionais</Categoria>
+		<AtividadeEspecifica>Atividade na fazenda, empilhando feno, varrendo cocheiras, limpando granjas, criação de aves, esforço vigoroso</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>11150</Id>
+		<MET>3.5</MET>
+		<Categoria>Atividades Ocupacionais</Categoria>
+		<AtividadeEspecifica>Atividade na fazenda, conduzindo gado, não extenuante (andando), esforço moderado</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>11151</Id>
+		<MET>4.0</MET>
+		<Categoria>Atividades Ocupacionais</Categoria>
+		<AtividadeEspecifica>Atividade na fazenda, conduzindo gado ou outro rebanho sobre cavalo, esforço moderado</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>11152</Id>
+		<MET>2.0</MET>
+		<Categoria>Atividades Ocupacionais</Categoria>
+		<AtividadeEspecifica>Atividade na fazenda, conduzindo gado ou outro rebanho, dirigindo, esforço leve</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>11160</Id>
+		<MET>2.5</MET>
+		<Categoria>Atividades Ocupacionais</Categoria>
+		<AtividadeEspecifica>Atividade na fazenda, dirigindo colheitadeira, cortando feno, trabalho de irrigação</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>11170</Id>
+		<MET>2.5</MET>
+		<Categoria>Atividades Ocupacionais</Categoria>
+		<AtividadeEspecifica>Atividade na fazenda, dirigindo trator</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>11180</Id>
+		<MET>4.0</MET>
+		<Categoria>Atividades Ocupacionais</Categoria>
+		<AtividadeEspecifica>Atividade na fazenda, alimentando pequenos animais</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>11190</Id>
+		<MET>4.5</MET>
+		<Categoria>Atividades Ocupacionais</Categoria>
+		<AtividadeEspecifica>Atividade na fazenda, alimentando gado, cavalos</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>11191</Id>
+		<MET>4.5</MET>
+		<Categoria>Atividades Ocupacionais</Categoria>
+		<AtividadeEspecifica>Atividade na fazenda, transportando água para animais, transportando água em geral</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>11192</Id>
+		<MET>6.0</MET>
+		<Categoria>Atividades Ocupacionais</Categoria>
+		<AtividadeEspecifica>Atividade na fazenda, cuidando dos animais (escovando, tosando, ajudando no parto, cuidados médicos, marcando)</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>11200</Id>
+		<MET>8.0</MET>
+		<Categoria>Atividades Ocupacionais</Categoria>
+		<AtividadeEspecifica>Atividade na fazenda, recolhendo feixes de palha/ feno com anchinho/ garfo, limpando currais e cocheiras, esforço vigoroso</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>11210</Id>
+		<MET>3.0</MET>
+		<Categoria>Atividades Ocupacionais</Categoria>
+		<AtividadeEspecifica>Atividade na fazenda, ordenha manual, esforço moderado</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>11220</Id>
+		<MET>1.5</MET>
+		<Categoria>Atividades Ocupacionais</Categoria>
+		<AtividadeEspecifica>Atividade na fazenda, ordenha mecânica, esforço leve</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>11230</Id>
+		<MET>5.5</MET>
+		<Categoria>Atividades Ocupacionais</Categoria>
+		<AtividadeEspecifica>Atividade na fazenda, recolhendo grãos com pá, esforço moderado</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>11240</Id>
+		<MET>12.0</MET>
+		<Categoria>Atividades Ocupacionais</Categoria>
+		<AtividadeEspecifica>Bombeiro (soldado de fogo), geral</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>11245</Id>
+		<MET>11.0</MET>
+		<Categoria>Atividades Ocupacionais</Categoria>
+		<AtividadeEspecifica>Bombeiro, subindo escadas aceleradamente</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>11246</Id>
+		<MET>8.0</MET>
+		<Categoria>Atividades Ocupacionais</Categoria>
+		<AtividadeEspecifica>Bombeiro, transportando mangueiras no chão</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>11250</Id>
+		<MET>17.0</MET>
+		<Categoria>Atividades Ocupacionais</Categoria>
+		<AtividadeEspecifica>Atividade florestal, cortando com machado, acelerado</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>11260</Id>
+		<MET>5.0</MET>
+		<Categoria>Atividades Ocupacionais</Categoria>
+		<AtividadeEspecifica>Atividade florestal, cortando com machado, lentamente</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>11270</Id>
+		<MET>7.0</MET>
+		<Categoria>Atividades Ocupacionais</Categoria>
+		<AtividadeEspecifica>Atividade florestal, raspando árvores</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>11280</Id>
+		<MET>11.0</MET>
+		<Categoria>Atividades Ocupacionais</Categoria>
+		<AtividadeEspecifica>Atividade florestal, carregando troncos</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>11290</Id>
+		<MET>8.0</MET>
+		<Categoria>Atividades Ocupacionais</Categoria>
+		<AtividadeEspecifica>Atividade florestal, derrubando árvores</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>11300</Id>
+		<MET>8.0</MET>
+		<Categoria>Atividades Ocupacionais</Categoria>
+		<AtividadeEspecifica>Atividade florestal, geral</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>11310</Id>
+		<MET>5.0</MET>
+		<Categoria>Atividades Ocupacionais</Categoria>
+		<AtividadeEspecifica>Atividade florestal, semeando</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>11320</Id>
+		<MET>6.0</MET>
+		<Categoria>Atividades Ocupacionais</Categoria>
+		<AtividadeEspecifica>Atividade florestal, plantando manualmente</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>11330</Id>
+		<MET>7.0</MET>
+		<Categoria>Atividades Ocupacionais</Categoria>
+		<AtividadeEspecifica>Atividade florestal, serrando manualmente</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>11340</Id>
+		<MET>4.5</MET>
+		<Categoria>Atividades Ocupacionais</Categoria>
+		<AtividadeEspecifica>Atividade florestal, serrando, motor</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>11350</Id>
+		<MET>9.0</MET>
+		<Categoria>Atividades Ocupacionais</Categoria>
+		<AtividadeEspecifica>Atividade florestal, cortando árvores em pedaços</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>11360</Id>
+		<MET>4.0</MET>
+		<Categoria>Atividades Ocupacionais</Categoria>
+		<AtividadeEspecifica>Atividade florestal, semeando</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>11370</Id>
+		<MET>4.5</MET>
+		<Categoria>Atividades Ocupacionais</Categoria>
+		<AtividadeEspecifica>Trabalho com peles de animais (peleteiro)</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>11380</Id>
+		<MET>6.0</MET>
+		<Categoria>Atividades Ocupacionais</Categoria>
+		<AtividadeEspecifica>Cuidar de cavalos</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>11390</Id>
+		<MET>8.0</MET>
+		<Categoria>Atividades Ocupacionais</Categoria>
+		<AtividadeEspecifica>Equitação, galope</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>11400</Id>
+		<MET>6.0</MET>
+		<Categoria>Atividades Ocupacionais</Categoria>
+		<AtividadeEspecifica>Equitação, trote</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>11410</Id>
+		<MET>2.6</MET>
+		<Categoria>Atividades Ocupacionais</Categoria>
+		<AtividadeEspecifica>Equitação, ao passo lento</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>11420</Id>
+		<MET>3.5</MET>
+		<Categoria>Atividades Ocupacionais</Categoria>
+		<AtividadeEspecifica>Serralheria</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>11430</Id>
+		<MET>2.5</MET>
+		<Categoria>Atividades Ocupacionais</Categoria>
+		<AtividadeEspecifica>Operando máquinas, trabalhando lâminas de metal</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>11440</Id>
+		<MET>3.0</MET>
+		<Categoria>Atividades Ocupacionais</Categoria>
+		<AtividadeEspecifica>Operando máquinas, operando grua </AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>11450</Id>
+		<MET>5.0</MET>
+		<Categoria>Atividades Ocupacionais</Categoria>
+		<AtividadeEspecifica>Operando máquinas, operando perfuradora ou britadeira</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>11460</Id>
+		<MET>4.0</MET>
+		<Categoria>Atividades Ocupacionais</Categoria>
+		<AtividadeEspecifica>Operando máquinas, martelar levemente, usar furadeira</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>11470</Id>
+		<MET>3.0</MET>
+		<Categoria>Atividades Ocupacionais</Categoria>
+		<AtividadeEspecifica>Operando máquinas, soldando</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>11480</Id>
+		<MET>7.0</MET>
+		<Categoria>Atividades Ocupacionais</Categoria>
+		<AtividadeEspecifica>Maçonaria, concreto</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>11485</Id>
+		<MET>4.0</MET>
+		<Categoria>Atividades Ocupacionais</Categoria>
+		<AtividadeEspecifica>Fazer massagem, em pé</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>11490</Id>
+		<MET>7.5</MET>
+		<Categoria>Atividades Ocupacionais</Categoria>
+		<AtividadeEspecifica>Mover, empurrar objetos pesados, 34 Kg ou mais (mobiliário, mudanças)</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>11495</Id>
+		<MET>12.0</MET>
+		<Categoria>Atividades Ocupacionais</Categoria>
+		<AtividadeEspecifica>Mergulho (skindiving ou Scuba diving) como homem-rã (marinha)</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>11500</Id>
+		<MET>2.5</MET>
+		<Categoria>Atividades Ocupacionais</Categoria>
+		<AtividadeEspecifica>Operar equipamento pesado/ automatizado, estacionário, sem conduzi-lo/ dirigi-lo</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>11510</Id>
+		<MET>4.5</MET>
+		<Categoria>Atividades Ocupacionais</Categoria>
+		<AtividadeEspecifica>Trabalho em plantação de laranjas</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>11520</Id>
+		<MET>2.3</MET>
+		<Categoria>Atividades Ocupacionais</Categoria>
+		<AtividadeEspecifica>Trabalho de impressão gráfica (em pé)</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>11525</Id>
+		<MET>2.5</MET>
+		<Categoria>Atividades Ocupacionais</Categoria>
+		<AtividadeEspecifica>Policial, controlador de tráfego (em pé)</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>11526</Id>
+		<MET>2.0</MET>
+		<Categoria>Atividades Ocupacionais</Categoria>
+		<AtividadeEspecifica>Policial, dirigindo viatura (sentado)</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>11527</Id>
+		<MET>1.3</MET>
+		<Categoria>Atividades Ocupacionais</Categoria>
+		<AtividadeEspecifica>Policial, viajando em viatura (sentado)</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>11528</Id>
+		<MET>4.0</MET>
+		<Categoria>Atividades Ocupacionais</Categoria>
+		<AtividadeEspecifica>Policial, fazendo uma prisão (em pé)</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>11530</Id>
+		<MET>2.5</MET>
+		<Categoria>Atividades Ocupacionais</Categoria>
+		<AtividadeEspecifica>Reparo de sapatos, geral</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>11540</Id>
+		<MET>8.5</MET>
+		<Categoria>Atividades Ocupacionais</Categoria>
+		<AtividadeEspecifica>Cavando com pá, cavando fossas</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>11550</Id>
+		<MET>9.0</MET>
+		<Categoria>Atividades Ocupacionais</Categoria>
+		<AtividadeEspecifica>Cavando com pá, pesado (mais de 7 Kg/min)</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>11560</Id>
+		<MET>6.0</MET>
+		<Categoria>Atividades Ocupacionais</Categoria>
+		<AtividadeEspecifica>Cavando com pá, leve (menos de 4,5 Kg/min)</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>11570</Id>
+		<MET>7.0</MET>
+		<Categoria>Atividades Ocupacionais</Categoria>
+		<AtividadeEspecifica>Cavando com pá, moderado (4,5 a 7 Kg/min)</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>11580</Id>
+		<MET>1.5</MET>
+		<Categoria>Atividades Ocupacionais</Categoria>
+		<AtividadeEspecifica>Sentado, trabalho leve de escritório, geral (laboratório, reparo de relógios ou computadores, manuseio de ferramentas leves,), lendo ou dirigindo</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>11585</Id>
+		<MET>1.5</MET>
+		<Categoria>Atividades Ocupacionais</Categoria>
+		<AtividadeEspecifica>Sentado, encontros e congressos, geral, falando ou não, comendo em encontro de trabalho</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>11590</Id>
+		<MET>2.5</MET>
+		<Categoria>Atividades Ocupacionais</Categoria>
+		<AtividadeEspecifica>Sentado, moderado (acionar alavancas pesadas, manejar vortador de grama ou forcado, operar guindaste, dando aulas de alongamento ou ioga</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>11600</Id>
+		<MET>2.3</MET>
+		<Categoria>Atividades Ocupacionais</Categoria>
+		<AtividadeEspecifica>Em pé, leve (atendimento em bar, vendas, operando copiadoras, armando árvore de Natal), em pé e falando no trabalho, mudando de roupa em aulas de educação física</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>11610</Id>
+		<MET>3.0</MET>
+		<Categoria>Atividades Ocupacionais</Categoria>
+		<AtividadeEspecifica>Em pé, leve/ moderado (trabalhos manuais pesados, soldagem, guardar compras na despensa, reparo de carros, empacotar caixas para mudança etc.), cuidar de pacientes (como em atividades de enfermagem)</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>11615</Id>
+		<MET>4.0</MET>
+		<Categoria>Atividades Ocupacionais</Categoria>
+		<AtividadeEspecifica>Erguendo pesos continuamente (4-9 Kg), com períodos curtos de caminhada ou repouso</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>11620</Id>
+		<MET>3.5</MET>
+		<Categoria>Atividades Ocupacionais</Categoria>
+		<AtividadeEspecifica>De pé, moderado (trabalhos manuais feitos acaleradamente, levantar pesos de 22 Kg, atrelar animais ou trançar cordas</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>11630</Id>
+		<MET>4.0</MET>
+		<Categoria>Atividades Ocupacionais</Categoria>
+		<AtividadeEspecifica>De pé, moderado/ pesado (levantar pesos &gt; 22 Kg, maçonaria, pitura, colocar papel de parede)</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>11640</Id>
+		<MET>5.0</MET>
+		<Categoria>Atividades Ocupacionais</Categoria>
+		<AtividadeEspecifica>Siderurgia/Metalurgia, alisar o aço</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>11650</Id>
+		<MET>5.5</MET>
+		<Categoria>Atividades Ocupacionais</Categoria>
+		<AtividadeEspecifica>Siderurgia/Metalurgia, forjar peças</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>11660</Id>
+		<MET>8.0</MET>
+		<Categoria>Atividades Ocupacionais</Categoria>
+		<AtividadeEspecifica>Siderurgia/Metalurgia, laminação</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>11670</Id>
+		<MET>8.0</MET>
+		<Categoria>Atividades Ocupacionais</Categoria>
+		<AtividadeEspecifica>Siderurgia/Metalurgia, fresagem</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>11680</Id>
+		<MET>11.0</MET>
+		<Categoria>Atividades Ocupacionais</Categoria>
+		<AtividadeEspecifica>Siderurgia/Metalurgia, remover entulho metálico</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>11690</Id>
+		<MET>7.5</MET>
+		<Categoria>Atividades Ocupacionais</Categoria>
+		<AtividadeEspecifica>Siderurgia/Metalurgia, fornalha</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>11700</Id>
+		<MET>5.5</MET>
+		<Categoria>Atividades Ocupacionais</Categoria>
+		<AtividadeEspecifica>Siderurgia/Metalurgia, entornar aço nas formas</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>11710</Id>
+		<MET>8.0</MET>
+		<Categoria>Atividades Ocupacionais</Categoria>
+		<AtividadeEspecifica>Siderurgia/Metalurgia, trabalhos em geral</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>11720</Id>
+		<MET>2.5</MET>
+		<Categoria>Atividades Ocupacionais</Categoria>
+		<AtividadeEspecifica>Alfaiataria, corte</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>11730</Id>
+		<MET>2.5</MET>
+		<Categoria>Atividades Ocupacionais</Categoria>
+		<AtividadeEspecifica>Alfaiataria, em geral</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>11740</Id>
+		<MET>2.0</MET>
+		<Categoria>Atividades Ocupacionais</Categoria>
+		<AtividadeEspecifica>Alfaiataria, costura a mão</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>11750</Id>
+		<MET>2.5</MET>
+		<Categoria>Atividades Ocupacionais</Categoria>
+		<AtividadeEspecifica>Alfaiataria, costura a máquina</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>11760</Id>
+		<MET>4.0</MET>
+		<Categoria>Atividades Ocupacionais</Categoria>
+		<AtividadeEspecifica>Alfaiataria, passar a ferro</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>11765</Id>
+		<MET>3.0</MET>
+		<Categoria>Atividades Ocupacionais</Categoria>
+		<AtividadeEspecifica>Alfaiataria, tecelagem</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>11766</Id>
+		<MET>6.5</MET>
+		<Categoria>Atividades Ocupacionais</Categoria>
+		<AtividadeEspecifica>Dirigir caminhão, carregar e descarregar caminhão (de pé)</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>11770</Id>
+		<MET>1.5</MET>
+		<Categoria>Atividades Ocupacionais</Categoria>
+		<AtividadeEspecifica>Digitação em máquina elétrica, manual ou computador</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>11780</Id>
+		<MET>6.0</MET>
+		<Categoria>Atividades Ocupacionais</Categoria>
+		<AtividadeEspecifica>Usar ferramentas pesadas, como ferramentas pneumáticas (macaco, arado, etc)</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>11790</Id>
+		<MET>8.0</MET>
+		<Categoria>Atividades Ocupacionais</Categoria>
+		<AtividadeEspecifica>Usar ferramentas manuais e pesadas como pá de ferro, picareta, pá</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>11791</Id>
+		<MET>2.0</MET>
+		<Categoria>Atividades Ocupacionais</Categoria>
+		<AtividadeEspecifica>Caminhar no trabalho (no escritório ou área de trabalho), a menos de 3 Km/h e bem devagar</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>11792</Id>
+		<MET>3.3</MET>
+		<Categoria>Atividades Ocupacionais</Categoria>
+		<AtividadeEspecifica>Caminhar no trabalho (no escritório), 5 Km/h, velocidade moderada, sem carregar nada</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>11793</Id>
+		<MET>3.8</MET>
+		<Categoria>Atividades Ocupacionais</Categoria>
+		<AtividadeEspecifica>Caminhar no trabalho (no escritório), 5 a 6 Km/h, velocidade rápida, sem carregar nada</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>11795</Id>
+		<MET>3.0</MET>
+		<Categoria>Atividades Ocupacionais</Categoria>
+		<AtividadeEspecifica>Caminhar, 4 Km/h, lentamente, carregando objetos leves com menos de 11 Kg</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>11796</Id>
+		<MET>3.0</MET>
+		<Categoria>Atividades Ocupacionais</Categoria>
+		<AtividadeEspecifica>Andando, juntando coisas no trabalho, pronto para sair</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>11800</Id>
+		<MET>4.0</MET>
+		<Categoria>Atividades Ocupacionais</Categoria>
+		<AtividadeEspecifica>Caminhar, 5 Km/h, velocidade moderada, carregando objetos leves com menos de 11 Kg</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>11805</Id>
+		<MET>4.0</MET>
+		<Categoria>Atividades Ocupacionais</Categoria>
+		<AtividadeEspecifica>Caminhando, empurrando uma cadeira de rodas</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>11810</Id>
+		<MET>4.5</MET>
+		<Categoria>Atividades Ocupacionais</Categoria>
+		<AtividadeEspecifica>Caminhar, 5 a 6 Km/h, rapidamente, carregando objetos de menos de 11 Kg</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>11820</Id>
+		<MET>5.0</MET>
+		<Categoria>Atividades Ocupacionais</Categoria>
+		<AtividadeEspecifica>Caminhar, descer rampas ou escadas, ficar de pé, carregando objetos variando de 11 a 22 Kg</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>11830</Id>
+		<MET>6.5</MET>
+		<Categoria>Atividades Ocupacionais</Categoria>
+		<AtividadeEspecifica>Caminhar, descer escadas ou rampas, ficar de pé, carregando objetos variando de 22 a 34 Kg</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>11840</Id>
+		<MET>7.5</MET>
+		<Categoria>Atividades Ocupacionais</Categoria>
+		<AtividadeEspecifica>Caminhar, descer escadas ou rampas, ficar de pé, carregando objetos variando de 34 a 45 Kg</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>11850</Id>
+		<MET>8.5</MET>
+		<Categoria>Atividades Ocupacionais</Categoria>
+		<AtividadeEspecifica>Caminhar, descer escadas ou rampas, ficar de pé, carregando objetos de 45 Kg ou mais</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>11870</Id>
+		<MET>3.0</MET>
+		<Categoria>Atividades Ocupacionais</Categoria>
+		<AtividadeEspecifica>Trabalhar em cenário de teatro, como ator ou nos bastidores</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>11875</Id>
+		<MET>4.0</MET>
+		<Categoria>Atividades Ocupacionais</Categoria>
+		<AtividadeEspecifica>Ensinar Educação Física, exercícios, aulas esportivas, sem jogos esportivos</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>11876</Id>
+		<MET>6.5</MET>
+		<Categoria>Atividades Ocupacionais</Categoria>
+		<AtividadeEspecifica>Ensinar Educação Física, exercícios, aulas esportivas (participando da aula)</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>12010</Id>
+		<MET>6.0</MET>
+		<Categoria>Correr</Categoria>
+		<AtividadeEspecifica>Combinação de caminhada e atividades laborais (componente laboral com menos de 10 minutos) (Cód. 180 de Taylor)</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>12020</Id>
+		<MET>7.0</MET>
+		<Categoria>Correr</Categoria>
+		<AtividadeEspecifica>Jogging em geral</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>12025</Id>
+		<MET>8.0</MET>
+		<Categoria>Correr</Categoria>
+		<AtividadeEspecifica>Jogging, estacionário</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>12027</Id>
+		<MET>4.5</MET>
+		<Categoria>Correr</Categoria>
+		<AtividadeEspecifica>Jogging, em uma mini-excursão</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>12030</Id>
+		<MET>8.0</MET>
+		<Categoria>Correr</Categoria>
+		<AtividadeEspecifica>Correr, 8 Km/h (7,5 min.Km-1)</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>12040</Id>
+		<MET>9.0</MET>
+		<Categoria>Correr</Categoria>
+		<AtividadeEspecifica>Correr, 8,3 Km/h (7,1 min.Km-1)</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>12050</Id>
+		<MET>10.0</MET>
+		<Categoria>Correr</Categoria>
+		<AtividadeEspecifica>Correr, 9,7Km/h (6,2 min.Km-1)</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>12060</Id>
+		<MET>11.0</MET>
+		<Categoria>Correr</Categoria>
+		<AtividadeEspecifica>Correr, 10,7 Km/h (5,6 min.Km-1)</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>12070</Id>
+		<MET>11.5</MET>
+		<Categoria>Correr</Categoria>
+		<AtividadeEspecifica>Correr, 11,2 Km/h (5,3 min.Km-1)</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>12080</Id>
+		<MET>12.5</MET>
+		<Categoria>Correr</Categoria>
+		<AtividadeEspecifica>Correr, 12,0 Km/h (5 min.Km-1)</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>12090</Id>
+		<MET>13.5</MET>
+		<Categoria>Correr</Categoria>
+		<AtividadeEspecifica>Correr, 12,8 Km/h (4,6 min.Km-1)</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>12100</Id>
+		<MET>14.0</MET>
+		<Categoria>Correr</Categoria>
+		<AtividadeEspecifica>Correr, 13,8 Km/h (4,3 min.Km-1)</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>12110</Id>
+		<MET>15.0</MET>
+		<Categoria>Correr</Categoria>
+		<AtividadeEspecifica>Correr, 14,4 Km/h (4,0 min.Km-1)</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>12120</Id>
+		<MET>16.0</MET>
+		<Categoria>Correr</Categoria>
+		<AtividadeEspecifica>Correr, 16,0 Km/h (3,7 min.Km-1)</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>12130</Id>
+		<MET>18.0</MET>
+		<Categoria>Correr</Categoria>
+		<AtividadeEspecifica>Correr, 17,5 Km/h (3,4 min.Km-1)</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>12140</Id>
+		<MET>9.0</MET>
+		<Categoria>Correr</Categoria>
+		<AtividadeEspecifica>Correr, terrenos irregulares, tipo cross-country</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>12150</Id>
+		<MET>8.0</MET>
+		<Categoria>Correr</Categoria>
+		<AtividadeEspecifica>Correr (Cód. 200 de Taylor)</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>12170</Id>
+		<MET>15.0</MET>
+		<Categoria>Correr</Categoria>
+		<AtividadeEspecifica>Correr, subir rampa ou escada</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>12180</Id>
+		<MET>10.0</MET>
+		<Categoria>Correr</Categoria>
+		<AtividadeEspecifica>Correr numa pista, treino de equipe</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>12190</Id>
+		<MET>8.0</MET>
+		<Categoria>Correr</Categoria>
+		<AtividadeEspecifica>Correr, treinamento, empurrar cadeira de roda em situação competitiva</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>13000</Id>
+		<MET>2.0</MET>
+		<Categoria>Cuidados Pessoais</Categoria>
+		<AtividadeEspecifica>De pé, se aprontar para ir dormir, em geral</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>13009</Id>
+		<MET>1.0</MET>
+		<Categoria>Cuidados Pessoais</Categoria>
+		<AtividadeEspecifica>Sentado na privada (vaso sanitário)</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>13010</Id>
+		<MET>1.5</MET>
+		<Categoria>Cuidados Pessoais</Categoria>
+		<AtividadeEspecifica>Tomar banho (sentado) </AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>13020</Id>
+		<MET>2.0</MET>
+		<Categoria>Cuidados Pessoais</Categoria>
+		<AtividadeEspecifica>Vestir-se ou tirar a roupa (de pé ou sentado)</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>13030</Id>
+		<MET>1.5</MET>
+		<Categoria>Cuidados Pessoais</Categoria>
+		<AtividadeEspecifica>Comer (sentado)</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>13035</Id>
+		<MET>2.0</MET>
+		<Categoria>Cuidados Pessoais</Categoria>
+		<AtividadeEspecifica>Conversar e comer ao mesmo tempo ou somente comer (de pé)</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>13036</Id>
+		<MET>1.0</MET>
+		<Categoria>Cuidados Pessoais</Categoria>
+		<AtividadeEspecifica>Tomar remédio, sentado ou em pé</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>13040</Id>
+		<MET>2.0</MET>
+		<Categoria>Cuidados Pessoais</Categoria>
+		<AtividadeEspecifica>Cuidar-se, sentado ou de pé (lavar-se, barbear-se, escovar os dentes, urinar, lavar as mãos, maquiar-se)</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>13045</Id>
+		<MET>2.5</MET>
+		<Categoria>Cuidados Pessoais</Categoria>
+		<AtividadeEspecifica>Fazer um penteado</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>13046</Id>
+		<MET>1.0</MET>
+		<Categoria>Cuidados Pessoais</Categoria>
+		<AtividadeEspecifica>Ter o cabelo ou unha cuidados por terceiros, sentado</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>13050</Id>
+		<MET>2.0</MET>
+		<Categoria>Cuidados Pessoais</Categoria>
+		<AtividadeEspecifica>Tomar banho de chuveiro, secar-se (de pé)</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>14010</Id>
+		<MET>1.5</MET>
+		<Categoria>Atividade Sexual</Categoria>
+		<AtividadeEspecifica>Ativa, esforço vigoroso</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>14020</Id>
+		<MET>1.3</MET>
+		<Categoria>Atividade Sexual</Categoria>
+		<AtividadeEspecifica>Geral, esforço moderado</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>14030</Id>
+		<MET>1.0</MET>
+		<Categoria>Atividade Sexual</Categoria>
+		<AtividadeEspecifica>Passiva, esforço leve, beijos, abraços</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>15010</Id>
+		<MET>3.5</MET>
+		<Categoria>Esportes</Categoria>
+		<AtividadeEspecifica>Arco e flecha (sem finalidade de caça)</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>15020</Id>
+		<MET>7.0</MET>
+		<Categoria>Esportes</Categoria>
+		<AtividadeEspecifica>Badminton, competitivo (Cód. 450 de Taylor)</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>15030</Id>
+		<MET>4.5</MET>
+		<Categoria>Esportes</Categoria>
+		<AtividadeEspecifica>Badminton, não competitivo, simples e duplas, geral</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>15040</Id>
+		<MET>8.0</MET>
+		<Categoria>Esportes</Categoria>
+		<AtividadeEspecifica>Basquetebol, jogo (Cód. 490 de Taylor)</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>15050</Id>
+		<MET>6.0</MET>
+		<Categoria>Esportes</Categoria>
+		<AtividadeEspecifica>Basquetebol, sem ser jogo, em geral (Cód. 480 de Taylor)</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>15060</Id>
+		<MET>7.0</MET>
+		<Categoria>Esportes</Categoria>
+		<AtividadeEspecifica>Basquetebol, oficial (Cód. 500 de Taylor)</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>15070</Id>
+		<MET>4.5</MET>
+		<Categoria>Esportes</Categoria>
+		<AtividadeEspecifica>Basquetebol, arremessar a cesta</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>15075</Id>
+		<MET>6.5</MET>
+		<Categoria>Esportes</Categoria>
+		<AtividadeEspecifica>Basquetebol, em cadeiras de roda</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>15080</Id>
+		<MET>2.5</MET>
+		<Categoria>Esportes</Categoria>
+		<AtividadeEspecifica>Bilhar</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>15090</Id>
+		<MET>3.0</MET>
+		<Categoria>Esportes</Categoria>
+		<AtividadeEspecifica>Boliche (Cód. 390 de Taylor)</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>15100</Id>
+		<MET>12.0</MET>
+		<Categoria>Esportes</Categoria>
+		<AtividadeEspecifica>Boxe, no ringue, em geral</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>15110</Id>
+		<MET>6.0</MET>
+		<Categoria>Esportes</Categoria>
+		<AtividadeEspecifica>Boxe, punching bag</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>15120</Id>
+		<MET>9.0</MET>
+		<Categoria>Esportes</Categoria>
+		<AtividadeEspecifica>Boxe, sparring (lutador auxiliar, que atua como adversário para treinamento de golpes)</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>15130</Id>
+		<MET>7.0</MET>
+		<Categoria>Esportes</Categoria>
+		<AtividadeEspecifica>Broomball (jogo similar ao hóquei, com bola de borracha no lugar do disco, uma espécie de vassoura no lugar do taco e no qual os jogadores correm sobre o gelo com auxílio de sapatos especiais</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>15135</Id>
+		<MET>5.0</MET>
+		<Categoria>Esportes</Categoria>
+		<AtividadeEspecifica>Jogos de criança com movimentação corporal intensa (amarelinha, 4-quadros, queimado, brinquedos de playground, taco etc)</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>15140</Id>
+		<MET>4.0</MET>
+		<Categoria>Esportes</Categoria>
+		<AtividadeEspecifica>Treinar: futebol americano, futebol, basquetebol, basebol, natação, etc</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>15150</Id>
+		<MET>5.0</MET>
+		<Categoria>Esportes</Categoria>
+		<AtividadeEspecifica>Cricket (rebater, lançar)</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>15160</Id>
+		<MET>2.5</MET>
+		<Categoria>Esportes</Categoria>
+		<AtividadeEspecifica>Croquet</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>15170</Id>
+		<MET>4.0</MET>
+		<Categoria>Esportes</Categoria>
+		<AtividadeEspecifica>Curling (desporto de equipe praticado sobre o gelo, no qual se busca impulsionar rochas de 19 Kg na direção de um alvo de 3,6 m de diâmetro)</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>15180</Id>
+		<MET>2.5</MET>
+		<Categoria>Esportes</Categoria>
+		<AtividadeEspecifica>Dardo, na parede ou gramado</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>15190</Id>
+		<MET>6.0</MET>
+		<Categoria>Esportes</Categoria>
+		<AtividadeEspecifica>Corrida de carreta, empurrar ou dirigir carros</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>15200</Id>
+		<MET>6.0</MET>
+		<Categoria>Esportes</Categoria>
+		<AtividadeEspecifica>Esgrima</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>15210</Id>
+		<MET>9.0</MET>
+		<Categoria>Esportes</Categoria>
+		<AtividadeEspecifica>Futebol americano, competitivo</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>15230</Id>
+		<MET>8.0</MET>
+		<Categoria>Esportes</Categoria>
+		<AtividadeEspecifica>Futebol americano, geral (Cód. 510 de Taylor)</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>15235</Id>
+		<MET>2.5</MET>
+		<Categoria>Esportes</Categoria>
+		<AtividadeEspecifica>Futebol americano ou beisebol, arremesso e pegada</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>15240</Id>
+		<MET>3.0</MET>
+		<Categoria>Esportes</Categoria>
+		<AtividadeEspecifica>Frisbee em geral</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>15250</Id>
+		<MET>8.0</MET>
+		<Categoria>Esportes</Categoria>
+		<AtividadeEspecifica>Frisbee, 'radical'</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>15255</Id>
+		<MET>4.5</MET>
+		<Categoria>Esportes</Categoria>
+		<AtividadeEspecifica>Golfe, geral</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>15265</Id>
+		<MET>4.5</MET>
+		<Categoria>Esportes</Categoria>
+		<AtividadeEspecifica>Golfe, caminhando e trasnportando tacos</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>15270</Id>
+		<MET>3.0</MET>
+		<Categoria>Esportes</Categoria>
+		<AtividadeEspecifica>Golfe, miniatura</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>15285</Id>
+		<MET>4.3</MET>
+		<Categoria>Esportes</Categoria>
+		<AtividadeEspecifica>Golfe, caminhando e empurrando tacos</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>15290</Id>
+		<MET>3.5</MET>
+		<Categoria>Esportes</Categoria>
+		<AtividadeEspecifica>Golfe, usando carrinhos elétricos (trollers) (Cód. 070 de Taylor)</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>15300</Id>
+		<MET>4.0</MET>
+		<Categoria>Esportes</Categoria>
+		<AtividadeEspecifica>Ginástica, geral</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>15310</Id>
+		<MET>4.0</MET>
+		<Categoria>Esportes</Categoria>
+		<AtividadeEspecifica>Hacky sack (Jogo em que deve ser controlada uma pequena massa esférica sem uso das mãos - semelhante a fazer 'embaixadinhas')</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>15320</Id>
+		<MET>12.0</MET>
+		<Categoria>Esportes</Categoria>
+		<AtividadeEspecifica>Andebol, geral (Cód. 520 de Taylor)</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>15330</Id>
+		<MET>8.0</MET>
+		<Categoria>Esportes</Categoria>
+		<AtividadeEspecifica>Andebol, meia-quadra</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>15340</Id>
+		<MET>3.5</MET>
+		<Categoria>Esportes</Categoria>
+		<AtividadeEspecifica>Praticar vôo livre (asa delta)</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>15350</Id>
+		<MET>8.0</MET>
+		<Categoria>Esportes</Categoria>
+		<AtividadeEspecifica>Hóquei, de campo</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>15360</Id>
+		<MET>8.0</MET>
+		<Categoria>Esportes</Categoria>
+		<AtividadeEspecifica>Hóquei, de gelo</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>15370</Id>
+		<MET>4.0</MET>
+		<Categoria>Esportes</Categoria>
+		<AtividadeEspecifica>Cavalgar, geral</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>15380</Id>
+		<MET>3.5</MET>
+		<Categoria>Esportes</Categoria>
+		<AtividadeEspecifica>Cavalgar, selar e cuidas de cavalo</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>15390</Id>
+		<MET>6.5</MET>
+		<Categoria>Esportes</Categoria>
+		<AtividadeEspecifica>Cavalgar trotar</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>15400</Id>
+		<MET>2.5</MET>
+		<Categoria>Esportes</Categoria>
+		<AtividadeEspecifica>Cavalgar passeando</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>15410</Id>
+		<MET>3.0</MET>
+		<Categoria>Esportes</Categoria>
+		<AtividadeEspecifica>Colocar ferradura em cavalo</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>15420</Id>
+		<MET>12.0</MET>
+		<Categoria>Esportes</Categoria>
+		<AtividadeEspecifica>Jai alai (jogo de equipe em que uma bola é lançada com uso de luvas contra paredes em altas velocidade)</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>15430</Id>
+		<MET>10.0</MET>
+		<Categoria>Esportes</Categoria>
+		<AtividadeEspecifica>Judô, Jiu-jitsu, karatê, kick boxing, tae-kwon-do</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>15440</Id>
+		<MET>4.0</MET>
+		<Categoria>Esportes</Categoria>
+		<AtividadeEspecifica>Malabarismo (com as mãos, lançando objetos para cima e recuperando-os)</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>15450</Id>
+		<MET>7.0</MET>
+		<Categoria>Esportes</Categoria>
+		<AtividadeEspecifica>Kickball</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>15460</Id>
+		<MET>8.0</MET>
+		<Categoria>Esportes</Categoria>
+		<AtividadeEspecifica>Lacrosse (jogo de equipe em que se utilizam bastões (crosse) com redes para arremessar bolas para marcar gols - combina, de certa forma, futebol, basquetebol ehóquei)</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>15470</Id>
+		<MET>4.0</MET>
+		<Categoria>Esportes</Categoria>
+		<AtividadeEspecifica>Moto-cross</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>15480</Id>
+		<MET>9.0</MET>
+		<Categoria>Esportes</Categoria>
+		<AtividadeEspecifica>Orienteering (corrida de orientação), trilhas</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>15490</Id>
+		<MET>10.0</MET>
+		<Categoria>Esportes</Categoria>
+		<AtividadeEspecifica>Paddleball, competitivo (jogo indoor, similar ao squash, com raquetes sem acordoamento, inteiriças)</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>15500</Id>
+		<MET>6.0</MET>
+		<Categoria>Esportes</Categoria>
+		<AtividadeEspecifica>Paddleball, casual em geral (Cód. 460 de Taylor)</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>15510</Id>
+		<MET>8.0</MET>
+		<Categoria>Esportes</Categoria>
+		<AtividadeEspecifica>Pólo</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>15520</Id>
+		<MET>10.0</MET>
+		<Categoria>Esportes</Categoria>
+		<AtividadeEspecifica>Racketball (jogo semelhante ao tênis, com raquetes maiores e quadra menor) competitivo</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>15530</Id>
+		<MET>7.0</MET>
+		<Categoria>Esportes</Categoria>
+		<AtividadeEspecifica>Racketball, casual, geral (Cód. 470 de Taylor)</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>15535</Id>
+		<MET>11.0</MET>
+		<Categoria>Esportes</Categoria>
+		<AtividadeEspecifica>Escalar ou subir rochas</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>15540</Id>
+		<MET>8.0</MET>
+		<Categoria>Esportes</Categoria>
+		<AtividadeEspecifica>Escalar em rochas, rappel</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>15550</Id>
+		<MET>12.0</MET>
+		<Categoria>Esportes</Categoria>
+		<AtividadeEspecifica>Pular corda velocidade rápida</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>15551</Id>
+		<MET>10.0</MET>
+		<Categoria>Esportes</Categoria>
+		<AtividadeEspecifica>Pular corda velocidade moderada, geral</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>15552</Id>
+		<MET>8.0</MET>
+		<Categoria>Esportes</Categoria>
+		<AtividadeEspecifica>Pular corda velocidade lenta</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>15560</Id>
+		<MET>10.0</MET>
+		<Categoria>Esportes</Categoria>
+		<AtividadeEspecifica>Rugby</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>15570</Id>
+		<MET>3.0</MET>
+		<Categoria>Esportes</Categoria>
+		<AtividadeEspecifica>Shuffleboard (jogo em que se impulsionam discos, contato com o solo, com uso de tacos), boliche em gramado</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>15580</Id>
+		<MET>5.0</MET>
+		<Categoria>Esportes</Categoria>
+		<AtividadeEspecifica>Anadr de skate</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>15590</Id>
+		<MET>7.0</MET>
+		<Categoria>Esportes</Categoria>
+		<AtividadeEspecifica>Patinação (Cód. 360 de Taylor)</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>15591</Id>
+		<MET>12.5</MET>
+		<Categoria>Esportes</Categoria>
+		<AtividadeEspecifica>Roller blanding (in-line skating) (patinação com uso de patins com rolamentos em linha)</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>15600</Id>
+		<MET>3.5</MET>
+		<Categoria>Esportes</Categoria>
+		<AtividadeEspecifica>Saltar de pára-quedas</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>15605</Id>
+		<MET>10.0</MET>
+		<Categoria>Esportes</Categoria>
+		<AtividadeEspecifica>Futebol competitivo</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>15610</Id>
+		<MET>7.0</MET>
+		<Categoria>Esportes</Categoria>
+		<AtividadeEspecifica>Futebol casual, geral (Cód. 540 de Taylor)</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>15620</Id>
+		<MET>5.0</MET>
+		<Categoria>Esportes</Categoria>
+		<AtividadeEspecifica>Softball ou beisebol, velocidade rápida ou lenta, geral (Cód. 440 de Taylor)</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>15630</Id>
+		<MET>4.0</MET>
+		<Categoria>Esportes</Categoria>
+		<AtividadeEspecifica>Softball, oficial (adaptação do beisebol, com uso de uma bola maior)</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>15640</Id>
+		<MET>6.0</MET>
+		<Categoria>Esportes</Categoria>
+		<AtividadeEspecifica>Softball , lançamentos</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>15650</Id>
+		<MET>12.0</MET>
+		<Categoria>Esportes</Categoria>
+		<AtividadeEspecifica>Squash (Cód. 530 de Taylor)</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>15660</Id>
+		<MET>4.0</MET>
+		<Categoria>Esportes</Categoria>
+		<AtividadeEspecifica>Tênis de mesa, pingue-pongue (Cód. 410 de Taylor)</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>15670</Id>
+		<MET>4.0</MET>
+		<Categoria>Esportes</Categoria>
+		<AtividadeEspecifica>Tai chi chuan</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>15675</Id>
+		<MET>7.0</MET>
+		<Categoria>Esportes</Categoria>
+		<AtividadeEspecifica>Tênis , geral</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>15680</Id>
+		<MET>6.0</MET>
+		<Categoria>Esportes</Categoria>
+		<AtividadeEspecifica>Tênis, duplas (Cód.430 de Taylor)</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>15685</Id>
+		<MET>5.0</MET>
+		<Categoria>Esportes</Categoria>
+		<AtividadeEspecifica>Tênis, duplas</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>15690</Id>
+		<MET>8.0</MET>
+		<Categoria>Esportes</Categoria>
+		<AtividadeEspecifica>Tênis simples (Cód. 420 de Taylor)</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>15700</Id>
+		<MET>3.5</MET>
+		<Categoria>Esportes</Categoria>
+		<AtividadeEspecifica>Trampolin</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>15710</Id>
+		<MET>4.0</MET>
+		<Categoria>Esportes</Categoria>
+		<AtividadeEspecifica>Voleibol (Cód. 400 de Taylor)</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>15711</Id>
+		<MET>8.0</MET>
+		<Categoria>Esportes</Categoria>
+		<AtividadeEspecifica>Voleibol, competitivo, em ginásio</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>15720</Id>
+		<MET>3.0</MET>
+		<Categoria>Esportes</Categoria>
+		<AtividadeEspecifica>Voleibol , não-competitivo, com 6 a 9 membros no time, geral</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>15725</Id>
+		<MET>8.0</MET>
+		<Categoria>Esportes</Categoria>
+		<AtividadeEspecifica>Voleibol de praia</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>15730</Id>
+		<MET>6.0</MET>
+		<Categoria>Esportes</Categoria>
+		<AtividadeEspecifica>Luta romana (1 match = 5 minutos)</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>15731</Id>
+		<MET>7.0</MET>
+		<Categoria>Esportes</Categoria>
+		<AtividadeEspecifica>Wallyball, geral (variação do voleibal, jogando em quadra de raqueball fechada - 12 x 6 m - em que a bola toca as paredes - walls)</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>15732</Id>
+		<MET>4.0</MET>
+		<Categoria>Esportes</Categoria>
+		<AtividadeEspecifica>Atletismo (peso, disco, martelo)</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>15733</Id>
+		<MET>6.0</MET>
+		<Categoria>Esportes</Categoria>
+		<AtividadeEspecifica>Atletismo (salto em altura, distância triplo, dardo, salto com vara)</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>15734</Id>
+		<MET>10.0</MET>
+		<Categoria>Esportes</Categoria>
+		<AtividadeEspecifica>Atletismo (obstáculos - steeplechase, barreiras)</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>16010</Id>
+		<MET>2.0</MET>
+		<Categoria>Transporte</Categoria>
+		<AtividadeEspecifica>Dirigir carro ou caminhão leve</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>16015</Id>
+		<MET>1.0</MET>
+		<Categoria>Transporte</Categoria>
+		<AtividadeEspecifica>Dirigir carro ou caminhão</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>16016</Id>
+		<MET>1.0</MET>
+		<Categoria>Transporte</Categoria>
+		<AtividadeEspecifica>Dirigir caminhão</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>16020</Id>
+		<MET>2.0</MET>
+		<Categoria>Transporte</Categoria>
+		<AtividadeEspecifica>Pilotar avião</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>16030</Id>
+		<MET>2.5</MET>
+		<Categoria>Transporte</Categoria>
+		<AtividadeEspecifica>Dirigir patinete motorizado ou motocicleta</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>16040</Id>
+		<MET>6.0</MET>
+		<Categoria>Transporte</Categoria>
+		<AtividadeEspecifica>Conduzir avião para fora do hangar</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>16050</Id>
+		<MET>3.0</MET>
+		<Categoria>Transporte</Categoria>
+		<AtividadeEspecifica>Dirigir caminhão pesado, trator ou ônibus</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>17010</Id>
+		<MET>7.0</MET>
+		<Categoria>Caminhar</Categoria>
+		<AtividadeEspecifica>Carregar mochila de viagem (backpacking ou, na gíria brasileira 'mochileiro') (Cód. 050 de Taylor)</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>17020</Id>
+		<MET>3.5</MET>
+		<Categoria>Caminhar</Categoria>
+		<AtividadeEspecifica>Carregar criança ou carga de aproximadamente 7kg (maleta), terreno plano ou em descidas</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>17025</Id>
+		<MET>9.0</MET>
+		<Categoria>Caminhar</Categoria>
+		<AtividadeEspecifica>Carregar carga em subidas, geral</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>17026</Id>
+		<MET>5.0</MET>
+		<Categoria>Caminhar</Categoria>
+		<AtividadeEspecifica>Carregar carga entre 0.5 e 7 kg, em subidas</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>17027</Id>
+		<MET>6.0</MET>
+		<Categoria>Caminhar</Categoria>
+		<AtividadeEspecifica>Carregar carga entre 7 e 11 kg, em subidas</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>17028</Id>
+		<MET>8.0</MET>
+		<Categoria>Caminhar</Categoria>
+		<AtividadeEspecifica>Carregar carga entre 11 e 22 kg, em subidas</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>17029</Id>
+		<MET>10.0</MET>
+		<Categoria>Caminhar</Categoria>
+		<AtividadeEspecifica>Carregar carga entre 22 e 34 kg, em subidas</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>17030</Id>
+		<MET>12.0</MET>
+		<Categoria>Caminhar</Categoria>
+		<AtividadeEspecifica>Carregar carga &gt; de 34 kg, em subidas</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>17031</Id>
+		<MET>3.0</MET>
+		<Categoria>Caminhar</Categoria>
+		<AtividadeEspecifica>Carregando ou descarregando o carro</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>17035</Id>
+		<MET>7.0</MET>
+		<Categoria>Caminhar</Categoria>
+		<AtividadeEspecifica>Subir encostas com carga até 4 kg</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>17040</Id>
+		<MET>7.5</MET>
+		<Categoria>Caminhar</Categoria>
+		<AtividadeEspecifica>Subir encostas com carga entre 4 e 10 kg</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>17050</Id>
+		<MET>8.0</MET>
+		<Categoria>Caminhar</Categoria>
+		<AtividadeEspecifica>Subir encostas com carga entre 10 e 19 kg</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>17060</Id>
+		<MET>9.0</MET>
+		<Categoria>Caminhar</Categoria>
+		<AtividadeEspecifica>Subir encostas com carga &gt; de 19 kg</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>17070</Id>
+		<MET>3.0</MET>
+		<Categoria>Caminhar</Categoria>
+		<AtividadeEspecifica>Descer encostas/escadas </AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>17080</Id>
+		<MET>6.0</MET>
+		<Categoria>Caminhar</Categoria>
+		<AtividadeEspecifica>Caminhadas longas em trilhas ou florestas (Cód. 040 de Taylor)</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>17085</Id>
+		<MET>2.5</MET>
+		<Categoria>Caminhar</Categoria>
+		<AtividadeEspecifica>Observar pássaros com hobby ('bird watching')</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>17090</Id>
+		<MET>6.5</MET>
+		<Categoria>Caminhar</Categoria>
+		<AtividadeEspecifica>Marchar, de forma marcial e rapidamente</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>17100</Id>
+		<MET>2.5</MET>
+		<Categoria>Caminhar</Categoria>
+		<AtividadeEspecifica>Empurrar ou puxar carrinho de bebê com criança</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>17105</Id>
+		<MET>4.0</MET>
+		<Categoria>Caminhar</Categoria>
+		<AtividadeEspecifica>Empurrando a cadeira de rodas, em contexto não-ocupacional</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>17110</Id>
+		<MET>6.5</MET>
+		<Categoria>Caminhar</Categoria>
+		<AtividadeEspecifica>Race walking (conteste ou disputa de quem consegue andar mais rápido possível, quase correndo)</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>17120</Id>
+		<MET>8.0</MET>
+		<Categoria>Caminhar</Categoria>
+		<AtividadeEspecifica>Escalar rochas ou montanhas (Cód. 060 de Taylor)</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>17130</Id>
+		<MET>8.0</MET>
+		<Categoria>Caminhar</Categoria>
+		<AtividadeEspecifica>Subir escadas, usando ou subindo uma escada de mão (Cód. 030 de Taylor)</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>17140</Id>
+		<MET>5.0</MET>
+		<Categoria>Caminhar</Categoria>
+		<AtividadeEspecifica>Caminhar usando muletas ou bengalas</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>17150</Id>
+		<MET>2.0</MET>
+		<Categoria>Caminhar</Categoria>
+		<AtividadeEspecifica>Caminhar, andar em casa</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>17151</Id>
+		<MET>2.0</MET>
+		<Categoria>Caminhar</Categoria>
+		<AtividadeEspecifica>Caminhar, menos 3 Km/h, de modo confortável, em terreno plano, bem devagar</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>17152</Id>
+		<MET>2.5</MET>
+		<Categoria>Caminhar</Categoria>
+		<AtividadeEspecifica>Caminhar a 3 Km/h, terreno plano firme, ritmo lento</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>17160</Id>
+		<MET>3.5</MET>
+		<Categoria>Caminhar</Categoria>
+		<AtividadeEspecifica>Caminhar por prazer (Cód. 010 de Taylor)</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>17161</Id>
+		<MET>2.5</MET>
+		<Categoria>Caminhar</Categoria>
+		<AtividadeEspecifica>Caminhar de casa para o carro ou ônibus, do carro ônibus para outros lugares, como o trabalho</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>17162</Id>
+		<MET>2.5</MET>
+		<Categoria>Caminhar</Categoria>
+		<AtividadeEspecifica>Caminhar até a casa de vizinhos ou familiares por razões sociais</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>17165</Id>
+		<MET>3.0</MET>
+		<Categoria>Caminhar</Categoria>
+		<AtividadeEspecifica>Caminhar com o cachorro</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>17170</Id>
+		<MET>3.0</MET>
+		<Categoria>Caminhar</Categoria>
+		<AtividadeEspecifica>Caminhar, 4 Km/h, superfície firme</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>17180</Id>
+		<MET>2.8</MET>
+		<Categoria>Caminhar</Categoria>
+		<AtividadeEspecifica>Caminhar, 4 Km/h, descendo encosta</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>17190</Id>
+		<MET>3.3</MET>
+		<Categoria>Caminhar</Categoria>
+		<AtividadeEspecifica>Caminhar, 5 Km/h, terreno plano, superfície firme, ritmo moderado</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>17200</Id>
+		<MET>3.8</MET>
+		<Categoria>Caminhar</Categoria>
+		<AtividadeEspecifica>Caminhar, 5.5 Km/h, terreno plano, superfície firme, caminhado para exercitar-se, ritmo rápido</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>17210</Id>
+		<MET>6.0</MET>
+		<Categoria>Caminhar</Categoria>
+		<AtividadeEspecifica>Caminhar, 5.5 Km/h, subindo encosta</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>17220</Id>
+		<MET>5.0</MET>
+		<Categoria>Caminhar</Categoria>
+		<AtividadeEspecifica>Caminhar, 6.5 Km/h, terreno plano, superfície firme, ritmo muito rápido</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>17230</Id>
+		<MET>6.3</MET>
+		<Categoria>Caminhar</Categoria>
+		<AtividadeEspecifica>Caminhar, 7 Km/h, terreno plano, superfície firme, ritmo extremamente rápido</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>17231</Id>
+		<MET>8.0</MET>
+		<Categoria>Caminhar</Categoria>
+		<AtividadeEspecifica>Caminhar 7.5 Km/h</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>17250</Id>
+		<MET>3.5</MET>
+		<Categoria>Caminhar</Categoria>
+		<AtividadeEspecifica>Caminhar, por prazer, no intervalo do trabalho</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>17260</Id>
+		<MET>5.0</MET>
+		<Categoria>Caminhar</Categoria>
+		<AtividadeEspecifica>Caminhar em pista ou terreno gramado</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>17270</Id>
+		<MET>4.0</MET>
+		<Categoria>Caminhar</Categoria>
+		<AtividadeEspecifica>Caminhar para o trabalho ou para aula (Cód. 015 de Taylor)</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>17280</Id>
+		<MET>2.5</MET>
+		<Categoria>Caminhar</Categoria>
+		<AtividadeEspecifica>Caminhar para e de um local externo à casa</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>18010</Id>
+		<MET>2.5</MET>
+		<Categoria>Atividades Aquáticas</Categoria>
+		<AtividadeEspecifica>Conduzir barco a motor</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>18020</Id>
+		<MET>4.0</MET>
+		<Categoria>Atividades Aquáticas</Categoria>
+		<AtividadeEspecifica>Canoagem, em viagem de acampamento (Cód. 270 de Taylor)</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>18025</Id>
+		<MET>3.3</MET>
+		<Categoria>Atividades Aquáticas</Categoria>
+		<AtividadeEspecifica>Canoagem, colheita manual de arroz selvagem (manuseio da canoa e extrair/bater o grão do caule - regiões pantanosas dos EUA e Canadá)</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>18030</Id>
+		<MET>7.0</MET>
+		<Categoria>Atividades Aquáticas</Categoria>
+		<AtividadeEspecifica>Canoagem, em lago ou mar</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>18040</Id>
+		<MET>3.0</MET>
+		<Categoria>Atividades Aquáticas</Categoria>
+		<AtividadeEspecifica>Canoagem, remando entre 3 e 6 Km/h, esforço leve</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>18050</Id>
+		<MET>7.0</MET>
+		<Categoria>Atividades Aquáticas</Categoria>
+		<AtividadeEspecifica>Canoagem, remando entre 6 e 9.5 Km/h, esforço moderado</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>18060</Id>
+		<MET>12.0</MET>
+		<Categoria>Atividades Aquáticas</Categoria>
+		<AtividadeEspecifica>Canoagem , remando &gt; de 9.5 Km/h, esforço vigoroso</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>18070</Id>
+		<MET>3.5</MET>
+		<Categoria>Atividades Aquáticas</Categoria>
+		<AtividadeEspecifica>Canoagem , remando por prazer, geral (Cód. 250 de Taylor)</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>18080</Id>
+		<MET>12.0</MET>
+		<Categoria>Atividades Aquáticas</Categoria>
+		<AtividadeEspecifica>Canoagem, remando em competição, em equipe ou duplas (Cód. 260 de Taylor)</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>18090</Id>
+		<MET>3.0</MET>
+		<Categoria>Atividades Aquáticas</Categoria>
+		<AtividadeEspecifica>Mergulhar, da costa ou de plataforma</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>18100</Id>
+		<MET>5.0</MET>
+		<Categoria>Atividades Aquáticas</Categoria>
+		<AtividadeEspecifica>Remar caiaque</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>18110</Id>
+		<MET>4.0</MET>
+		<Categoria>Atividades Aquáticas</Categoria>
+		<AtividadeEspecifica>Conduzir barco a pedal ('pedalinho')</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>18120</Id>
+		<MET>3.0</MET>
+		<Categoria>Atividades Aquáticas</Categoria>
+		<AtividadeEspecifica>Velejar, windsurf, velejar no gelo, geral (Cód. 235 de Taylor)</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>18130</Id>
+		<MET>5.0</MET>
+		<Categoria>Atividades Aquáticas</Categoria>
+		<AtividadeEspecifica>Velejar, em competição</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>18140</Id>
+		<MET>3.0</MET>
+		<Categoria>Atividades Aquáticas</Categoria>
+		<AtividadeEspecifica>Velejar (categorias: sunfish, laser, hobby cat, keel boats), velejar em oceano, iatismo</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>18150</Id>
+		<MET>6.0</MET>
+		<Categoria>Atividades Aquáticas</Categoria>
+		<AtividadeEspecifica>Esqui aquático 9Cód. 220 de Taylor)</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>18160</Id>
+		<MET>7.0</MET>
+		<Categoria>Atividades Aquáticas</Categoria>
+		<AtividadeEspecifica>Skimobiling (atividade semelhante ao snowmobiling - ver descrição no código 19200)</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>18180</Id>
+		<MET>16.0</MET>
+		<Categoria>Atividades Aquáticas</Categoria>
+		<AtividadeEspecifica>Mergulho (Skindiving), rápido</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>18190</Id>
+		<MET>12.5</MET>
+		<Categoria>Atividades Aquáticas</Categoria>
+		<AtividadeEspecifica>Mergulho (Skindiving), moderado</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>18200</Id>
+		<MET>7.0</MET>
+		<Categoria>Atividades Aquáticas</Categoria>
+		<AtividadeEspecifica>Mergulho (Skindiving), scuba diving (com garrafa), geral (Cód. 310 de Taylor)</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>18210</Id>
+		<MET>5.0</MET>
+		<Categoria>Atividades Aquáticas</Categoria>
+		<AtividadeEspecifica>Mergulhar com snorkel (Cód. 320 de Taylor) (mergulho sem garrafas, em apnéia)</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>18220</Id>
+		<MET>3.0</MET>
+		<Categoria>Atividades Aquáticas</Categoria>
+		<AtividadeEspecifica>Surfe ou vody board</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>18230</Id>
+		<MET>10.0</MET>
+		<Categoria>Atividades Aquáticas</Categoria>
+		<AtividadeEspecifica>Nadar, estilo livre, em velocidade rápida, esforço vigoroso</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>18240</Id>
+		<MET>7.0</MET>
+		<Categoria>Atividades Aquáticas</Categoria>
+		<AtividadeEspecifica>Nadar, estilo livre, em velocidade lenta, esforço leve a moderado</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>18250</Id>
+		<MET>7.0</MET>
+		<Categoria>Atividades Aquáticas</Categoria>
+		<AtividadeEspecifica>Nadar, costas, geral</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>18260</Id>
+		<MET>10.0</MET>
+		<Categoria>Atividades Aquáticas</Categoria>
+		<AtividadeEspecifica>Nadar, peito, geral</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>18270</Id>
+		<MET>11.0</MET>
+		<Categoria>Atividades Aquáticas</Categoria>
+		<AtividadeEspecifica>Nadar, borboleta, geral</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>18280</Id>
+		<MET>11.0</MET>
+		<Categoria>Atividades Aquáticas</Categoria>
+		<AtividadeEspecifica>Nadar, crawl, velocidade rapída (7.0 m/min), esforço vigoroso</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>18290</Id>
+		<MET>8.0</MET>
+		<Categoria>Atividades Aquáticas</Categoria>
+		<AtividadeEspecifica>Nadar, crawl, velocidade lenta (45-46 m/min), esforço leve a moderado</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>18300</Id>
+		<MET>6.0</MET>
+		<Categoria>Atividades Aquáticas</Categoria>
+		<AtividadeEspecifica>Nadar, em lago, oceano ou rio (Cód. 280 e 295 de Taylor</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>18310</Id>
+		<MET>6.0</MET>
+		<Categoria>Atividades Aquáticas</Categoria>
+		<AtividadeEspecifica>Nadar por lazer, sem viradas, geral</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>18320</Id>
+		<MET>8.0</MET>
+		<Categoria>Atividades Aquáticas</Categoria>
+		<AtividadeEspecifica>Nadar, nado lateral, geral</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>18330</Id>
+		<MET>8.0</MET>
+		<Categoria>Atividades Aquáticas</Categoria>
+		<AtividadeEspecifica>Nado sincronizados</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>18340</Id>
+		<MET>10.0</MET>
+		<Categoria>Atividades Aquáticas</Categoria>
+		<AtividadeEspecifica>Nadar , andar na água, velocidade rápida, esforço vigoroso</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>18350</Id>
+		<MET>4.0</MET>
+		<Categoria>Atividades Aquáticas</Categoria>
+		<AtividadeEspecifica>Nadar, andar na água, esforço moderado geral</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>18355</Id>
+		<MET>4.0</MET>
+		<Categoria>Atividades Aquáticas</Categoria>
+		<AtividadeEspecifica>Atividades aeróbicas na água, calistenia aquática (hidroginástica)</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>18360</Id>
+		<MET>10.0</MET>
+		<Categoria>Atividades Aquáticas</Categoria>
+		<AtividadeEspecifica>Pólo aquático</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>18365</Id>
+		<MET>3.0</MET>
+		<Categoria>Atividades Aquáticas</Categoria>
+		<AtividadeEspecifica>Voleibol na água</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>18366</Id>
+		<MET>8.0</MET>
+		<Categoria>Atividades Aquáticas</Categoria>
+		<AtividadeEspecifica>Jogging  na água</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>18370</Id>
+		<MET>5.0</MET>
+		<Categoria>Atividades Aquáticas</Categoria>
+		<AtividadeEspecifica>Whitewater (descer correntezas em balsa), rafting, andar, de caiaque ou canoagem</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>19010</Id>
+		<MET>6.0</MET>
+		<Categoria>Atividades de Inverno</Categoria>
+		<AtividadeEspecifica>Remover o gelo da casa (cobrir bruacos)</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>19020</Id>
+		<MET>5.5</MET>
+		<Categoria>Atividades de Inverno</Categoria>
+		<AtividadeEspecifica>Patinar no gelo  a 14.5 Km/h</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>19030</Id>
+		<MET>7.0</MET>
+		<Categoria>Atividades de Inverno</Categoria>
+		<AtividadeEspecifica>Patinar no gelo, geral (Cód. 360 de Taylor)</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>19040</Id>
+		<MET>9.0</MET>
+		<Categoria>Atividades de Inverno</Categoria>
+		<AtividadeEspecifica>Patinar no gelo, em que a velocidade rápida (&gt; de 14.5 Km/h)</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>19050</Id>
+		<MET>15.0</MET>
+		<Categoria>Atividades de Inverno</Categoria>
+		<AtividadeEspecifica>Patinação , veloz, competitiva</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>19060</Id>
+		<MET>7.0</MET>
+		<Categoria>Atividades de Inverno</Categoria>
+		<AtividadeEspecifica>Saltar com esquis e subir montanhas carregando o esquis</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>19075</Id>
+		<MET>7.0</MET>
+		<Categoria>Atividades de Inverno</Categoria>
+		<AtividadeEspecifica>Esquiar, geral</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>19080</Id>
+		<MET>7.0</MET>
+		<Categoria>Atividades de Inverno</Categoria>
+		<AtividadeEspecifica>Esquiar, esqui de fundo cross-country), velocdade de 4.0 Km/h devagar ou com esforço leve, andar esquiando</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>19090</Id>
+		<MET>8.0</MET>
+		<Categoria>Atividades de Inverno</Categoria>
+		<AtividadeEspecifica>Esquiar, esqui de fundo cross-country), velocdade entre 6.5 e 8.0 Km/h velocidade e esforço moderado, geral</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>19100</Id>
+		<MET>9.0</MET>
+		<Categoria>Atividades de Inverno</Categoria>
+		<AtividadeEspecifica>Esquiar, esqui de fundo cross-country), velocdade entre 8.0 e 13.0 Km/h, com velocidade rápida, esforço vigoroso</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>19110</Id>
+		<MET>14.0</MET>
+		<Categoria>Atividades de Inverno</Categoria>
+		<AtividadeEspecifica>Esquiar, esqui de fundo cross-country), velocdade &gt; 13.0 Km/h, velocidade rápida, esforço vigoroso</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>19130</Id>
+		<MET>16.5</MET>
+		<Categoria>Atividades de Inverno</Categoria>
+		<AtividadeEspecifica>Esquiar, esqui de fundo cross-country), em neve pesada, subindo encostas, esforço máximo, montanhismo de neve</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>19150</Id>
+		<MET>5.0</MET>
+		<Categoria>Atividades de Inverno</Categoria>
+		<AtividadeEspecifica>Esquiar, descendo encosta, esforço leve</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>19160</Id>
+		<MET>6.0</MET>
+		<Categoria>Atividades de Inverno</Categoria>
+		<AtividadeEspecifica>Esquiar, descendo encosta, esforço moderado, geral</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>19170</Id>
+		<MET>8.0</MET>
+		<Categoria>Atividades de Inverno</Categoria>
+		<AtividadeEspecifica>Esquiar, descendo encosta em velocidade, esforço vigoroso</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>19180</Id>
+		<MET>7.0</MET>
+		<Categoria>Atividades de Inverno</Categoria>
+		<AtividadeEspecifica>Sledding (plataforma onde corredores se movem rapidamente no gelo), descer de tobogã no gelo, bobsledding (plataforma com freio e motor e com dois corredores), andar de trenó (luge) (Cód. 370 de Taylor)</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>19190</Id>
+		<MET>8.0</MET>
+		<Categoria>Atividades de Inverno</Categoria>
+		<AtividadeEspecifica>Snow shoeing (andar no gelo com botas especiais, sem afundar no mesmo)</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>19200</Id>
+		<MET>3.5</MET>
+		<Categoria>Atividades de Inverno</Categoria>
+		<AtividadeEspecifica>Snowmobiling (conduzir veículo motorizado, adaptado para deslocar-se na superfície da neve)</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>20000</Id>
+		<MET>1.0</MET>
+		<Categoria>Atividades Religiosas</Categoria>
+		<AtividadeEspecifica>Sentado na igreja, durante a missa, assistindo a uma cerimônia, sentado, participação ativa</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>20001</Id>
+		<MET>2.5</MET>
+		<Categoria>Atividades Religiosas</Categoria>
+		<AtividadeEspecifica>Sentado, tocando algum instrumento na igreja</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>20005</Id>
+		<MET>1.5</MET>
+		<Categoria>Atividades Religiosas</Categoria>
+		<AtividadeEspecifica>Sentado na igreja, falando ou cantando, assistindo a uma cerimônia, sentado, participação ativa</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>20010</Id>
+		<MET>1.3</MET>
+		<Categoria>Atividades Religiosas</Categoria>
+		<AtividadeEspecifica>Sentado, lendo textos religiosos em casa</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>20015</Id>
+		<MET>1.2</MET>
+		<Categoria>Atividades Religiosas</Categoria>
+		<AtividadeEspecifica>Em pé na igreja (quieto), assistindo a uma cerimônia</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>20020</Id>
+		<MET>2.0</MET>
+		<Categoria>Atividades Religiosas</Categoria>
+		<AtividadeEspecifica>Em pé e cantando na igreja, assistindo a uma cerimônia, participação ativa</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>20025</Id>
+		<MET>1.0</MET>
+		<Categoria>Atividades Religiosas</Categoria>
+		<AtividadeEspecifica>Ajoelhado na igreja ou em casa, rezando (orando)</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>20030</Id>
+		<MET>1.8</MET>
+		<Categoria>Atividades Religiosas</Categoria>
+		<AtividadeEspecifica>Em pé, falando na igreja</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>20035</Id>
+		<MET>2.0</MET>
+		<Categoria>Atividades Religiosas</Categoria>
+		<AtividadeEspecifica>Caminhando na igreja</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>20036</Id>
+		<MET>2.0</MET>
+		<Categoria>Atividades Religiosas</Categoria>
+		<AtividadeEspecifica>Caminhando menos do que 3 Km/h, muito lento</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>20037</Id>
+		<MET>3.3</MET>
+		<Categoria>Atividades Religiosas</Categoria>
+		<AtividadeEspecifica>Caminhando a 4.5 Km/h, velocidade moderada, sem carregar nada</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>20038</Id>
+		<MET>3.8</MET>
+		<Categoria>Atividades Religiosas</Categoria>
+		<AtividadeEspecifica>Caminhando a 5.5 Km/h, velocidade rápida, sem carregar nada</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>20039</Id>
+		<MET>2.0</MET>
+		<Categoria>Atividades Religiosas</Categoria>
+		<AtividadeEspecifica>Caminhar ou ficar em pé, para finalidades religiosas, guia</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>20040</Id>
+		<MET>5.0</MET>
+		<Categoria>Atividades Religiosas</Categoria>
+		<AtividadeEspecifica>Orar com dança ou deslicamentos rápidos, danças religiosoas na igreja (spiritual dancing)</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>20045</Id>
+		<MET>2.5</MET>
+		<Categoria>Atividades Religiosas</Categoria>
+		<AtividadeEspecifica>Servindo comida na igreja</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>20046</Id>
+		<MET>2.0</MET>
+		<Categoria>Atividades Religiosas</Categoria>
+		<AtividadeEspecifica>Preparando comida na igreja</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>20047</Id>
+		<MET>2.3</MET>
+		<Categoria>Atividades Religiosas</Categoria>
+		<AtividadeEspecifica>Lavando pratos / limpando a cozinha da igreja</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>20050</Id>
+		<MET>1.5</MET>
+		<Categoria>Atividades Religiosas</Categoria>
+		<AtividadeEspecifica>Comendo na igreja</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>20055</Id>
+		<MET>2.0</MET>
+		<Categoria>Atividades Religiosas</Categoria>
+		<AtividadeEspecifica>Comendo/falando na igreja ou comendo em pé (quermesses)</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>20060</Id>
+		<MET>3.0</MET>
+		<Categoria>Atividades Religiosas</Categoria>
+		<AtividadeEspecifica>Limpando a igreja</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>20061</Id>
+		<MET>5.0</MET>
+		<Categoria>Atividades Religiosas</Categoria>
+		<AtividadeEspecifica>Trabalha geral no jardim/pátio da igreja</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>20065</Id>
+		<MET>2.5</MET>
+		<Categoria>Atividades Religiosas</Categoria>
+		<AtividadeEspecifica>Em  pé, moderado (erguendo 20 Kg, juntando peças em ritmo rápido)</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>20095</Id>
+		<MET>4.0</MET>
+		<Categoria>Atividades Religiosas</Categoria>
+		<AtividadeEspecifica>Em pé, trabalho moderado-pesado</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>20100</Id>
+		<MET>1.5</MET>
+		<Categoria>Atividades Religiosas</Categoria>
+		<AtividadeEspecifica>Datilografando, máquina elétrica, manual ou computador</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>21000</Id>
+		<MET>1.5</MET>
+		<Categoria>Atividades Voluntárias</Categoria>
+		<AtividadeEspecifica>Sentado - encontros, geral, com ou sem conversação envolvida</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>21005</Id>
+		<MET>1.5</MET>
+		<Categoria>Atividades Voluntárias</Categoria>
+		<AtividadeEspecifica>Sentado - trabalho leve de escritório, geral</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>21010</Id>
+		<MET>2.5</MET>
+		<Categoria>Atividades Voluntárias</Categoria>
+		<AtividadeEspecifica>Sentado - trabalho moderado</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>21015</Id>
+		<MET>2.3</MET>
+		<Categoria>Atividades Voluntárias</Categoria>
+		<AtividadeEspecifica>Em pé - trabalho leve (falando, preenchendo, montando peças)</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>21016</Id>
+		<MET>2.5</MET>
+		<Categoria>Atividades Voluntárias</Categoria>
+		<AtividadeEspecifica>Sentado, cuidadndo de crianças (apenas períodos ativos)</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>21017</Id>
+		<MET>3.0</MET>
+		<Categoria>Atividades Voluntárias</Categoria>
+		<AtividadeEspecifica>Em pé, cuidando de crianças (apenas períodos ativos)</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>21018</Id>
+		<MET>4.0</MET>
+		<Categoria>Atividades Voluntárias</Categoria>
+		<AtividadeEspecifica>Caminhar/correr brincando com crianças, moderado (apenas períodos ativos)</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>21019</Id>
+		<MET>5.0</MET>
+		<Categoria>Atividades Voluntárias</Categoria>
+		<AtividadeEspecifica>Caminhar/correr brincando com crianças, vigoroso (apenas períodos ativos)</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>21020</Id>
+		<MET>3.0</MET>
+		<Categoria>Atividades Voluntárias</Categoria>
+		<AtividadeEspecifica>Em pé - trabalho leve/moderado (empacotar, montar/reparar, montar cadeiras e móveis em geral)</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>21025</Id>
+		<MET>3.5</MET>
+		<Categoria>Atividades Voluntárias</Categoria>
+		<AtividadeEspecifica>Em pé - trabalho moderado (erguer 20 Kg, montando peças em ritmo rápido)</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>21030</Id>
+		<MET>4.0</MET>
+		<Categoria>Atividades Voluntárias</Categoria>
+		<AtividadeEspecifica>Em pé - trabalho moderado e pesado</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>21035</Id>
+		<MET>1.5</MET>
+		<Categoria>Atividades Voluntárias</Categoria>
+		<AtividadeEspecifica>Digitando/datilografando, máquina elétrica, manual ou computador</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>21040</Id>
+		<MET>2.0</MET>
+		<Categoria>Atividades Voluntárias</Categoria>
+		<AtividadeEspecifica>Andando, menos de 3 Km/h, bem devagar</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>21045</Id>
+		<MET>3.3</MET>
+		<Categoria>Atividades Voluntárias</Categoria>
+		<AtividadeEspecifica>Andando, 5Km/h, velocidade moderada, sem carregar nada</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>21050</Id>
+		<MET>3.8</MET>
+		<Categoria>Atividades Voluntárias</Categoria>
+		<AtividadeEspecifica>Andando, 5.5Km/h, velocidade moderada, sem carregar nada</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>21055</Id>
+		<MET>3.0</MET>
+		<Categoria>Atividades Voluntárias</Categoria>
+		<AtividadeEspecifica>Andando, 4Km/h, lentamente e carregando objetos com menos de 10 Kg</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>21060</Id>
+		<MET>4.0</MET>
+		<Categoria>Atividades Voluntárias</Categoria>
+		<AtividadeEspecifica>Andando, 5Km/h, moderamente e carregando objetos com menos de 10 Kg, empurrando algo</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>21065</Id>
+		<MET>4.5</MET>
+		<Categoria>Atividades Voluntárias</Categoria>
+		<AtividadeEspecifica>Andando, 5.5 Km/h, rapidamente e carregando objetos com menos de 10 Kg</AtividadeEspecifica>
+	</Atividade>
+	<Atividade>
+		<Id>21070</Id>
+		<MET>3.0</MET>
+		<Categoria>Atividades Voluntárias</Categoria>
+		<AtividadeEspecifica>Combinação de atividades andando ou em pé, com finalidade de trabalho voluntário</AtividadeEspecifica>
+	</Atividade>
+</Raiz>

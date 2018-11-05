@@ -12,4 +12,5 @@
     <string name="error_field_required">Campo necessario</string>
     <string name="permission_rationale">"Necessario permissão para acesso aos contatos."</string>
     <string name="title_activity_tela_principal">TelaPrincipal</string>
+    <string name="tituloDialog">Nova atividade fisica realizada</string>
 </resources>

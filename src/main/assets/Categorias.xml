@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Raiz>
+	<Categorias>
+		<Id>1</Id>
+		<Categoria>Ciclismo</Categoria>
+		<Descricao>Atividades com bicicleta</Descricao>
+	</Categorias>
+	<Categorias>
+		<Id>2</Id>
+		<Categoria>Exercício de Condicionamento</Categoria>
+		<Descricao>Atividades para aprimoramento fisico</Descricao>
+	</Categorias>
+	<Categorias>
+		<Id>3</Id>
+		<Categoria>Dança</Categoria>
+		<Descricao>Danças</Descricao>
+	</Categorias>
+	<Categorias>
+		<Id>4</Id>
+		<Categoria>Caça e Pesca</Categoria>
+		<Descricao>Pescaria</Descricao>
+	</Categorias>
+	<Categorias>
+		<Id>5</Id>
+		<Categoria>Atividades Domésticas</Categoria>
+		<Descricao>Afazeres domesticos</Descricao>
+	</Categorias>
+	<Categorias>
+		<Id>6</Id>
+		<Categoria>Reparos Domésticos</Categoria>
+		<Descricao>Reparos Domésticos</Descricao>
+	</Categorias>
+	<Categorias>
+		<Id>7</Id>
+		<Categoria>Inatividade, tranquilo</Categoria>
+		<Descricao>Repouso</Descricao>
+	</Categorias>
+	<Categorias>
+		<Id>8</Id>
+		<Categoria>Gramado e jardim</Categoria>
+		<Descricao>Jardinagem</Descricao>
+	</Categorias>
+	<Categorias>
+		<Id>9</Id>
+		<Categoria>Miscelânea</Categoria>
+		<Descricao>Atividades diversas</Descricao>
+	</Categorias>
+	<Categorias>
+		<Id>10</Id>
+		<Categoria>Tocar Música/ Instrumentos</Categoria>
+		<Descricao>Atividades relacionadas a musica</Descricao>
+	</Categorias>
+	<Categorias>
+		<Id>11</Id>
+		<Categoria>Atividades Ocupacionais</Categoria>
+		<Descricao>Atividades Ocupacionais</Descricao>
+	</Categorias>
+	<Categorias>
+		<Id>12</Id>
+		<Categoria>Correr</Categoria>
+		<Descricao>Correr</Descricao>
+	</Categorias>
+	<Categorias>
+		<Id>13</Id>
+		<Categoria>Cuidados Pessoais</Categoria>
+		<Descricao>Cuidados Pessoais</Descricao>
+	</Categorias>
+	<Categorias>
+		<Id>14</Id>
+		<Categoria>Atividade Sexual</Categoria>
+		<Descricao>Atividade Sexual</Descricao>
+	</Categorias>
+	<Categorias>
+		<Id>15</Id>
+		<Categoria>Esportes</Categoria>
+		<Descricao>Praticar Esportes</Descricao>
+	</Categorias>
+	<Categorias>
+		<Id>16</Id>
+		<Categoria>Transporte</Categoria>
+		<Descricao>Transporte</Descricao>
+	</Categorias>
+	<Categorias>
+		<Id>17</Id>
+		<Categoria>Caminhar</Categoria>
+		<Descricao>Caminhar</Descricao>
+	</Categorias>
+	<Categorias>
+		<Id>18</Id>
+		<Categoria>Atividades Aquáticas</Categoria>
+		<Descricao>Atividades Aquáticas</Descricao>
+	</Categorias>
+	<Categorias>
+		<Id>19</Id>
+		<Categoria>Atividades de Inverno</Categoria>
+		<Descricao>Atividades de Inverno</Descricao>
+	</Categorias>
+	<Categorias>
+		<Id>20</Id>
+		<Categoria>Atividades Religiosas</Categoria>
+		<Descricao>Atividades Religiosas</Descricao>
+	</Categorias>
+	<Categorias>
+		<Id>21</Id>
+		<Categoria>Atividades Voluntárias</Categoria>
+		<Descricao>Atividades Voluntárias</Descricao>
+	</Categorias>
+</Raiz>
