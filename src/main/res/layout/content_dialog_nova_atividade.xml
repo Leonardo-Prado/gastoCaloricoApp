@@ -13,6 +13,25 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:scrollbarAlwaysDrawHorizontalTrack="true"
+            android:scrollbars="horizontal">
+
+            <android.support.v7.widget.AppCompatAutoCompleteTextView
+                android:id="@+id/acAtividade"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:dropDownHeight="wrap_content"
+                android:hint="Digite a atividade ou procure nas caixas abaixo..."
+                android:singleLine="false"
+                android:spinnerMode="dialog"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="horizontal">
 
             <Spinner
@@ -21,6 +40,8 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
                 android:layout_weight="1"
+                android:dropDownWidth="match_parent"
+                android:scrollbars="horizontal"
                 android:spinnerMode="dialog" />
 
             <Spinner
@@ -29,6 +50,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
                 android:layout_weight="0.5"
+                android:scrollbars="horizontal"
                 android:spinnerMode="dialog" />
         </LinearLayout>
 
@@ -44,7 +66,7 @@
                 android:layout_margin="5dp"
                 android:layout_weight="1"
                 android:ems="10"
-                android:hint="Hora de Inicio"
+                android:hint="@string/ed_hint_hora_de_inicio"
                 android:inputType="textAutoComplete|time" />
 
             <EditText
@@ -54,7 +76,7 @@
                 android:layout_margin="5dp"
                 android:layout_weight="1"
                 android:ems="10"
-                android:hint="Hora de Termino"
+                android:hint="@string/ed_hint_hora_de_termino"
                 android:inputType="textAutoComplete|time" />
         </LinearLayout>
 
@@ -62,7 +84,10 @@
             android:id="@+id/btnConfirmar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Confirmar" />
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="15dp"
+            android:text="@string/btn_confirmar" />
 
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>

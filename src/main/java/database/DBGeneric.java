@@ -13,9 +13,8 @@ import java.util.List;
 
 public class DBGeneric {
     private SQLiteDatabase db;
-    private Context context;
+
     public  DBGeneric(Context context){
-        this.context = context;
         DBHelp dbHelp = new DBHelp(context);
         db = dbHelp.getWritableDatabase();
     }
@@ -31,14 +30,7 @@ public class DBGeneric {
         }
         return i;
     }
-    public void inserir( ContentValues values,String tabela,Context context){
-        try {
-            db.insert(tabela,null,values);
-        }catch (SQLException e)
-        {
-            Log.e( "Erro ao inserir: ",e.getMessage());
-        }
-    }
+
     public  void  atualizar(String tabela,ContentValues values,String condicao,String[] argumentos ){
         try {
             db.update(tabela,values,condicao,argumentos);
@@ -93,10 +85,48 @@ public class DBGeneric {
                 lista.add(strings);
                 i++;
             }
+            cursor.close();
         }
         return (lista);
     }
 
+    public List<List<String>> buscar(String tabela,String [] campos,String ordenador){
+        List<List<String>> lista = new ArrayList<>();
+        Cursor cursor = db.query(tabela,campos,null,null,null,null,ordenador);
+
+        if (cursor.getCount()>0)
+        {
+            int fim = cursor.getCount();
+            int i = 0;
+            int j = cursor.getColumnCount();
+            cursor.moveToFirst();
+            while(i<fim)
+            {
+                List<String> strings = new ArrayList<>();
+                int k = 0;
+                while(k<j)
+                {
+                    switch (cursor.getType(k)) {
+                        case 1:
+                            strings.add(Integer.toString(cursor.getInt(k)));
+                            break;
+                        case 2:
+                            strings.add(Double.toString(cursor.getFloat(k)));
+                            break;
+                        case 3:
+                            strings.add(cursor.getString(k));
+                            break;
+                    }
+                    k++;
+                }
+                cursor.moveToNext();
+                lista.add(strings);
+                i++;
+            }
+            cursor.close();
+        }
+        return (lista);
+    }
 
     public List<List<String>> buscar(String tabela,String [] campos,String selection,String [] argumento) {
         List<List<String>> lista = new ArrayList<>();
@@ -129,6 +159,7 @@ public class DBGeneric {
                     lista.add(strings);
                     i++;
                 }
+                cursor.close();
             }
 
         } catch (SQLException e) {
@@ -170,6 +201,7 @@ public class DBGeneric {
                     lista.add(strings);
                     i++;
                 }
+                cursor.close();
             }
 
         } catch (SQLException e) {

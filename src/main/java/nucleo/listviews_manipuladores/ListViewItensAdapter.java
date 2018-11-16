@@ -1,7 +1,7 @@
-package nucleo;
+package nucleo.listviews_manipuladores;
 
-import android.content.ContentValues;
 import android.content.Context;
+import android.graphics.Typeface;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
@@ -16,6 +16,9 @@ import com.ifmg.polardispendium_gastocalorico.R;
 import java.util.List;
 
 import database.DBGeneric;
+import nucleo.entidades_do_nucleo.AtividadesRealizadas;
+import nucleo.entidades_do_nucleo.GastoEnergetico;
+import nucleo.entidades_do_nucleo.Usuario;
 import objetos_auxiliares.FormatNum;
 import objetos_auxiliares.ManipuladorDataTempo;
 
@@ -47,6 +50,9 @@ public class ListViewItensAdapter extends ArrayAdapter<AtividadesRealizadas> {
         TextView tvGastoCalorico = (TextView) view.findViewById(R.id.tvGastoCalorico);
         ImageButton ibtnEditar = (ImageButton) view.findViewById(R.id.ibtnEditar);
         ImageButton ibtnApagar = (ImageButton) view.findViewById(R.id.ibtnApagar);
+
+        Typeface typeface = Typeface.createFromAsset(context.getAssets(),"font/century-gothic.ttf");
+       // tvAtividade.setTypeface(typeface);
 
         //busca as atividades no banco de dados pela idAtividade fornecida pela atividade
         //realizada para passar para o campo tvAtividade no list view

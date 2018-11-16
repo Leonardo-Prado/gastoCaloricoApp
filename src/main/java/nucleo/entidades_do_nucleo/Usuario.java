@@ -1,4 +1,4 @@
-package nucleo;
+package nucleo.entidades_do_nucleo;
 
 public class Usuario {
     public static int MASCULINO = 0;

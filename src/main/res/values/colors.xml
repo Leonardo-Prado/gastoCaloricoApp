@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <color name="colorPrimaryDark">#007973</color>
     <color name="colorPrimary">#18a6a4</color>
-    <color name="colorPrimaryDark">#86dddd</color>
-    <color name="colorAccent">#9cc2df</color>
-    <color name="colorGraficoBackground">#87034669</color>
-    <color name="pontosDoGrafico">#04edf5</color>
+    <color name="colorAccent">#a6181a</color>
+    <color name="colorGraficoBackground">#7ecbcb</color>
+    <color name="colorSecundaria">#d43332</color>
+    <color name="pontosDoGrafico">#c2292c</color>
+    <color name="black_overlay">#66000000</color>
 </resources>

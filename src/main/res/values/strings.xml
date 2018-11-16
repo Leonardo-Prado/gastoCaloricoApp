@@ -13,4 +13,14 @@
     <string name="permission_rationale">"Necessario permissão para acesso aos contatos."</string>
     <string name="title_activity_tela_principal">TelaPrincipal</string>
     <string name="tituloDialog">Nova atividade fisica realizada</string>
+    <string name="btn_confirmar">Confirmar</string>
+    <string name="ed_hint_hora_de_termino">Hora de Termino</string>
+    <string name="ed_hint_hora_de_inicio">Hora de Inicio</string>
+
+    <string name="title_activity_splash_screen">SplashScreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

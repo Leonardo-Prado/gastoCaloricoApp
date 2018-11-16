@@ -1,4 +1,4 @@
-package nucleo;
+package nucleo.entidades_do_nucleo;
 
 import java.util.List;
 

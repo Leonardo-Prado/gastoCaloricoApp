@@ -30,6 +30,7 @@ public class DBHelp extends SQLiteOpenHelper {
            sqLiteDatabase.execSQL("CREATE TABLE AtividadesRealizadas (_id INTEGER PRIMARY KEY AUTOINCREMENT, _idAtividade INTEGER NOT NULL, Data INTEGER NOT NULL, HoraInicio INTEGER NOT NULL, HoraFim INTEGER NOT NULL,_idUsuario INTEGER NOT NULL,FOREIGN KEY(_idAtividade) REFERENCES AtividadesFisicas(_id),FOREIGN KEY(_idUsuario) REFERENCES Usuarios(_id))");
            sqLiteDatabase.execSQL("CREATE TABLE Usuarios (_id INTEGER PRIMARY KEY AUTOINCREMENT,Nome TEXT NOT NULL,Idade INTEGER,Sexo INTEGER,MassaCorporal REAL NOT NULL)");
            sqLiteDatabase.execSQL("CREATE TABLE GastoEnergetico (_id INTEGER PRIMARY KEY AUTOINCREMENT,Data INTEGER NOT NULL,GastoCalorico REAL NOT NULL,_idUsuario INTEGER NOT NULL,FOREIGN KEY(_idUsuario) REFERENCES Usuarios(_id))");
+           sqLiteDatabase.execSQL("CREATE TABLE Peso (_id INTEGER PRIMARY KEY AUTOINCREMENT,Data INTEGER NOT NULL,Peso REAL NOT NULL,_idUsuario INTEGER NOT NULL,FOREIGN KEY(_idUsuario) REFERENCES Usuarios(_id))");
        }catch (SQLException e)
        {
            Log.e("Erro ao criar tabela",e.getMessage().toString());

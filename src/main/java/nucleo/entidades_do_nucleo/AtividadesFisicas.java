@@ -1,8 +1,6 @@
-package nucleo;
+package nucleo.entidades_do_nucleo;
 
-import database.DBGeneric;
-
-public class AtividadesFisicas extends Categoria{
+public class AtividadesFisicas extends Categoria {
     private int id;
     private float met;
     private String atividade;

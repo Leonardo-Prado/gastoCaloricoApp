@@ -1,8 +1,8 @@
-package nucleo;
+package nucleo.entidades_do_nucleo;
 
 import objetos_auxiliares.ManipuladorDataTempo;
 
-public class AtividadesRealizadas extends AtividadesFisicas{
+public class AtividadesRealizadas extends AtividadesFisicas {
     private int id;
     private int idAtividade;
     private long dia;

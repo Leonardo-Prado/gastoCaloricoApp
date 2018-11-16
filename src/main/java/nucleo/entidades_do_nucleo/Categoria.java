@@ -1,8 +1,4 @@
-package nucleo;
-
-import java.util.List;
-
-import database.DBGeneric;
+package nucleo.entidades_do_nucleo;
 
 public class Categoria {
     private int id;
