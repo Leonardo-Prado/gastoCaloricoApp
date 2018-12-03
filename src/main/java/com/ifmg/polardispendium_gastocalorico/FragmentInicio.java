@@ -1,29 +1,35 @@
 package com.ifmg.polardispendium_gastocalorico;
 
 import android.app.DatePickerDialog;
-import android.graphics.Bitmap;
-import android.graphics.Canvas;
+import android.content.res.Configuration;
 import android.os.Bundle;
+import android.os.Handler;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.Fragment;
 import android.text.InputType;
 import android.util.Log;
+import android.view.Display;
+import android.view.GestureDetector;
 import android.view.LayoutInflater;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.ViewTreeObserver;
 import android.view.WindowManager;
+import android.view.animation.TranslateAnimation;
+import android.widget.AbsListView;
 import android.widget.DatePicker;
 import android.widget.EditText;
-import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.ListView;
+import android.widget.Toast;
 
 import java.text.ParseException;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
+import java.util.TimerTask;
 
-import database.DBGeneric;
 import nucleo.entidades_do_nucleo.AtividadesRealizadas;
 import nucleo.listviews_manipuladores.AtualizadorLista;
 import nucleo.graficos.DesenharGraficoCaloriasDiarias;
@@ -33,15 +39,17 @@ import objetos_auxiliares.ManipuladorDataTempo;
 
 public class FragmentInicio extends Fragment {
 
-    private Canvas canvasGrafico;
-    private Bitmap bitmapGrafico;
     private EditText edData;
-    private ImageButton ibtnAdicionar;
     private ImageView imageViewGrafico;
-    private DBGeneric dbGeneric;
     private Usuario usuario;
-    private FloatingActionButton fabAdicionar;
     private WindowManager windowManager;
+    private View graficoContainer;
+    private boolean escondido = false;
+    private View layoutAddNovaAtiv;
+    private int listViewItemPosition;
+    private boolean minItens = false;
+    public FragmentInicio() {
+    }
 
     public static FragmentInicio newInstance(Usuario usuario,WindowManager windowManager) {
         FragmentInicio fragment = new FragmentInicio();
@@ -57,9 +65,63 @@ public class FragmentInicio extends Fragment {
         final View inflate = inflater.inflate(R.layout.fragment_inicio, container, false);
         try {
             dataTempo = new ManipuladorDataTempo(new Date());
-            edData = (EditText)inflate.findViewById(R.id.edData);
+            edData = inflate.findViewById(R.id.edData);
             final View graficoConteiner = inflate.findViewById(R.id.graficoContainer);
+            setGraficoContainer(graficoConteiner);
             edData.setText(dataTempo.getDataString());
+            ListView lvAtividadesDoDia = inflate.findViewById(R.id.lvListaAtividadesDoDia);
+            lvAtividadesDoDia.setSmoothScrollbarEnabled(true);
+            lvAtividadesDoDia.setOnScrollListener(new AbsListView.OnScrollListener() {
+                @Override
+                public void onScrollStateChanged(final AbsListView absListView, int i) {
+                    try{
+                        if(getActivity().getResources().getConfiguration().orientation==Configuration.ORIENTATION_PORTRAIT&&isMinItens()){
+                            final TranslateAnimation[] animation = new TranslateAnimation[1];
+                            if(i==SCROLL_STATE_TOUCH_SCROLL){
+                                animation[0] = new TranslateAnimation(0,0,0,-getGraficoContainer().getHeight());
+                                animation[0].setDuration(250);
+                                animation[0].setFillAfter(true);
+                                getGraficoContainer().startAnimation(animation[0]);
+                                getGraficoContainer().setVisibility(View.GONE);
+                                layoutAddNovaAtiv.setVisibility(View.GONE);
+                            }
+                            else  {
+                                final Handler handler = new Handler();
+                                final Runnable r = new Runnable()
+                                {
+                                    public void run()
+                                    {
+                                        if(!(getGraficoContainer().getVisibility()==View.VISIBLE)){
+                                            animation[0] = new TranslateAnimation(0,0,-getGraficoContainer().getHeight(),0);
+                                            animation[0].setDuration(250);
+                                            animation[0].setFillAfter(true);
+                                            getGraficoContainer().startAnimation(animation[0]);
+                                            absListView.smoothScrollToPosition(listViewItemPosition+1);
+                                            Toast.makeText(getContext(),"posicao"+listViewItemPosition,Toast.LENGTH_SHORT);
+                                            getGraficoContainer().setVisibility(View.VISIBLE);
+                                            layoutAddNovaAtiv.setVisibility(View.VISIBLE);
+                                        }
+                                    }
+                                };
+                                handler.postDelayed(r,10000);
+
+                            }
+                        }
+                    }catch (Exception e){
+                        Log.e("erro ao movimentar",e.getMessage());
+                    }
+                }
+
+                @Override
+                public void onScroll(AbsListView absListView, int i, int i1, int i2) {
+                    setListViewItemPosition(i+i1);
+                    if(i2>2)
+                        setMinItens(true);
+                    else
+                        setMinItens(false);
+                }
+            });
+            layoutAddNovaAtiv = inflate.findViewById(R.id.layoutAddNovaAtiv);
             edData.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(final View view) {
@@ -86,8 +148,8 @@ public class FragmentInicio extends Fragment {
                 }
             });
             //define variaveis
-            fabAdicionar =  inflate.findViewById(R.id.fabAdicionar);
-            imageViewGrafico =(ImageView) inflate.findViewById(R.id.ivGrafico);
+            FloatingActionButton fabAdicionar = inflate.findViewById(R.id.fabAdicionar);
+            imageViewGrafico = inflate.findViewById(R.id.ivGrafico);
             edData.setText(dataTempo.getDataString());//Passa a data atual para o edittext edData
             List<AtividadesRealizadas> atividadesRealizadas = TelaPrincipal.buscarAtividadesRealizadas(dataTempo.getDataInt(), getUsuario(),getContext()); //busca no banco de dados as atividades realizadas na data marcada e cria uma lista de atividades realizadas atraves do metodo
             if (atividadesRealizadas.size() > 0) {//Se existir atividades realizadas para a data passa as mesmas para o listview
@@ -124,19 +186,51 @@ public class FragmentInicio extends Fragment {
 
     }
 
-    public Usuario getUsuario() {
+    private Usuario getUsuario() {
         return usuario;
     }
 
-    public void setUsuario(Usuario usuario) {
+    private void setUsuario(Usuario usuario) {
         this.usuario = usuario;
     }
 
-    public WindowManager getWindowManager() {
+    private WindowManager getWindowManager() {
         return windowManager;
     }
 
-    public void setWindowManager(WindowManager windowManager) {
+    private void setWindowManager(WindowManager windowManager) {
         this.windowManager = windowManager;
+    }
+
+    public View getGraficoContainer() {
+        return graficoContainer;
+    }
+
+    private void setGraficoContainer(View graficoContainer) {
+        this.graficoContainer = graficoContainer;
+    }
+
+    public boolean isEscondido() {
+        return escondido;
+    }
+
+    public void setEscondido(boolean escondido) {
+        this.escondido = escondido;
+    }
+
+    public int getListViewItemPosition() {
+        return listViewItemPosition;
+    }
+
+    public void setListViewItemPosition(int listViewItemPosition) {
+        this.listViewItemPosition = listViewItemPosition;
+    }
+
+    public boolean isMinItens() {
+        return minItens;
+    }
+
+    public void setMinItens(boolean minItens) {
+        this.minItens = minItens;
     }
 }

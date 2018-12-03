@@ -15,28 +15,29 @@
         tools:ignore="MissingConstraints">
 
         <EditText
-            android:id="@+id/edNomeUsuario"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="5dp"
-            android:ems="10"
-            android:hint="...Nome"
-            android:inputType="textPersonName" />
-
-        <EditText
             android:id="@+id/edPeso"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
             android:ems="10"
-            android:hint="...Massa corporal (Kg)"
-            android:inputType="number" />
+            android:hint="Massa corporal (Kg)..."
+            android:inputType="number|numberDecimal" />
 
-        <Button
-            android:id="@+id/btnCriarUsuario"
+        <EditText
+            android:id="@+id/edAltura"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Criar Novo Usuario" />
+            android:layout_margin="5dp"
+            android:ems="10"
+            android:hint="Altura..."
+            android:inputType="number|numberDecimal" />
+
+        <Button
+            android:id="@+id/btnDadoDoUsuario"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Inserir Dados" />
     </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>

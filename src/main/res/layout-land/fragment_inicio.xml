@@ -18,12 +18,13 @@
             android:layout_height="match_parent"
             android:orientation="horizontal"
             tools:layout_editor_absoluteX="136dp"
-            tools:layout_editor_absoluteY="32dp">
+            tools:layout_editor_absoluteY="32dp"
+            android:baselineAligned="false">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
+                android:layout_weight="1.1"
                 android:orientation="vertical">
 
                 <RelativeLayout
@@ -31,7 +32,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginBottom="10dp"
-                    android:layout_weight="1">
+                    android:layout_weight="1.2">
 
                     <ImageView
                         android:id="@+id/ivGrafico"
@@ -46,7 +47,7 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="2"
+                    android:layout_weight="3"
                     android:orientation="horizontal">
 
                     <EditText
@@ -86,7 +87,7 @@
                 android:id="@+id/lvListaAtividadesDoDia"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_weight="1.2" />
+                android:layout_weight="1" />
 
         </LinearLayout>
 

@@ -211,4 +211,178 @@ public class DBGeneric {
         }
         return (lista);
     }
+
+    public List<List<Object>> buscarBlob(String tabela, String [] campos){
+        List<List<Object>> lista = new ArrayList<>();
+        Cursor cursor = db.query(tabela,campos,null,null,null,null,"_id ASC");
+
+        if (cursor.getCount()>0)
+        {
+            int fim = cursor.getCount();
+            int i = 0;
+            int j = cursor.getColumnCount();
+            cursor.moveToFirst();
+            while(i<fim)
+            {
+                List<Object> objects = new ArrayList<>();
+                int k = 0;
+                while(k<j)
+                {
+                    switch (cursor.getType(k)) {
+                        case 1:
+                            objects.add(cursor.getInt(k));
+                            break;
+                        case 2:
+                            objects.add(cursor.getFloat(k));
+                            break;
+                        case 3:
+                            objects.add(cursor.getString(k));
+                            break;
+                        case 4:
+                            objects.add(cursor.getBlob(k));
+                            break;
+                    }
+                    k++;
+                }
+                cursor.moveToNext();
+                lista.add(objects);
+                i++;
+            }
+            cursor.close();
+        }
+        return (lista);
+    }
+
+    public List<List<Object>> buscarBlob(String tabela,String [] campos,String ordenador){
+        List<List<Object>> lista = new ArrayList<>();
+        Cursor cursor = db.query(tabela,campos,null,null,null,null,ordenador);
+
+        if (cursor.getCount()>0)
+        {
+            int fim = cursor.getCount();
+            int i = 0;
+            int j = cursor.getColumnCount();
+            cursor.moveToFirst();
+            while(i<fim)
+            {
+                List<Object> objects = new ArrayList<>();
+                int k = 0;
+                while(k<j)
+                {
+                    switch (cursor.getType(k)) {
+                        case 1:
+                            objects.add(cursor.getInt(k));
+                            break;
+                        case 2:
+                            objects.add(cursor.getFloat(k));
+                            break;
+                        case 3:
+                            objects.add(cursor.getString(k));
+                            break;
+                        case 4:
+                            objects.add(cursor.getBlob(k));
+                            break;
+                    }
+                    k++;
+                }
+                cursor.moveToNext();
+                lista.add(objects);
+                i++;
+            }
+            cursor.close();
+        }
+        return (lista);
+    }
+
+    public List<List<Object>> buscarBlob(String tabela,String [] campos,String selection,String [] argumento) {
+        List<List<Object>> lista = new ArrayList<>();
+        try {
+            Cursor cursor = db.query(tabela, campos, selection, argumento, null, null, "_id ASC");
+
+            if (cursor.getCount() > 0) {
+                int fim = cursor.getCount();
+                int i = 0;
+                int j = cursor.getColumnCount();
+                cursor.moveToFirst();
+                while (i < fim) {
+                    List<Object> objects = new ArrayList<>();
+                    int k = 0;
+                    while (k < j) {
+                        switch (cursor.getType(k)) {
+                            case 1:
+                                objects.add(cursor.getInt(k));
+                                break;
+                            case 2:
+                                objects.add(cursor.getFloat(k));
+                                break;
+                            case 3:
+                                objects.add(cursor.getString(k));
+                                break;
+                            case 4:
+                                objects.add(cursor.getBlob(k));
+                                break;
+                        }
+                        k++;
+                    }
+                    cursor.moveToNext();
+                    lista.add(objects);
+                    i++;
+                }
+                cursor.close();
+            }
+
+        } catch (SQLException e) {
+            Log.e("buscar db", "Erro ao buscar no banco");
+        } catch (Exception e) {
+            Log.e("buscar db", "Erro ao buscar no banco");
+        }
+        return (lista);
+    }
+
+    public List<List<Object>> buscarBlob(String tabela,String [] campos,String selection,String [] argumento,String orderBy) {
+        List<List<Object>> lista = new ArrayList<>();
+        try {
+            Cursor cursor = db.query(tabela, campos, selection, argumento, null, null, orderBy);
+
+            if (cursor.getCount() > 0) {
+                int fim = cursor.getCount();
+                int i = 0;
+                int j = cursor.getColumnCount();
+                cursor.moveToFirst();
+                while (i < fim) {
+                    List<Object> objects = new ArrayList<>();
+                    int k = 0;
+                    while (k < j) {
+                        switch (cursor.getType(k)) {
+                            case 1:
+                                objects.add(cursor.getInt(k));
+                                break;
+                            case 2:
+                                objects.add(cursor.getFloat(k));
+                                break;
+                            case 3:
+                                objects.add(cursor.getString(k));
+                                break;
+                            case 4:
+                                objects.add(cursor.getBlob(k));
+                                break;
+                        }
+                        k++;
+                    }
+                    cursor.moveToNext();
+                    lista.add(objects);
+                    i++;
+                }
+                cursor.close();
+            }
+
+        } catch (SQLException e) {
+            Log.e("buscar db", "Erro ao buscar no banco");
+        } catch (Exception e) {
+            Log.e("buscar db", "Erro ao buscar no banco");
+        }
+        return (lista);
+    }
+
+
 }

@@ -2,8 +2,14 @@ package objetos_auxiliares;
 
 import android.content.Context;
 import android.content.DialogInterface;
+import android.graphics.Color;
+import android.graphics.Typeface;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AlertDialog;
+import android.view.Gravity;
+import android.view.View;
+import android.widget.LinearLayout;
+import android.widget.TextView;
 
 public class DialogConstrutor extends AlertDialog.Builder {
     private String titulo;
@@ -19,6 +25,7 @@ public class DialogConstrutor extends AlertDialog.Builder {
         this.setPositiveButton();
         this.setDialog(this.create());
         getDialog().show();
+        menssagemCustomizada();
 
 
     }
@@ -29,12 +36,24 @@ public class DialogConstrutor extends AlertDialog.Builder {
         setMenssagem(menssagem);
         setDialog(this.create());
         getDialog().show();
+        menssagemCustomizada();
 
     }
 
     public DialogConstrutor(@NonNull Context context) {
         super(context);
+        this.tituloCustomizado("Alerta");
+        this.setMenssagem("Menssagem de alerta");
         setDialog(this.create());
+    }
+    public DialogConstrutor(@NonNull Context context, View view,String titulo,String menssagem) {
+        super(context);
+        this.setView(view);
+        this.tituloCustomizado(titulo);
+        this.setMenssagem(menssagem);
+        setDialog(this.create());
+        getDialog().show();
+        menssagemCustomizada();
     }
 
     public String getTitulo() {
@@ -42,7 +61,7 @@ public class DialogConstrutor extends AlertDialog.Builder {
     }
 
     public void setTitulo(String titulo) {
-        setTitle(titulo);
+        tituloCustomizado(titulo);
         this.titulo = titulo;
     }
 
@@ -70,6 +89,29 @@ public class DialogConstrutor extends AlertDialog.Builder {
     public void setDialog(AlertDialog dialog) {
         this.dialog = dialog;
     }
+    public void fechar(){
+        getDialog().dismiss();
+    }
+    public void tituloCustomizado(String titulo){
+        TextView textView = new TextView(getContext());
+        textView.setText(titulo);
+        textView.setTextSize(1,22);
+        textView.setLayoutParams(new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT,LinearLayout.LayoutParams.WRAP_CONTENT));
+        textView.setGravity(Gravity.CENTER);
+        textView.setTextColor(Color.BLACK);
+        final Typeface typeface = Typeface.createFromAsset(getContext().getAssets(),"font/century-gothic.ttf");
+        textView.setTypeface(typeface);
+        setCustomTitle(textView);
+    }
+    public void menssagemCustomizada(){
+        TextView textView = this.dialog.getWindow().findViewById(android.R.id.message);
+        textView.setTextSize(1,14);
+        textView.setLayoutParams(new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT,LinearLayout.LayoutParams.WRAP_CONTENT));
+        textView.setGravity(Gravity.LEFT);
+        textView.setTextColor(Color.DKGRAY);
+        final Typeface typeface = Typeface.createFromAsset(getContext().getAssets(),"font/century-gothic.ttf");
+        textView.setTypeface(typeface);
+    }
 
     private void setPositiveButton() {
         super.setPositiveButton(getPositiveButtonTexto(), new DialogInterface.OnClickListener() {
@@ -79,4 +121,12 @@ public class DialogConstrutor extends AlertDialog.Builder {
             }
         });
     }
+
+    private void setPositiveButton(String textoBotao, DialogInterface.OnClickListener onClickListener) {
+        super.setPositiveButton(textoBotao,onClickListener);
+    }
+    private void setNegativeButton(String textoBotao, DialogInterface.OnClickListener onClickListener) {
+        super.setNegativeButton(textoBotao,onClickListener);
+    }
+
 }

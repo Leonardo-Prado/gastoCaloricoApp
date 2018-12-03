@@ -63,7 +63,7 @@ public class AtualizadorLista {
                 getDbGeneric().inserir(c, "GastoEnergetico");
             }
             //cria uma nova instancia da listview para as atividades realizadas na data
-            ListView listView = (ListView) view.findViewById(R.id.lvListaAtividadesDoDia);//cria o listview
+            ListView listView = view.findViewById(R.id.lvListaAtividadesDoDia);//cria o listview
             ArrayAdapter listViewItensAdapter = new ListViewItensAdapter(getContext(), atividadesRealizadas, usuario);//cria o listview adapter para as atividades
             listView.setAdapter(listViewItensAdapter);//passa o adapter para as listviews
         } catch (Exception e) {

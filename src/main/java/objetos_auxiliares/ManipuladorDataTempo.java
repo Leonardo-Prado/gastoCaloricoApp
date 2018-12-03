@@ -4,7 +4,6 @@ import android.util.Log;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.util.Calendar;
 import java.util.Date;
 
 public class ManipuladorDataTempo {
@@ -57,7 +56,7 @@ public class ManipuladorDataTempo {
         this.dataString = dataString;
     }
 
-    public String getTempoString() {
+    private String getTempoString() {
         return tempoString;
     }
 
@@ -67,8 +66,7 @@ public class ManipuladorDataTempo {
     public static String dataIntToDataString(Long dataInt) {
         SimpleDateFormat formataData = new SimpleDateFormat("dd-MM-yyyy");
         Date date = new Date(dataInt);
-        String d = formataData.format(date);
-        return d;
+        return formataData.format(date);
     }
     public static String dataIntToDataString(Long dataInt,String pattern) {
         SimpleDateFormat formataData = new SimpleDateFormat(pattern);
@@ -89,7 +87,7 @@ public class ManipuladorDataTempo {
     }
     public static Long tempoStringToTempoInt(String dataString) throws ParseException {
         SimpleDateFormat formataData = new SimpleDateFormat("HH:mm");
-        Long tempo = Long.valueOf(0);
+        Long tempo = 0L;
         try {
             formataData.parse(dataString);
             tempo = formataData.getCalendar().getTimeInMillis();

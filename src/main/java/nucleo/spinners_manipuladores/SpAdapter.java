@@ -8,12 +8,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.LinearLayout;
-import android.widget.SpinnerAdapter;
 import android.widget.TextView;
 
-import com.ifmg.polardispendium_gastocalorico.R;
-
-import java.util.ArrayList;
 import java.util.List;
 
 public class SpAdapter extends ArrayAdapter<String> {

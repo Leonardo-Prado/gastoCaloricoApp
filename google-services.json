@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "453805640003",
+    "firebase_url": "https://polardispendium-gastocalorico.firebaseio.com",
+    "project_id": "polardispendium-gastocalorico",
+    "storage_bucket": "polardispendium-gastocalorico.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:453805640003:android:cc009582fea7cd8b",
+        "android_client_info": {
+          "package_name": "com.ifmg.polardispendium_gastocalorico"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "453805640003-i9da0uertrf7cke01hmnbs7g2ui4n62q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBr3iRyUFlwXH795k13QmEefbeWNpHIuA4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

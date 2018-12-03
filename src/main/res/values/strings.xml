@@ -1,9 +1,9 @@
 <resources>
     <string name="app_name">Polar dispendium - Gasto calorico</string>
 
-    <!-- Strings related to login -->
+    <!-- Strings related to dialog_dados_do_usuario -->
     <string name="prompt_email">Email</string>
-    <string name="prompt_password">Senha (optional)</string>
+    <string name="prompt_password">Senha</string>
     <string name="action_sign_in">Entre ou Registre-se</string>
     <string name="action_sign_in_short">Entre</string>
     <string name="error_invalid_email">Este email é invalido</string>
@@ -18,9 +18,59 @@
     <string name="ed_hint_hora_de_inicio">Hora de Inicio</string>
 
     <string name="title_activity_splash_screen">SplashScreenActivity</string>
-    <string name="dummy_button">Dummy Button</string>
-    <string name="dummy_content">DUMMY\nCONTENT</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="tv_peso_atual">Peso atual:</string>
+    <string name="tv_altura">Altura:</string>
+    <string name="tv_imc">IMC:</string>
+    <string name="btn_atualizar_text">Atualizar</string>
+    <string name="tv_informacao_text">Informações do usuario:</string>
+    <string name="iv_ic_perfil_descricao">icone de perfil</string>
+
+    <!--Strings para as dialogs geradas em tempo de execução-->
+    <!--Tela de Login-->
+    <string name="dialog_positive_button_texto_padrao">OK</string>
+
+    <string name="login_activ_dialog_senha_errada_titulo">Senha Errada</string>
+    <string name="login_activ_dialog_senha_errada_menssagem">A senha que você digitou não corresponde à senha do usuario</string>
+
+    <string name="login_activ_dialog_usuario_inexistente_titulo">Usuario Inexistente</string>
+    <string name="login_activ_dialog_usuario_inexistente_menssagem">O email inserido não corresponde a um usuario registrado, gostaria de se registrar?</string>
+
+    <string name="login_activ_dialog_registrar_menssagem_sucesso_titulo">Registrado com sucesso!</string>
+    <string name="login_activ_dialog_registrar_menssagem_sucesso_menssagem">Parabens! Você está registrado para usar o Polar Dispendium.</string>
+
+    <string name="login_activ_dialog_registrar_menssagem_falha_titulo">Falha ao criar registro!</string>
+    <string name="login_activ_dialog_registrar_menssagem_falha_menssagem">Falha ao registrar, tente novamente.</string>
+
+    <string name="login_activ_dialog_registrar_menssagem_senha_diferente_titulo">Senha diferente!</string>
+    <string name="login_activ_dialog_registrar_menssagem_senha_diferente_menssagem">As senhas devem ser iguais</string>
+
+    <string name="login_activ_dialog_senha_ou_email_invalidos_titulo">Informações invalidas!</string>
+    <string name="login_activ_dialog_senha_ou_email_invalidos_menssagem">A senha ou email informados não são validos, um email valido deve ter o caracter @ e .com com pelo menos 6 digitos. A senha deve ter no minimo 6 digitos. </string>
+
+    <!--Tela principal-->
+    <string name="tela_principal_dialog_dados_do_usuario_titulo">Quase lá!</string>
+    <string name="tela_principal_dialog_dados_do_usuario_menssagem">Para a correta utilização do aplicativo precisamos saber o seu peso e altura</string>
+
+    <string name="tela_principal_dialog_campos_necessarios_titulo">Campos necessarios!</string>
+    <string name="tela_principal_dialog_campos_necessarios_menssagem">Todos os campos devem ser preenchidos</string>
+
+    <string name="tela_principal_dialog_sobre_titulo">Sobre o Polar Dispendium.</string>
+    <string name="tela_principal_dialog_sobre_menssagem">Aplicativo desenvolvido pelos alunos do IFMG - Campus Itabirito com o objetivo de auxiliar a missão brasileira na Antartida a manter a saúde atraves do controle do gasto calorico</string>
+
+    <string name="tela_principal_dialog_logout_titulo">Desconectar!</string>
+    <string name="tela_principal_dialog_logout_menssagem">Tem certeza de que quer desconectar?</string>
+    <string name="tela_principal_dialog_logout_positivebutton">Desconectar</string>
+    <string name="tela_principal_dialog_logout_negativebutton">Cancelar</string>
+
+    <string name="tela_principal_menu_navegacao_inferior_item_home">Iniciar</string>
+    <string name="tela_principal_menu_navegacao_inferior_item_peso">Meu Progresso</string>
+    <string name="tela_principal_menu_navegacao_inferior_item_informacoes">Minhas Informações</string>
+
+    <!--Desenhar grafico de gasto calorico-->
+    <string name="grafico_gasto_calorico_titulo">gasto calorico diario</string>
+
+    <!--Desenhar grafico de gasto calorico-->
+    <string name="grafico_peso_titulo">Meu peso</string>
+
 </resources>

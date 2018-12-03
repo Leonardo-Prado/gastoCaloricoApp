@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
     tools:context=".FragmentInicio">
+
     <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
@@ -25,8 +29,8 @@
                 android:id="@+id/graficoContainer"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginBottom="10dp"
-                android:layout_weight="1.35">
+                android:layout_weight="1.5"
+                android:animateLayoutChanges="true">
 
                 <ImageView
                     android:id="@+id/ivGrafico"
@@ -37,6 +41,7 @@
             </RelativeLayout>
 
             <LinearLayout
+                android:id="@+id/layoutAddNovaAtiv"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1.85"
@@ -47,7 +52,7 @@
                     android:id="@+id/edData"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_margin="5dp"
+                    android:layout_marginTop="10dp"
                     android:layout_weight="1"
                     android:ems="10"
                     android:inputType="date" />
@@ -55,6 +60,7 @@
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
                     android:layout_weight="3">
 
                     <android.support.design.widget.FloatingActionButton

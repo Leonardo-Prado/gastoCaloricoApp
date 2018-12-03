@@ -3267,109 +3267,109 @@
 	<Atividade>
 		<Id>19010</Id>
 		<MET>6.0</MET>
-		<Categoria>Atividades de Inverno</Categoria>
+		<Categoria>Atividades De Inverno</Categoria>
 		<AtividadeEspecifica>Remover o gelo da casa (cobrir bruacos)</AtividadeEspecifica>
 	</Atividade>
 	<Atividade>
 		<Id>19020</Id>
 		<MET>5.5</MET>
-		<Categoria>Atividades de Inverno</Categoria>
+		<Categoria>Atividades De Inverno</Categoria>
 		<AtividadeEspecifica>Patinar no gelo  a 14.5 Km/h</AtividadeEspecifica>
 	</Atividade>
 	<Atividade>
 		<Id>19030</Id>
 		<MET>7.0</MET>
-		<Categoria>Atividades de Inverno</Categoria>
+		<Categoria>Atividades De Inverno</Categoria>
 		<AtividadeEspecifica>Patinar no gelo, geral (Cód. 360 de Taylor)</AtividadeEspecifica>
 	</Atividade>
 	<Atividade>
 		<Id>19040</Id>
 		<MET>9.0</MET>
-		<Categoria>Atividades de Inverno</Categoria>
+		<Categoria>Atividades De Inverno</Categoria>
 		<AtividadeEspecifica>Patinar no gelo, em que a velocidade rápida (&gt; de 14.5 Km/h)</AtividadeEspecifica>
 	</Atividade>
 	<Atividade>
 		<Id>19050</Id>
 		<MET>15.0</MET>
-		<Categoria>Atividades de Inverno</Categoria>
+		<Categoria>Atividades De Inverno</Categoria>
 		<AtividadeEspecifica>Patinação , veloz, competitiva</AtividadeEspecifica>
 	</Atividade>
 	<Atividade>
 		<Id>19060</Id>
 		<MET>7.0</MET>
-		<Categoria>Atividades de Inverno</Categoria>
+		<Categoria>Atividades De Inverno</Categoria>
 		<AtividadeEspecifica>Saltar com esquis e subir montanhas carregando o esquis</AtividadeEspecifica>
 	</Atividade>
 	<Atividade>
 		<Id>19075</Id>
 		<MET>7.0</MET>
-		<Categoria>Atividades de Inverno</Categoria>
+		<Categoria>Atividades De Inverno</Categoria>
 		<AtividadeEspecifica>Esquiar, geral</AtividadeEspecifica>
 	</Atividade>
 	<Atividade>
 		<Id>19080</Id>
 		<MET>7.0</MET>
-		<Categoria>Atividades de Inverno</Categoria>
+		<Categoria>Atividades De Inverno</Categoria>
 		<AtividadeEspecifica>Esquiar, esqui de fundo cross-country), velocdade de 4.0 Km/h devagar ou com esforço leve, andar esquiando</AtividadeEspecifica>
 	</Atividade>
 	<Atividade>
 		<Id>19090</Id>
 		<MET>8.0</MET>
-		<Categoria>Atividades de Inverno</Categoria>
+		<Categoria>Atividades De Inverno</Categoria>
 		<AtividadeEspecifica>Esquiar, esqui de fundo cross-country), velocdade entre 6.5 e 8.0 Km/h velocidade e esforço moderado, geral</AtividadeEspecifica>
 	</Atividade>
 	<Atividade>
 		<Id>19100</Id>
 		<MET>9.0</MET>
-		<Categoria>Atividades de Inverno</Categoria>
+		<Categoria>Atividades De Inverno</Categoria>
 		<AtividadeEspecifica>Esquiar, esqui de fundo cross-country), velocdade entre 8.0 e 13.0 Km/h, com velocidade rápida, esforço vigoroso</AtividadeEspecifica>
 	</Atividade>
 	<Atividade>
 		<Id>19110</Id>
 		<MET>14.0</MET>
-		<Categoria>Atividades de Inverno</Categoria>
+		<Categoria>Atividades De Inverno</Categoria>
 		<AtividadeEspecifica>Esquiar, esqui de fundo cross-country), velocdade &gt; 13.0 Km/h, velocidade rápida, esforço vigoroso</AtividadeEspecifica>
 	</Atividade>
 	<Atividade>
 		<Id>19130</Id>
 		<MET>16.5</MET>
-		<Categoria>Atividades de Inverno</Categoria>
+		<Categoria>Atividades De Inverno</Categoria>
 		<AtividadeEspecifica>Esquiar, esqui de fundo cross-country), em neve pesada, subindo encostas, esforço máximo, montanhismo de neve</AtividadeEspecifica>
 	</Atividade>
 	<Atividade>
 		<Id>19150</Id>
 		<MET>5.0</MET>
-		<Categoria>Atividades de Inverno</Categoria>
+		<Categoria>Atividades De Inverno</Categoria>
 		<AtividadeEspecifica>Esquiar, descendo encosta, esforço leve</AtividadeEspecifica>
 	</Atividade>
 	<Atividade>
 		<Id>19160</Id>
 		<MET>6.0</MET>
-		<Categoria>Atividades de Inverno</Categoria>
+		<Categoria>Atividades De Inverno</Categoria>
 		<AtividadeEspecifica>Esquiar, descendo encosta, esforço moderado, geral</AtividadeEspecifica>
 	</Atividade>
 	<Atividade>
 		<Id>19170</Id>
 		<MET>8.0</MET>
-		<Categoria>Atividades de Inverno</Categoria>
+		<Categoria>Atividades De Inverno</Categoria>
 		<AtividadeEspecifica>Esquiar, descendo encosta em velocidade, esforço vigoroso</AtividadeEspecifica>
 	</Atividade>
 	<Atividade>
 		<Id>19180</Id>
 		<MET>7.0</MET>
-		<Categoria>Atividades de Inverno</Categoria>
+		<Categoria>Atividades De Inverno</Categoria>
 		<AtividadeEspecifica>Sledding (plataforma onde corredores se movem rapidamente no gelo), descer de tobogã no gelo, bobsledding (plataforma com freio e motor e com dois corredores), andar de trenó (luge) (Cód. 370 de Taylor)</AtividadeEspecifica>
 	</Atividade>
 	<Atividade>
 		<Id>19190</Id>
 		<MET>8.0</MET>
-		<Categoria>Atividades de Inverno</Categoria>
+		<Categoria>Atividades De Inverno</Categoria>
 		<AtividadeEspecifica>Snow shoeing (andar no gelo com botas especiais, sem afundar no mesmo)</AtividadeEspecifica>
 	</Atividade>
 	<Atividade>
 		<Id>19200</Id>
 		<MET>3.5</MET>
-		<Categoria>Atividades de Inverno</Categoria>
+		<Categoria>Atividades De Inverno</Categoria>
 		<AtividadeEspecifica>Snowmobiling (conduzir veículo motorizado, adaptado para deslocar-se na superfície da neve)</AtividadeEspecifica>
 	</Atividade>
 	<Atividade>

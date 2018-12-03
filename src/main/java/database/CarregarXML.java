@@ -2,7 +2,6 @@ package database;
 
 import android.content.Context;
 import android.content.res.AssetManager;
-import android.util.Log;
 
 import org.w3c.dom.Document;
 import org.w3c.dom.Node;

@@ -3,8 +3,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="com.ifmg.test.TelaPrincipal">
     <item
-        android:id="@+id/action_settings"
+        android:id="@+id/imSobre"
         android:orderInCategory="100"
         android:title="Sobre"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/imSair"
+        android:orderInCategory="200"
+        android:title="Sair"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/imLogOut"
+        android:orderInCategory="150"
+        android:title="Logout"
         app:showAsAction="never" />
 </menu>

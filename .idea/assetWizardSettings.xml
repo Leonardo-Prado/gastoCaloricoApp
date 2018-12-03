@@ -35,8 +35,8 @@
                                   <option name="values">
                                     <map>
                                       <entry key="assetType" value="IMAGE" />
-                                      <entry key="imageAsset" value="C:\Users\xleos\Desktop\Projeto Gasto Energetico\Imagens\Icones\ic_atualizar.png" />
-                                      <entry key="outputName" value="ic_refresh" />
+                                      <entry key="imageAsset" value="C:\Users\xleos\Desktop\Projeto Gasto Energetico\Imagens\Icones\Ícones\transportes.png" />
+                                      <entry key="outputName" value="ic_transportes" />
                                     </map>
                                   </option>
                                 </PersistentState>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="imagemListCategorias"  >
+        <item >@drawable/ic_atividades_aquaticas</item>
+        <item >@drawable/ic_atividades_inverno </item>
+        <item >@drawable/ic_atividades_domesticas</item>
+        <item >@drawable/ic_atividades_ocupacionais</item>
+        <item >@drawable/ic_atividades_religiosas</item>
+        <item >@drawable/ic_atividades_sexuais</item>
+        <item >@drawable/ic_atividades_voluntarias</item>
+        <item >@drawable/ic_caminhar</item>
+        <item >@drawable/ic_caca_e_pesca</item>
+        <item >@drawable/ic_ciclismo</item>
+        <item >@drawable/ic_correr</item>
+        <item >@drawable/ic_cuidados_pessoais</item>
+        <item >@drawable/ic_danca</item>
+        <item >@drawable/ic_esportes</item>
+        <item >@drawable/ic_exercicio_condicionamento</item>
+        <item >@drawable/ic_gramado_e_jardim</item>
+        <item >@drawable/ic_inatividade</item>
+        <item >@drawable/ic_miscelanea</item>
+        <item >@drawable/ic_reparos_domesticos</item>
+        <item >@drawable/ic_tocar_instrumentos</item>
+        <item >@drawable/ic_transportes</item>
+
+
+
+    </array>
+
+</resources>

@@ -17,5 +17,11 @@
         android:id="@+id/menu_item_peso">
 
     </item>
+        <item
+            android:title="Eu"
+            android:icon="@drawable/ic_perfil"
+            android:id="@+id/menu_item_eu">
+
+        </item>
     </group>
 </menu>
