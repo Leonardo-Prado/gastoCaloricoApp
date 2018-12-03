@@ -68,9 +68,73 @@
     <string name="tela_principal_menu_navegacao_inferior_item_informacoes">Minhas Informações</string>
 
     <!--Desenhar grafico de gasto calorico-->
-    <string name="grafico_gasto_calorico_titulo">gasto calorico diario</string>
+    <string name="grafico_gasto_calorico_titulo">Gasto calorico diario</string>
 
     <!--Desenhar grafico de gasto calorico-->
     <string name="grafico_peso_titulo">Meu peso</string>
+
+    <!--Fragment inicio-->
+    <string name="fragment_inicio_dialog_datepicker_titulo">Escolha o dia</string>
+
+    <!--Fragment informacoes usuarios-->
+    <string name="fragment_informacoes_usuarios_tvpeso_unidade">Kg</string>
+    <string name="fragment_informacoes_usuarios_tvaltura_unidade">m</string>
+    <string name="fragment_informacoes_usuarios_tvgastocaloricomedio_unidade">por dia</string>
+    <string name="fragment_informacoes_usuarios_tvimc_unidade">kg/m\u2072</string>
+
+    <string name="fragment_informacoes_usuarios_dialog_editar_altura_edatualizarvalor_hint">Atualizar altura...</string>
+    <string name="fragment_informacoes_usuarios_dialog_editar_altura_titulo">Altere a altura</string>
+    <string name="fragment_informacoes_usuarios_dialog_editar_altura_menssagem">Modificar valor da altura</string>
+
+    <string name="fragment_informacoes_usuarios_dialog_editar_peso_edatualizarvalor_hint">Atualizar massa corporal...</string>
+    <string name="fragment_informacoes_usuarios_dialog_editar_peso_titulo">Altere o peso</string>
+    <string name="fragment_informacoes_usuarios_dialog_editar_peso_menssagem">Modificar valor do peso</string>
+
+    <!--Dialog Nova Atividade-->
+    <string name="dialog_nova_atividade_autocomplete_item_invalido_dialog_titulo">Item selecionado invalido</string>
+    <string name="dialog_nova_atividade_autocomplete_item_invalido_dialog_menssagem">Item selecionado invalido</string>
+
+    <string name="dialog_nova_atividade_btnconfirmar_valores_inadequados_dialog_titulo">Valores inadequados</string>
+    <string name="dialog_nova_atividade_btnconfirmar_valores_inadequados_dialog_menssagem">O tempo inicial deve ser menor que a tempo final</string>
+
+    <string name="dialog_nova_atividade_btnconfirmar_campos_necessarios_vasios_dialog_titulo">Campos necessarios vazios</string>
+    <string name="dialog_nova_atividade_btnconfirmar_campos_necessarios_vasios_dialog_menssagem">Os campos hora inicial e final devem ser preenchido</string>
+
+    <string name="dialog_nova_atividade_edhorainicio_titulo">Inicio</string>
+    <string name="dialog_nova_atividade_edhorafim_titulo">Fim</string>
+
+    <!--layout dialog dados do usuario-->
+    <string name="dialog_dados_usuarios_edpeso_hint">Massa corporal (Kg)...</string>
+    <string name="dialog_dados_usuario_edaltura_hint">Altura...</string>
+    <string name="dialog_dados_usuario_btndadosdousuario_texto">Inserir Dados</string>
+
+    <!--layout dialog nova atividade-->
+    <string name="dialog_nova_atividade_acatividade_hint">Digite a atividade ou procure nas caixas abaixo...</string>
+
+    <!--layout dialog registrar usuario-->
+    <string name="dialog_registrar_usuario_ednomeregistrar_hint">Nome de usuario</string>
+    <string name="dialog_registrar_usuario_edrepetirsenha_hint">Repita a senha</string>
+    <string name="dialog_registrar_usuario_btncancelarregistro_texto">Cancelar</string>
+    <string name="dialog_registrar_usuario_btnconfirmarregistro_texto">Confirmar</string>
+
+    <!--layout dialog usuario inexistente-->
+    <string name="dialog_usuario_inexistente_btnrepetir_texto">Repitir</string>
+    <string name="dialog_usuario_inexistente_btnregistrar_texto">Registrar</string>
+
+    <!--layout fragment informaçoes do usuario-->
+    <string name="fragment_informacoes_usuario_tvpesoinicial_texto">Peso Inicial:</string>
+    <string name="fragment_informacoes_usuario_tvmediagastoscalorias_texto">Gasto medio de calorias:</string>
+
+    <!--layout fragment peso-->
+    <string name="fragment_peso_tvprogresso_texto">Progresso</string>
+    <string name="fragmento_peso_tvatualisarpeso_texto">Atualizar seu peso atual:</string>
+    <string name="fragment_peso_edmeupeso_hint">Seu peso atual...</string>
+    <!--itens de menu-->
+    <string name="menu_bottom_menu_item_inicio">Inicio</string>
+    <string name="menu_bottom_menu_item_peso">Peso</string>
+    <string name="menu_bottom_menu_item_eu">Eu</string>
+    <string name="menu_item_sobre">Sobre</string>
+    <string name="menu_item_sair">Sair</string>
+    <string name="menu_item_desconectar">Logout</string>
 
 </resources>
