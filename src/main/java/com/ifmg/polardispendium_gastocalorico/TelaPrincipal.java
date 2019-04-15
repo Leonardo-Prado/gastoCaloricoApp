@@ -6,8 +6,7 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.res.Resources;
-import android.graphics.Bitmap;
-import android.graphics.Canvas;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
@@ -21,12 +20,11 @@ import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.Window;
 import android.view.WindowManager;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ImageButton;
-import android.widget.ImageView;
 
 
 import java.util.ArrayList;
@@ -35,6 +33,7 @@ import java.util.List;
 
 import database.DBGeneric;
 import nucleo.entidades_do_nucleo.AtividadesRealizadas;
+import nucleo.entidades_do_nucleo.UserPreferences;
 import objetos_auxiliares.DialogConstrutor;
 import objetos_auxiliares.FontsOverride;
 import objetos_auxiliares.ManipuladorDataTempo;
@@ -48,11 +47,11 @@ public class TelaPrincipal extends AppCompatActivity implements BottomNavigation
     private boolean back = false;
     FloatingActionButton fabAdicionar;
     private WindowManager windowManager;
+    FragmentSobre fragmentSobre;
     Resources res;
+
     //TODO: criar area clicavel no canvas para selecionar data.
-    //TODO: Criar collapse expand no canvas/imageview para esconder/mostrar
     //TODO: Criar opção de duplicar atividade
-    //TODO: Adicionar icones para categorias
     //TODO: Criar grafico com acumulados semanais de calorias
     //TODO: Criar modo de acompanhamento de atividades fisicas
     //TODO: Criar modo de programação de atividades.
@@ -61,16 +60,19 @@ public class TelaPrincipal extends AppCompatActivity implements BottomNavigation
     protected void onCreate(final Bundle savedInstanceState) {
         try {
             super.onCreate(savedInstanceState);
-            //
+            setContentView(R.layout.activity_tela_principal);
+            //define fonts do projeto
             FontsOverride.setDefaultFont(this, "DEFAULT", "font/century-gothic.ttf");
             FontsOverride.setDefaultFont(this, "MONOSPACE", "font/century-gothic.ttf");
             FontsOverride.setDefaultFont(this, "SERIF", "font/century-gothic.ttf");
             FontsOverride.setDefaultFont(this, "SANS_SERIF", "font/century-gothic.ttf");
-            setContentView(R.layout.activity_tela_principal);
             Toolbar toolbar = findViewById(R.id.toolbar);
             setSupportActionBar(toolbar);
+
+            //cria a barra de navegação inferior
             BottomNavigationView bnvMenuInferior = findViewById(R.id.bnvMenuInferior);
             bnvMenuInferior.setOnNavigationItemSelectedListener(this);
+
             //inicializa variaveis
             windowManager = getWindowManager();
             res = this.getResources();
@@ -102,9 +104,13 @@ public class TelaPrincipal extends AppCompatActivity implements BottomNavigation
                                 usuario.setAltura(edAltura.getText().toString());
                                 usuario.setNome(listUsuarios.get(0).get(1));
                                 usuario.setId(Integer.parseInt(listUsuarios.get(0).get(0)));
+                                usuario.setPesoMaximo(usuario.getMassaCorporal());
+                                usuario.setPesoMinimo(usuario.getMassaCorporal());
                                 ContentValues values = new ContentValues();
                                 values.put("MassaCorporal",usuario.getMassaCorporal());
                                 values.put("Altura",usuario.getAltura());
+                                values.put("PesoMinimo",usuario.getPesoMinimo());
+                                values.put("PesoMaximo",usuario.getPesoMaximo());
                                 dbGeneric.atualizar("Usuarios",values,"_id = ?",new String[]{listUsuarios.get(0).get(0)});
                                 long data = dataTempo.getDataInt();
                                 values = new ContentValues();
@@ -114,6 +120,7 @@ public class TelaPrincipal extends AppCompatActivity implements BottomNavigation
                                 values.put("Inicial",1);
                                 dbGeneric.inserir(values,"Peso");
                                 dialogDadosUsuario.fechar();
+                                recreate();
                             }else{
                                 new DialogConstrutor(view.getContext(),res.getString(R.string.tela_principal_dialog_campos_necessarios_titulo),res.getString(R.string.tela_principal_dialog_campos_necessarios_menssagem),res.getString(R.string.dialog_positive_button_texto_padrao));
                             }
@@ -126,8 +133,9 @@ public class TelaPrincipal extends AppCompatActivity implements BottomNavigation
                     usuario.setMassaCorporal(Double.parseDouble(listUsuarios.get(0).get(1)));
                     usuario.setNome(listUsuarios.get(0).get(2));
                     usuario.setAltura(Double.parseDouble(listUsuarios.get(0).get(3)));
+                    UserPreferences userPreferences = new UserPreferences(this,usuario);
                 }
-                Fragment fragmentInicio = FragmentInicio.newInstance(getUsuario(),windowManager);
+                Fragment fragmentInicio = FragmentInicio.newInstance(usuario,windowManager);
                 openFragment(fragmentInicio);
             }
             //pega as falhas
@@ -196,11 +204,43 @@ public class TelaPrincipal extends AppCompatActivity implements BottomNavigation
 
             //noinspection SimplifiableIfStatement
             case R.id.imSobre: {
-                new DialogConstrutor(this,res.getString(R.string.tela_principal_dialog_sobre_titulo) , res.getString(R.string.tela_principal_dialog_sobre_menssagem), res.getString(R.string.dialog_positive_button_texto_padrao));
-                return true;
+                LayoutInflater inflater = (LayoutInflater) this.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+                View view = inflater.inflate(R.layout.dialog_sobre,null);
+                Button btnLink = view.findViewById(R.id.btnLink);
+                Button btnSobre = view.findViewById(R.id.btnSobreOk);
+                final DialogConstrutor dialogConstrutor = new DialogConstrutor(this,view);
+                btnLink.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        getSupportActionBar().setTitle("Sobre o aplicativo");
+                        fragmentSobre = FragmentSobre.newInstance();
+                        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+                        transaction.replace(R.id.frmContainerFragment, fragmentSobre,"FragmentSobre");
+                        transaction.commit();
+                        dialogConstrutor.fechar();
+                    }
+                });
+
+                btnSobre.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        dialogConstrutor.fechar();
+                    }
+                });
+                Window window = dialogConstrutor.getDialog().getWindow();
+                window.setLayout(WindowManager.LayoutParams.MATCH_PARENT, WindowManager.LayoutParams.WRAP_CONTENT );
+                break;
             }
             case R.id.imSair:{
                 finish();
+                break;
+            }
+            case R.id.imConfiguracoes:{
+                getSupportActionBar().setTitle(res.getString(R.string.app_name_reduzido)+" " + res.getString(R.string.menu_item_configuracoes));
+                Fragment fragmentConfiguracoes = FragementConfiguracoes.newInstance(getUsuario(),windowManager);
+                FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+                transaction.replace(R.id.frmContainerFragment, fragmentConfiguracoes,"FragmentConfiguracoes");
+                transaction.commit();
                 break;
             }
             case R.id.imLogOut:{
@@ -236,19 +276,19 @@ public class TelaPrincipal extends AppCompatActivity implements BottomNavigation
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()) {
             case R.id.menu_item_home: {
-                getSupportActionBar().setTitle(res.getString(R.string.tela_principal_menu_navegacao_inferior_item_home));
+                getSupportActionBar().setTitle(res.getString(R.string.app_name_reduzido) +" "+ res.getString(R.string.tela_principal_menu_navegacao_inferior_item_home));
                 Fragment fragmentInicio = FragmentInicio.newInstance(getUsuario(),windowManager);
                 openFragment(fragmentInicio);
                 break;
             }
             case R.id.menu_item_peso: {
-                getSupportActionBar().setTitle(res.getString(R.string.tela_principal_menu_navegacao_inferior_item_peso));
+                getSupportActionBar().setTitle(res.getString(R.string.app_name_reduzido) +" "+ res.getString(R.string.tela_principal_menu_navegacao_inferior_item_peso));
                 Fragment fragmentPeso = FragmentPeso.newInstance(getUsuario(),windowManager);
                 openFragment(fragmentPeso);
                 break;
             }
             case R.id.menu_item_eu: {
-                getSupportActionBar().setTitle(res.getString(R.string.tela_principal_menu_navegacao_inferior_item_informacoes));
+                getSupportActionBar().setTitle(res.getString(R.string.app_name_reduzido) +" "+ res.getString(R.string.tela_principal_menu_navegacao_inferior_item_informacoes));
                 Fragment fragmentEu = FragmentInformacoesUsuario.newInstance(getUsuario(),windowManager);
                 openFragment(fragmentEu);
                 break;
@@ -291,6 +331,18 @@ public class TelaPrincipal extends AppCompatActivity implements BottomNavigation
         this.usuario = usuario;
     }
 
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        if(fragmentSobre!=null){
+            if(fragmentSobre.isVisible()){
+                FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+                transaction.remove(fragmentSobre).commit();
+            }
+        }
+
+    }
+
     public static void hideKeyboard(Activity activity) {
         InputMethodManager imm = (InputMethodManager) activity.getSystemService(Activity.INPUT_METHOD_SERVICE);
         //Find the currently focused view, so we can grab the correct window token from it.
@@ -300,5 +352,12 @@ public class TelaPrincipal extends AppCompatActivity implements BottomNavigation
             view = new View(activity);
         }
         imm.hideSoftInputFromWindow(view.getWindowToken(), 0);
+    }
+}
+class syncFirebase extends AsyncTask<List<List<String>>,Integer,String>{
+
+    @Override
+    protected String doInBackground(List<List<String>> ...lists) {
+        return null;
     }
 }

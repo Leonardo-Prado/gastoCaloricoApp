@@ -33,7 +33,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
                 android:layout_weight="1"
-                android:text="Informações do usuario:"
+                android:text="@string/tv_informacao_text"
                 android:textSize="18sp" />
         </LinearLayout>
 
@@ -57,7 +57,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
                 android:layout_weight="1"
-                android:text="Peso Inicial:" />
+                android:text="@string/fragment_informacoes_usuario_tvpesoinicial_texto" />
         </LinearLayout>
 
         <LinearLayout
@@ -81,7 +81,7 @@
                 android:layout_marginTop="15dp"
                 android:layout_marginRight="15dp"
                 android:layout_weight="1"
-                android:text="Peso atual:" />
+                android:text="@string/tv_peso_atual" />
 
             <ImageButton
                 android:id="@+id/ibtnEditPeso"
@@ -113,7 +113,7 @@
                 android:layout_marginTop="15dp"
                 android:layout_marginRight="15dp"
                 android:layout_weight="1"
-                android:text="Altura:" />
+                android:text="@string/tv_altura"/>
 
             <ImageButton
                 android:id="@+id/ibtnEditAltura"
@@ -147,7 +147,7 @@
                 android:layout_marginRight="15dp"
                 android:layout_marginBottom="10dp"
                 android:layout_weight="1"
-                android:text="IMC:" />
+                android:text="@string/tv_imc" />
 
         </LinearLayout>
         <LinearLayout
@@ -172,7 +172,7 @@
                 android:layout_marginRight="15dp"
                 android:layout_marginBottom="10dp"
                 android:layout_weight="1"
-                android:text="Gasto medio de calorias:" />
+                android:text="@string/fragment_informacoes_usuario_tvmediagastoscalorias_texto" />
 
         </LinearLayout>
     </LinearLayout>

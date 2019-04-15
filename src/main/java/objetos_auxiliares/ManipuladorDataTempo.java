@@ -11,6 +11,8 @@ public class ManipuladorDataTempo {
     private long tempoInt;
     private String dataString;
     private String tempoString;
+    private String padraoHora;
+    private String padraoData;
 
     public ManipuladorDataTempo() {
     }
@@ -23,10 +25,12 @@ public class ManipuladorDataTempo {
         this.dataInt = dataInt;
     }
     public ManipuladorDataTempo(Date data) throws ParseException {
-        SimpleDateFormat formataData = new SimpleDateFormat("dd-MM-yyyy");
+        setPadraoData("dd-MM-yyyy");
+        setPadraoHora("HH:mm");
+        SimpleDateFormat formataData = new SimpleDateFormat(getPadraoData());
         this.dataString = formataData.format(data);
         this.dataInt = dataStringToDataInt(getDataString());
-        formataData = new SimpleDateFormat("HH:mm");
+        formataData = new SimpleDateFormat(getPadraoHora());
         this.tempoString = formataData.format(data);
         this.tempoInt =  tempoStringToTempoInt(getTempoString());
 
@@ -113,5 +117,21 @@ public class ManipuladorDataTempo {
         String s = formataData.format(date);
         String[] splited = s.split(":");
         return Double.parseDouble(splited[0])+ Double.parseDouble(splited[1])/60;
+    }
+
+    public String getPadraoHora() {
+        return padraoHora;
+    }
+
+    public void setPadraoHora(String padraoHora) {
+        this.padraoHora = padraoHora;
+    }
+
+    public String getPadraoData() {
+        return padraoData;
+    }
+
+    public void setPadraoData(String padraoData) {
+        this.padraoData = padraoData;
     }
 }

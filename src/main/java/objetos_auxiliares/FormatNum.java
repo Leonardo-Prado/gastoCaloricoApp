@@ -11,11 +11,17 @@ public class FormatNum {
 
     public static double casasDecimais(double valor,int numCasas)
     {
+        String padrao = "00000.";
+        int i = 0;
+        while(i<numCasas){
+            padrao = padrao+"#";
+            i++;
+        }
         String s = null;
         try {
             NumberFormat numberFormat = NumberFormat.getNumberInstance(Locale.US);
             DecimalFormat decimalFormat = (DecimalFormat)numberFormat;
-            decimalFormat.applyPattern("00000.##");
+            decimalFormat.applyPattern(padrao);
             s = decimalFormat.format(valor);
 
         }catch (Exception e)

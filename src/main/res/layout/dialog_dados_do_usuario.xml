@@ -20,7 +20,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
             android:ems="10"
-            android:hint="Massa corporal (Kg)..."
+            android:hint="@string/dialog_dados_usuarios_edpeso_hint"
             android:inputType="number|numberDecimal" />
 
         <EditText
@@ -29,7 +29,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
             android:ems="10"
-            android:hint="Altura..."
+            android:hint="@string/dialog_dados_usuario_edaltura_hint"
             android:inputType="number|numberDecimal" />
 
         <Button
@@ -37,7 +37,7 @@
             style="@style/Widget.AppCompat.Button.Borderless.Colored"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Inserir Dados" />
+            android:text="@string/dialog_dados_usuario_btndadosdousuario_texto" />
     </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>

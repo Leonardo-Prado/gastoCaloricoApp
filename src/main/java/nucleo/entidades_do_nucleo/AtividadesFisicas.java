@@ -2,35 +2,17 @@ package nucleo.entidades_do_nucleo;
 
 public class AtividadesFisicas extends Categoria {
     private int id;
+    private String idString;
     private float met;
+    private String metString;
     private String atividade;
     private int idCategotia;
+    private String idCategoriaString;
 
     public AtividadesFisicas() {
     }
 
     public AtividadesFisicas(int id) {this.id = id; }
-
-    public AtividadesFisicas(int idCategotia, int id) {
-        super(idCategotia);
-        this.idCategotia = idCategotia;
-        this.id = id;
-    }
-
-    public AtividadesFisicas(float met, String atividade, int idCategotia) {
-        super(idCategotia);
-        this.setMet(met);
-        this.setAtividade(atividade);
-        this.setIdCategotia(idCategotia);
-    }
-
-    public AtividadesFisicas(int id, float met, String atividade, int idCategotia) {
-        super(idCategotia);
-        this.setId(id);
-        this.setMet(met);
-        this.setAtividade(atividade);
-        this.setIdCategotia(idCategotia);
-    }
 
     public int getId() {
         return id;
@@ -38,6 +20,8 @@ public class AtividadesFisicas extends Categoria {
 
     public void setId(int id) {
         this.id = id;
+        setIdString(Integer.toString(getId()));
+
     }
 
     public float getMet() {
@@ -46,6 +30,7 @@ public class AtividadesFisicas extends Categoria {
 
     public void setMet(float met) {
         this.met = met;
+        setMetString(Float.toString(getMet()));
     }
 
     public String getAtividade() {
@@ -63,5 +48,40 @@ public class AtividadesFisicas extends Categoria {
     public void setIdCategotia(int idCategotia) {
         super.setId(idCategotia);
         this.idCategotia = idCategotia;
+        setIdCategoriaString(Integer.toString(getIdCategotia()));
+    }
+
+    public String getIdString() {
+        return idString;
+    }
+
+    public void setIdString(String idString) {
+        this.idString = idString;
+    }
+
+    public String getMetString() {
+        return metString;
+    }
+
+    public void setMetString(String metString) {
+        this.metString = metString;
+    }
+
+    public String getIdCategoriaString() {
+        return idCategoriaString;
+    }
+
+    public void setIdCategoriaString(String idCategoriaString) {
+        this.idCategoriaString = idCategoriaString;
+    }
+
+    @Override
+    public String toString() {
+        return "AtividadesFisicas{" +
+                "idString='" + idString + '\'' +
+                ", metString='" + metString + '\'' +
+                ", atividade='" + atividade + '\'' +
+                ", idCategoriaString='" + idCategoriaString + '\'' +
+                '}';
     }
 }

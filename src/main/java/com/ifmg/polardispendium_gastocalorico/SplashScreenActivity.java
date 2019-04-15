@@ -13,10 +13,14 @@ import android.widget.ProgressBar;
 import org.xml.sax.SAXException;
 
 import java.io.IOException;
+import java.text.ParseException;
+import java.util.Date;
 
 import javax.xml.parsers.ParserConfigurationException;
 
 import nucleo.outros_manipuladores.CriarDataBase;
+import objetos_auxiliares.Estaticos;
+import objetos_auxiliares.ManipuladorDataTempo;
 
 /**
  * An example full-screen activity that shows and hides the system UI (i.e.
@@ -103,14 +107,23 @@ public class SplashScreenActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        try {
+            Estaticos.setFragmentInicioData(new ManipuladorDataTempo(new Date()).getDataInt());
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
 
         setContentView(R.layout.activity_splash_screen);
 
         mVisible = true;
        /* mControlsView = findViewById(R.id.fullscreen_content_controls);
         mContentView = findViewById(R.id.fullscreen_content);*/
+
+       //inicializa progressBar
         pbInicializacao = findViewById(R.id.pbInicializacao);
+        //Cria a classe criar dataBase que é responsavel por ver se existe o banco de dados, se não existir cria e popula as tabelas de categoria e atividades fisicas
         final CriarDataBase criarDataBases = new CriarDataBase(this);
+        //cria uma thread para temporizar o splash screen
         new Thread(new Runnable() {
             @Override
             public void run() {

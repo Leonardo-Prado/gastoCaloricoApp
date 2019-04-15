@@ -19,7 +19,8 @@
             android:orientation="horizontal"
             tools:layout_editor_absoluteX="136dp"
             tools:layout_editor_absoluteY="32dp"
-            android:baselineAligned="false">
+            android:baselineAligned="false"
+            tools:ignore="MissingConstraints">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -62,20 +63,25 @@
                     <RelativeLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:layout_marginBottom="25dp"
                         android:layout_weight="3">
 
                         <android.support.design.widget.FloatingActionButton
                             android:id="@+id/fabAdicionar"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_centerInParent="true"
-                            android:layout_margin="5dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentBottom="false"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginEnd="5dp"
                             android:clickable="true"
                             android:fadingEdge="horizontal|vertical"
+                            android:focusable="true"
                             android:tint="@color/pontosDoGrafico"
                             app:backgroundTint="@color/colorPrimary"
-                            app:fabSize="mini"
+                            app:elevation="10dp"
+                            app:fabSize="normal"
                             app:rippleColor="@color/cardview_light_background"
                             app:srcCompat="@android:drawable/ic_input_add" />
                     </RelativeLayout>

@@ -9,7 +9,6 @@ import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Point;
 import android.graphics.Rect;
-import android.support.v4.content.res.ResourcesCompat;
 import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.View;
@@ -22,6 +21,7 @@ import java.util.Date;
 import java.util.List;
 
 import database.DBGeneric;
+import nucleo.entidades_do_nucleo.UserPreferences;
 import nucleo.entidades_do_nucleo.Usuario;
 import objetos_auxiliares.FormatNum;
 import objetos_auxiliares.ManipuladorDataTempo;
@@ -35,14 +35,20 @@ public class DesenharGraficoPeso {
     private DBGeneric dbGeneric;
     private WindowManager windowManager;
     private Usuario usuario;
+    private int tamanhoPontos;
+    private int tamanhoTexto;
+    private UserPreferences userPreferences;
 
     public DesenharGraficoPeso(Context context, ImageView imageViewGrafico, View graficoContainer, Usuario usuario, WindowManager windowManager) {
         this.context = context;
         this.imageViewGrafico = imageViewGrafico;
         this.graficoContainer = graficoContainer;
         this.usuario = usuario;
-        this.windowManager = windowManager;
+        this.setWindowManager(windowManager);
         if(context!=null){
+            userPreferences = new UserPreferences(getContext(),getUsuario());
+            setTamanhoPontos(userPreferences.getGraficoPontosSize());
+            setTamanhoTexto(userPreferences.getGraficoTextoSize());
             dbGeneric = new DBGeneric(getContext());
             desenharGrafico();
         }
@@ -62,7 +68,7 @@ public class DesenharGraficoPeso {
             Bitmap bitmap = BitmapFactory.decodeResource(res, R.drawable.back_grafico);
             Paint paintAlpha = new Paint();
             paintAlpha.setAntiAlias(true);
-            paintAlpha.setAlpha(10);
+            paintAlpha.setAlpha(15);
             getCanvasGrafico().drawBitmap(bitmap,null,new Rect(0,0,largura,altura),paintAlpha);
 
             Long dia = ManipuladorDataTempo.tempoStringToTempoInt("24:00");
@@ -95,13 +101,16 @@ public class DesenharGraficoPeso {
                 }
                 i = 0;
                 final int[] parametros = parametrosPorDensidade();
-                int alt = altura-12*parametros[0];
+                int alt = altura-14*parametros[0];
                 while (i < dias) {
                     int x = ponto.x;
                     int y = ponto.y;
                     ponto.x = (i + 1) * numeroX;
                     float f = Float.parseFloat(s.get(i).get(1));
-                    f = (f-(menorPeso)) / (maiorPeso-menorPeso);
+                    if(maiorPeso-menorPeso>0)
+                        f = (f-(menorPeso)) / (maiorPeso-menorPeso);
+                    else
+                        f = 1.0f;
                     ponto.y = (int)(alt -  f * alt)+ 7*parametros[0];
                     final Paint paint = new Paint();
                     if (i > 0) {
@@ -134,10 +143,10 @@ public class DesenharGraficoPeso {
                 }
             }
             Paint paint = new Paint();
-            paint.setTextSize((int)(parametrosPorDensidade()[1]*1.3));
+            paint.setTextSize((int)(parametrosPorDensidade()[1]*1.1));
             paint.setStyle(Paint.Style.FILL);
             paint.setColor(res.getColor(R.color.colorAccent));
-            getCanvasGrafico().drawText(res.getString(R.string.grafico_peso_titulo),20,30,paint);
+            getCanvasGrafico().drawText(res.getString(R.string.grafico_peso_titulo),10,20,paint);
 
         } catch (Exception e) {
             Log.e("erro ao desenhar",e.getMessage());
@@ -147,37 +156,37 @@ public class DesenharGraficoPeso {
     }
 
     private int[] parametrosPorDensidade() {
-        int [] parametros = {4, 4 +5};
+        int [] parametros = {getTamanhoPontos(), getTamanhoTexto()};
         DisplayMetrics metricas = new DisplayMetrics();
-        windowManager.getDefaultDisplay().getMetrics(metricas);
+        getWindowManager().getDefaultDisplay().getMetrics(metricas);
         switch (metricas.densityDpi){
             case(DisplayMetrics.DENSITY_LOW):
-                parametros[0] = 4;
-                parametros[1] = 11;
+                parametros[0] = getTamanhoPontos();
+                parametros[1] = getTamanhoTexto();
                 break;
             case(DisplayMetrics.DENSITY_HIGH):
-                parametros[0] = 3* 4 - 2;
-                parametros[1] = 20;
+                parametros[0] = 3* getTamanhoPontos() - 2;
+                parametros[1] = getTamanhoTexto()+6;
                 break;
             case(DisplayMetrics.DENSITY_MEDIUM):
-                parametros[0] = 2* 4 - 2;
-                parametros[1] = 15;
+                parametros[0] = 2* getTamanhoPontos() - 2;
+                parametros[1] = getTamanhoTexto()+3;
                 break;
             case(DisplayMetrics.DENSITY_XHIGH):
-                parametros[0] = 4* 4 - 2;
-                parametros[1] = 25;
+                parametros[0] = 4* getTamanhoPontos() -2;
+                parametros[1] = getTamanhoTexto()+12;
                 break;
             case(DisplayMetrics.DENSITY_XXHIGH):
-                parametros[0] = 6* 4;
-                parametros[1] = 30;
+                parametros[0] = 6* getTamanhoPontos();
+                parametros[1] = getTamanhoTexto()+18;
                 break;
             case(DisplayMetrics.DENSITY_XXXHIGH):
-                parametros[0] = 7* 4;
-                parametros[1] = 32;
+                parametros[0] = 7* getTamanhoPontos();
+                parametros[1] = getTamanhoTexto()+24;
                 break;
             default:
-                parametros[0] = 2* 4;
-                parametros[1] = 11;
+                parametros[0] = 2* getTamanhoPontos();
+                parametros[1] = getTamanhoTexto()+3;
                 break;
 
         }
@@ -202,10 +211,6 @@ public class DesenharGraficoPeso {
 
     private ImageView getImageViewGrafico() {
         return imageViewGrafico;
-    }
-
-    public void setImageViewGrafico(ImageView imageViewGrafico) {
-        this.imageViewGrafico = imageViewGrafico;
     }
 
     private View getGraficoContainer() {
@@ -238,5 +243,37 @@ public class DesenharGraficoPeso {
 
     public void setUsuario(Usuario usuario) {
         this.usuario = usuario;
+    }
+
+    public int getTamanhoPontos() {
+        return tamanhoPontos;
+    }
+
+    public void setTamanhoPontos(int tamanhoPontos) {
+        this.tamanhoPontos = tamanhoPontos;
+    }
+
+    public int getTamanhoTexto() {
+        return tamanhoTexto;
+    }
+
+    public void setTamanhoTexto(int tamanhoTexto) {
+        this.tamanhoTexto = tamanhoTexto;
+    }
+
+    public UserPreferences getUserPreferences() {
+        return userPreferences;
+    }
+
+    public void setUserPreferences(UserPreferences userPreferences) {
+        this.userPreferences = userPreferences;
+    }
+
+    public WindowManager getWindowManager() {
+        return windowManager;
+    }
+
+    public void setWindowManager(WindowManager windowManager) {
+        this.windowManager = windowManager;
     }
 }

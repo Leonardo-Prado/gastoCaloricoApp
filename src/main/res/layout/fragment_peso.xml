@@ -36,14 +36,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
-                android:text="Progresso" />
+                android:text="@string/fragment_peso_tvprogresso_texto" />
 
             <TextView
                 android:id="@+id/tvAtualizarPeso"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
-                android:text="Atualizar seu peso atual:" />
+                android:text="@string/fragmento_peso_tvatualisarpeso_texto" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -57,7 +57,7 @@
                     android:layout_margin="5dp"
                     android:layout_weight="1"
                     android:ems="10"
-                    android:hint="Seu peso atual..."
+                    android:hint="@string/fragment_peso_edmeupeso_hint"
                     android:inputType="number|numberDecimal" />
 
                 <android.support.design.widget.FloatingActionButton
@@ -67,6 +67,7 @@
                     android:layout_margin="5dp"
                     android:layout_weight="1"
                     android:clickable="true"
+                    android:focusable="true"
                     android:src="@drawable/ic_refresh"
                     android:tint="@color/pontosDoGrafico"
                     app:backgroundTint="@color/colorPrimary"

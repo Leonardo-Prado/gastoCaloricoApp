@@ -14,7 +14,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
             android:ems="10"
-            android:hint="Nome de usuario"
+            android:hint="@string/dialog_registrar_usuario_ednomeregistrar_hint"
             android:inputType="textPersonName" />
 
         <EditText
@@ -23,7 +23,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
             android:ems="10"
-            android:hint="Repita a senha"
+            android:hint="@string/dialog_registrar_usuario_edrepetirsenha_hint"
             android:inputType="textPassword" />
 
         <LinearLayout
@@ -37,7 +37,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="2"
-                android:text="Cancelar"
+                android:text="@string/dialog_registrar_usuario_btncancelarregistro_texto"
                 android:textSize="12sp" />
 
             <Button
@@ -46,7 +46,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Confirmar" />
+                android:text="@string/dialog_registrar_usuario_btnconfirmarregistro_texto" />
         </LinearLayout>
 
     </LinearLayout>

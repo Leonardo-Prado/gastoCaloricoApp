@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragementConfiguracoes">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvTitulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="@string/fragment_opcao_titulotextview_text"
+            android:textColor="@color/colorAccent"
+            android:textSize="18sp" />
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="5dp"
+            android:background="@color/colorSecundaria" />
+
+       <!-- <TextView
+            android:id="@+id/tvSensibilidadeRolamento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="@string/fragment_config_layout_tv_sensibilidade_de_rolamento" />
+
+        <componentes_customizados.SeekBarComTexto
+            android:id="@+id/sbSenseRolamento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:max="100"
+            android:paddingLeft="100dp"
+            android:paddingRight="100dp" />
+
+        <TextView
+            android:id="@+id/tvEsconderGraficoTempo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/fragment_config_layout_tv_tempo_de_oculta_o_do_grafico" />
+
+        <componentes_customizados.SeekBarComTexto
+            android:id="@+id/sbTempOcultGrafico"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:max="50"
+            android:paddingLeft="100dp"
+            android:paddingRight="100dp" /> -->
+
+        <TextView
+            android:id="@+id/tvTamanhoPontosGrafico"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/fragment_config_layout_tv_tamanho_dos_pontos_no_grafico" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <SeekBar
+                android:id="@+id/sbTamanhoPontos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:max="8"
+                android:paddingLeft="100dp"
+                android:paddingRight="100dp" />
+
+            <ImageView
+                android:id="@+id/ivTamanhoPontos"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_weight="4" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvTamanhoFonteGrafico"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/fragment_config_layout_tv_tamanho_da_fonte_do_grafico" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <SeekBar
+                android:id="@+id/sbTamanhoFonte"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:max="12"
+                android:paddingLeft="100dp"
+                android:paddingRight="100dp" />
+
+            <ImageView
+                android:id="@+id/ivTamanhoFonte"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_weight="4" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnRedefinir"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/fragment_config_layout_btn_redefinir_texto" />
+
+    </LinearLayout>
+
+</FrameLayout>

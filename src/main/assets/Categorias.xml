@@ -32,8 +32,8 @@
 	</Categorias>
 	<Categorias>
 		<Id>7</Id>
-		<Categoria>Atividades Voluntarias</Categoria>
-		<Descricao>Atividades Voluntarias</Descricao>
+		<Categoria>Atividades Voluntárias</Categoria>
+		<Descricao>Atividades Voluntárias em geral. Ajudar as pessoas de uma maneira a elevar o espirito</Descricao>
 	</Categorias>
 	<Categorias>
 		<Id>8</Id>
@@ -97,7 +97,7 @@
 	</Categorias>
 	<Categorias>
 		<Id>20</Id>
-		<Categoria>Tocar Música/ Instrumentos </Categoria>
+		<Categoria>Tocar Música/ Instrumentos</Categoria>
 		<Descricao>Atividades relacionadas a musica</Descricao>
 	</Categorias>
 	<Categorias>

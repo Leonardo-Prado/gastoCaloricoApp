@@ -24,20 +24,20 @@ public class CarregarXML {
 
     }
     public List<List<String>> XML(Context context,String xml,String no) throws IOException, ParserConfigurationException, SAXException {
-        final AssetManager manager = context.getAssets();
-        final InputStream is = manager.open(xml);
-        final List<List<String>> listPai = new ArrayList<>();
-        final DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
-        final DocumentBuilder db = factory.newDocumentBuilder();
-        final InputSource inputSource = new InputSource(is);
-        final Document document = db.parse(inputSource);
-        final NodeList nodeList = document.getElementsByTagName(no);
-        final int nodeListLength = nodeList.getLength();
+        AssetManager manager = context.getAssets();
+        InputStream is = manager.open(xml);
+        List<List<String>> listPai = new ArrayList<>();
+        DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+        DocumentBuilder db = factory.newDocumentBuilder();
+        InputSource inputSource = new InputSource(is);
+        Document document = db.parse(inputSource);
+        NodeList nodeList = document.getElementsByTagName(no);
+        int nodeListLength = nodeList.getLength();
         for (int i = 0; i < nodeListLength; i++) {
             List<String> listFilho = new ArrayList<>();
-            final Node nos = nodeList.item(i);
-            final NodeList filhos = nos.getChildNodes();
-            final int filhosLength = filhos.getLength();
+            Node nos = nodeList.item(i);
+            NodeList filhos = nos.getChildNodes();
+            int filhosLength = filhos.getLength();
             for (int j = 0; j < filhosLength; j++) {
                 if (filhos.item(j).getTextContent().charAt(0)!='\n')
                 listFilho.add(filhos.item(j).getTextContent());

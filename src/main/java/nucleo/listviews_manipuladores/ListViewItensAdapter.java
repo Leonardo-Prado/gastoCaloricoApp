@@ -71,12 +71,12 @@ class ListViewItensAdapter extends ArrayAdapter<AtividadesRealizadas> {
         long inicio,fim;
         inicio = atividadesRealizadas.get(position).getHoraInicio();
         fim = atividadesRealizadas.get(position).getHoraFim();
-        tvHoraInicio.setText("Inicio:\n"+ManipuladorDataTempo.tempoIntToTempoString(inicio));
-        tvHoraFim.setText("Termino: \n"+ManipuladorDataTempo.tempoIntToTempoString(fim));
+        tvHoraInicio.setText(context.getResources().getString(R.string.fragment_inicio_listview_tvhorainicio_text)+"\n"+ManipuladorDataTempo.tempoIntToTempoString(inicio));
+        tvHoraFim.setText(context.getResources().getString(R.string.fragment_inicio_listview_tvhoratermino_text)+"\n"+ManipuladorDataTempo.tempoIntToTempoString(fim));
         double tempoTotal = ManipuladorDataTempo.horas(fim) - ManipuladorDataTempo.horas(inicio);
-        tvTempoTotal.setText("Duração: \n"+Double.toString(FormatNum.casasDecimais(tempoTotal,2)));
+        tvTempoTotal.setText(context.getResources().getString(R.string.fragment_inicio_listview_tvtempototal_text) +"\n"+Double.toString(FormatNum.casasDecimais(tempoTotal,2)));
         double calorias = tempoTotal * usuario.getMassaCorporal() * Double.parseDouble(atividade.get(0).get(1));
-        tvGastoCalorico.setText("Calorias gastas: "+Double.toString(FormatNum.casasDecimais(calorias,2)));
+        tvGastoCalorico.setText(context.getResources().getString(R.string.fragment_inicio_listview_tvgastocalorico_text)+Double.toString(FormatNum.casasDecimais(calorias,2)));
         gastoEnergetico.setCalorias(gastoEnergetico.getCalorias()+calorias);
         int idCat = Integer.parseInt(atividade.get(0).get(2));
         Resources resources = getContext().getResources();

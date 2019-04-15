@@ -2,6 +2,9 @@ package nucleo.outros_manipuladores;
 
 import android.content.ContentValues;
 import android.content.Context;
+import android.util.Log;
+import android.view.GestureDetector;
+import android.view.MotionEvent;
 
 import java.util.List;
 
@@ -53,14 +56,23 @@ public class AtividadeRealizadaCriador {
                             values.put("HoraFim", atividadesRealizadas.getHoraInicio());
                             getDbGeneric().atualizar("AtividadesRealizadas", values, "_id = ?", new String[]{s.get(0)});
                         }
-                        if (fim!=fimAtiv){
+                        if (fim!=fimAtiv&&inicio==inicioAtiv){
                             values = new ContentValues();
                             values.put("HoraInicio", atividadesRealizadas.getHoraFim());
                             values.put("HoraFim", fim);
                             values.put("_idAtividade", Integer.parseInt(s.get(1)));
                             values.put("_idUsuario", atividadesRealizadas.getIdUsuario());
                             values.put("Data", atividadesRealizadas.getDia());
-                            getDbGeneric().inserir(values, "AtividadesRealizadas");
+                            getDbGeneric().atualizar( "AtividadesRealizadas",values,"_id = ?", new String[]{s.get(0)});
+                        }
+                        if (fim!=fimAtiv&&inicio!=inicioAtiv){
+                            values = new ContentValues();
+                            values.put("HoraInicio", atividadesRealizadas.getHoraFim());
+                            values.put("HoraFim", fim);
+                            values.put("_idAtividade", Integer.parseInt(s.get(1)));
+                            values.put("_idUsuario", atividadesRealizadas.getIdUsuario());
+                            values.put("Data", atividadesRealizadas.getDia());
+                            getDbGeneric().inserir( values,"AtividadesRealizadas");
                         }
                         if(fim==fimAtiv&&inicio==inicioAtiv){
                             tempoIgual = true;

@@ -2,6 +2,8 @@ package nucleo.listviews_manipuladores;
 
 import android.content.ContentValues;
 import android.content.Context;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -51,21 +53,41 @@ public class AtualizadorLista {
             }
             //busca no banco de dados por gastos caloricos do usuario na data estipulada
             List<List<String>> s = getDbGeneric().buscar("GastoEnergetico", new String[]{"_id"}, "Data = ? and _idUsuario = ?", new String[]{data.toString(), Integer.toString(gastoEnergetico.getIdUsuario())});
+            ContentValues c = new ContentValues();
             if (s.size() > 0) {//se existir gastos nessa data atualiza o banco de dados
-                ContentValues c = new ContentValues();
                 c.put("GastoCalorico", gastoEnergetico.getCalorias());
                 getDbGeneric().atualizar("GastoEnergetico", c, "_id = ?", new String[]{s.get(0).get(0)});
             } else {//se não existir gasto calorico na data cria um.
-                ContentValues c = new ContentValues();
                 c.put("GastoCalorico", gastoEnergetico.getCalorias());
                 c.put("Data", gastoEnergetico.getData());
                 c.put("_idUsuario", gastoEnergetico.getIdUsuario());
                 getDbGeneric().inserir(c, "GastoEnergetico");
             }
+            List<List<String>> gastosCaloricos= dbGeneric.buscar("GastoEnergetico",new String[]{"GastoCalorico"},"_idUsuario = ?",new String[]{Integer.toString(getUsuario().getId())},"GastoCalorico DESC");
+            double somaGastocaloricos = 0;
+            for (List<String> list:gastosCaloricos
+                    ) {
+                somaGastocaloricos=(somaGastocaloricos+Double.parseDouble(list.get(0)));
+            }
+            usuario.setGastoMedio(somaGastocaloricos/gastosCaloricos.size());
+            usuario.setGastoMaximo(Double.parseDouble(gastosCaloricos.get(0).get(0)));
+            usuario.setGastoMinimo(Double.parseDouble(gastosCaloricos.get(gastosCaloricos.size()-1).get(0)));
+            c = new ContentValues();
+            c.put("GastoMedio",usuario.getGastoMedio());
+            c.put("GastoMaximo",usuario.getGastoMaximo());
+            c.put("GastoMinimo",usuario.getGastoMinimo());
+            dbGeneric.atualizar("Usuarios",c,"_id = ?",new String[]{Integer.toString(usuario.getId())});
             //cria uma nova instancia da listview para as atividades realizadas na data
-            ListView listView = view.findViewById(R.id.lvListaAtividadesDoDia);//cria o listview
-            ArrayAdapter listViewItensAdapter = new ListViewItensAdapter(getContext(), atividadesRealizadas, usuario);//cria o listview adapter para as atividades
-            listView.setAdapter(listViewItensAdapter);//passa o adapter para as listviews
+
+            RecyclerView rvAtividades = view.findViewById(R.id.rvAtividades);
+            RecyclerView.Adapter adapter = new RecyclerViewAdapter(getContext(),atividadesRealizadas,usuario);
+            rvAtividades.setAdapter(adapter);
+            RecyclerView.LayoutManager layout = new LinearLayoutManager(context, LinearLayoutManager.VERTICAL, false);
+            rvAtividades.setLayoutManager(layout);
+
+          //  ListView listView = view.findViewById(R.id.lvListaAtividadesDoDia);//cria o listview
+          //  ArrayAdapter listViewItensAdapter = new ListViewItensAdapter(getContext(), atividadesRealizadas, usuario);//cria o listview adapter para as atividades
+           // listView.setAdapter(listViewItensAdapter);//passa o adapter para as listviews
         } catch (Exception e) {
             Log.e("erro ao criar listview", "Erro ao criar ");
         }

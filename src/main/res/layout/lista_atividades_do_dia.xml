@@ -4,42 +4,49 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginTop="10dp"
-    android:layout_marginBottom="20dp">
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="5dp"
-        android:background="@android:color/background_light"
+        android:layout_margin="10dp"
+        android:background="@drawable/rounded_layout_lista_ativ"
         android:orientation="vertical"
-        android:padding="5dp"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="5dp">
 
-        <LinearLayout
+        <FrameLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="5dp"
-            android:orientation="horizontal">
+            android:layout_height="match_parent"
+            android:padding="5dp">
 
-            <ImageView
-                android:id="@+id/imvImagemCategorias"
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:layout_weight="8"
-                app:srcCompat="@drawable/ic_atividades_sexuais" />
+                android:layout_margin="5dp"
+                android:orientation="horizontal">
 
-            <TextView
-                android:id="@+id/tvAtividade"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="10dp"
-                android:layout_weight="1"
-                android:textColor="@android:color/black" />
-        </LinearLayout>
+                <ImageView
+                    android:id="@+id/imvImagemCategorias"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="8"
+                    app:srcCompat="@drawable/ic_atividades_sexuais" />
+
+                <TextView
+                    android:id="@+id/tvAtividade"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textColor="@color/common_google_signin_btn_text_dark_focused" />
+            </LinearLayout>
+        </FrameLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -84,9 +91,7 @@
                 android:id="@+id/tvGastoCalorico"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="5dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginRight="5dp"
+                android:layout_gravity="center"
                 android:layout_weight="3"
                 android:paddingTop="5dp"
                 android:textColor="@android:color/black" />
@@ -95,14 +100,18 @@
                 android:id="@+id/ibtnEditar"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:layout_weight="0.5"
+                android:background="@color/cardview_light_background"
                 app:srcCompat="@android:drawable/ic_menu_edit" />
 
             <ImageButton
                 android:id="@+id/ibtnApagar"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
                 android:layout_weight="0.5"
+                android:background="@color/cardview_light_background"
                 app:srcCompat="@android:drawable/ic_menu_delete" />
         </LinearLayout>
 

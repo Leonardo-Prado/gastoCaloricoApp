@@ -6,6 +6,7 @@ import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AbsListView;
 import android.widget.ArrayAdapter;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -49,20 +50,20 @@ public class SpAdapter extends ArrayAdapter<String> {
 
         TextView tvItemSpinner = (TextView) super.getView(position, convertView, parent);
         tvItemSpinner.setSingleLine(false);
-        tvItemSpinner.setLayoutParams(new LinearLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT,LinearLayout.LayoutParams.WRAP_CONTENT));
+        tvItemSpinner.setLayoutParams(new AbsListView.LayoutParams(AbsListView.LayoutParams.WRAP_CONTENT,AbsListView.LayoutParams.WRAP_CONTENT));
         tvItemSpinner.setTextColor(Color.BLACK);
         tvItemSpinner.setText(strings.get(position));
         return tvItemSpinner;
-
     }
 
     @Override
     public View getDropDownView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
         TextView tvItemSpinner = (TextView) super.getDropDownView(position, convertView, parent);
         tvItemSpinner.setSingleLine(false);
-        tvItemSpinner.setLayoutParams(new LinearLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT,LinearLayout.LayoutParams.WRAP_CONTENT));
+        tvItemSpinner.setLayoutParams(new AbsListView.LayoutParams(AbsListView.LayoutParams.WRAP_CONTENT,AbsListView.LayoutParams.WRAP_CONTENT));
         tvItemSpinner.setTextColor(Color.BLACK);
         tvItemSpinner.setText(strings.get(position));
+
         return tvItemSpinner;
     }
 }

@@ -9,7 +9,7 @@ import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Point;
 import android.graphics.Rect;
-import android.support.v4.content.res.ResourcesCompat;
+import android.graphics.RectF;
 import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.GestureDetector;
@@ -20,11 +20,12 @@ import android.widget.ImageView;
 
 import com.ifmg.polardispendium_gastocalorico.R;
 
-import java.text.ParseException;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
 import database.DBGeneric;
+import nucleo.entidades_do_nucleo.UserPreferences;
 import nucleo.entidades_do_nucleo.Usuario;
 import objetos_auxiliares.FormatNum;
 import objetos_auxiliares.ManipuladorDataTempo;
@@ -42,10 +43,13 @@ public class DesenharGraficoCaloriasDiarias {
     private long primeiraData;
     private GestureDetector detector;
     private MyGestureListener gestureListener;
+    private int tamanhoPontos;
+    private int tamanhoTexto;
+    private int tempoGrafico;
+    private int rolamentoSens;
     private int numPontos;
-    private int altura;
-    private int alturaVelha;
-    private boolean escondido = true;
+    private UserPreferences userPreferences;
+    List<RectF> retangulos;
 
     public DesenharGraficoCaloriasDiarias(Context context, ImageView imageViewGrafico, View graficoContainer, Usuario usuario, WindowManager windowManager) {
         try {
@@ -60,10 +64,16 @@ public class DesenharGraficoCaloriasDiarias {
             detector = new GestureDetector(getContext(),gestureListener);
             setHoje(dataTempo.getDataInt());
             if (context != null) {
+                userPreferences = new UserPreferences(getContext(),getUsuario());
+                setTamanhoPontos(userPreferences.getGraficoPontosSize());
+                setTamanhoTexto(userPreferences.getGraficoTextoSize());
+                setRolamentoSens(userPreferences.getRolamentoSensibilidade());
+                setTempoGrafico(userPreferences.getEscondeGraficoTempo());
                 dbGeneric = new DBGeneric(getContext());
                 desenharGrafico();
             }
-           getImageViewGrafico().setOnTouchListener(touchListener);
+            retangulos = new ArrayList<>();
+            getImageViewGrafico().setOnTouchListener(touchListener);
         }
         catch (Exception e){
             Log.e("Erro ao construir",e.getMessage());
@@ -72,6 +82,7 @@ public class DesenharGraficoCaloriasDiarias {
 
     private void desenharGrafico() {
         try {
+            retangulos = new ArrayList<>();
             View graficoConteiner = getGraficoContainer();//pega o relative layout que contem o canvas para pegar a altura
             Resources res = getContext().getResources();
             int largura = graficoConteiner.getWidth(); // define a largura para ser usado no bitmap, da largura da tela
@@ -83,7 +94,7 @@ public class DesenharGraficoCaloriasDiarias {
             Bitmap bitmap = BitmapFactory.decodeResource(res, R.drawable.back_grafico);
             Paint paintAlpha = new Paint();
             paintAlpha.setAntiAlias(true);
-            paintAlpha.setAlpha(10);
+            paintAlpha.setAlpha(15);
             getCanvasGrafico().drawBitmap(bitmap,null,new Rect(0,0,largura,altura),paintAlpha);
             Long dia = ManipuladorDataTempo.tempoStringToTempoInt("24:00");
             List<List<String>> s = getDbGeneric().buscar("GastoEnergetico", new String[]{"Data", "GastoCalorico"}, "Data >= ? and Data <= ? and _idUsuario = ?", new String[]{Long.toString(primeiraData - dia * 5), Long.toString(primeiraData), Integer.toString(getUsuario().getId())}, "Data ASC");
@@ -95,9 +106,11 @@ public class DesenharGraficoCaloriasDiarias {
             if (dias > 0) {
                 final int[] parametros = parametrosPorDensidade();
                 int i = 0;
-                int maiorCaloria = 0;
-                int menorCaloria = 0;
-                while(i < dias){
+                List<List<String>> menor = getDbGeneric().buscar("1","GastoEnergetico", new String[]{ "GastoCalorico"}, "_idUsuario = ?", new String[]{Integer.toString(getUsuario().getId())}, "GastoCalorico ASC");
+                List<List<String>> maior = getDbGeneric().buscar("1","GastoEnergetico", new String[]{"GastoCalorico"}, "_idUsuario = ?", new String[]{Integer.toString(getUsuario().getId())}, "GastoCalorico DESC");
+                int maiorCaloria = (int)Double.parseDouble(maior.get(0).get(0));
+                int menorCaloria = (int)Double.parseDouble(menor.get(0).get(0));
+                /*while(i < dias){
                     try {
                         if (i > 0) {
                             if (Double.parseDouble(s.get(i).get(1)) > maiorCaloria)
@@ -112,9 +125,9 @@ public class DesenharGraficoCaloriasDiarias {
                         e.printStackTrace();
                     }
                     i++;
-                }
+                }*/
                 i = 0;
-                int alt = altura-12*parametros[0];
+                int alt = altura-14*parametros[0];//desloca o grafico para cima quanto maior o multiplicador
                 while (i < dias) {
                     int x = ponto.x;
                     int y = ponto.y;
@@ -124,7 +137,7 @@ public class DesenharGraficoCaloriasDiarias {
                         f = (f-(menorCaloria)) / (maiorCaloria-menorCaloria);
                     else
                         f = 1.0f;
-                    ponto.y = (int)(alt -  f * alt)+6*parametros[0];
+                    ponto.y = (int)(alt -  f * alt)+7*parametros[0];
                     final Paint paint = new Paint();
                     if (i > 0) {
                         paint.setColor(Color.GREEN);
@@ -136,9 +149,13 @@ public class DesenharGraficoCaloriasDiarias {
                     paint.setColor(res.getColor(R.color.pontosDoGrafico));
                     paint.setTextSize(parametros[1]);
                     getCanvasGrafico().drawCircle(ponto.x, ponto.y, parametros[0], paint);
+                    paint.setAlpha(0);
+                    RectF rectF = new RectF(ponto.x-2*parametros[0],ponto.y-2*parametros[0],ponto.x+2*parametros[0],ponto.y+2*parametros[0]);
+                    retangulos.add(rectF);
+                    paint.setAlpha(255);
                     paint.setColor(Color.WHITE);
                     getCanvasGrafico().drawText(Integer.toString((int)FormatNum.casasDecimais(Double.parseDouble(s.get(i).get(1)), 1)), ponto.x -(parametros[0]+parametros[0]/2), ponto.y - (parametros[0]+parametros[0]/2), paint);
-                    getCanvasGrafico().drawText(ManipuladorDataTempo.dataIntToDataString(Long.parseLong(s.get(i).get(0)),"dd-MM"), ponto.x-(parametros[0]+parametros[0]/2), altura - 5 , paint);
+                    getCanvasGrafico().drawText(ManipuladorDataTempo.dataIntToDataString(Long.parseLong(s.get(i).get(0)),"dd-MM"), ponto.x-(parametros[0]+parametros[0]/2), altura - 24 , paint);
                     if (i > 0) {
                         paint.setColor(Color.WHITE);
                         paint.setStrokeWidth(1f);
@@ -154,10 +171,10 @@ public class DesenharGraficoCaloriasDiarias {
                 }
             }
             Paint paint = new Paint();
-            paint.setTextSize((int)(parametrosPorDensidade()[1]*1.3));
+            paint.setTextSize((int)(parametrosPorDensidade()[1]*1.1));
             paint.setStyle(Paint.Style.FILL);
             paint.setColor(res.getColor(R.color.colorAccent));
-            getCanvasGrafico().drawText(res.getString(R.string.grafico_gasto_calorico_titulo),20,30,paint);
+            getCanvasGrafico().drawText(res.getString(R.string.grafico_gasto_calorico_titulo),10,20,paint);
 
         } catch (Exception e) {
             Log.e("erro ao desenhar",e.getMessage());
@@ -167,48 +184,48 @@ public class DesenharGraficoCaloriasDiarias {
     }
 
     private int[] parametrosPorDensidade() {
-        int [] parametros = {4, 4 +5};
+        int [] parametros = {getTamanhoPontos(), getTamanhoTexto()};
         DisplayMetrics metricas = new DisplayMetrics();
         getWindowManager().getDefaultDisplay().getMetrics(metricas);
         switch (metricas.densityDpi){
             case(DisplayMetrics.DENSITY_LOW):
-                parametros[0] = 4;
-                parametros[1] = 11;
+                parametros[0] = getTamanhoPontos();
+                parametros[1] = getTamanhoTexto();
                 break;
             case(DisplayMetrics.DENSITY_HIGH):
-                parametros[0] = 3* 4 - 2;
-                parametros[1] = 17;
+                parametros[0] = 3* getTamanhoPontos() - 2;
+                parametros[1] = getTamanhoTexto()+6;
                 break;
             case(DisplayMetrics.DENSITY_MEDIUM):
-                parametros[0] = 2* 4 - 2;
-                parametros[1] = 15;
+                parametros[0] = 2* getTamanhoPontos() - 2;
+                parametros[1] = getTamanhoTexto()+3;
                 break;
             case(DisplayMetrics.DENSITY_XHIGH):
-                parametros[0] = 4* 4 -2;
-                parametros[1] = 25;
+                parametros[0] = 4* getTamanhoPontos() -2;
+                parametros[1] = getTamanhoTexto()+12;
                 break;
             case(DisplayMetrics.DENSITY_XXHIGH):
-                parametros[0] = 6* 4;
-                parametros[1] = 30;
+                parametros[0] = 6* getTamanhoPontos();
+                parametros[1] = getTamanhoTexto()+18;
                 break;
             case(DisplayMetrics.DENSITY_XXXHIGH):
-                parametros[0] = 7* 4;
-                parametros[1] = 40;
+                parametros[0] = 7* getTamanhoPontos();
+                parametros[1] = getTamanhoTexto()+24;
                 break;
             default:
-                parametros[0] = 2* 4;
-                parametros[1] = 11;
+                parametros[0] = 2* getTamanhoPontos();
+                parametros[1] = getTamanhoTexto()+3;
                 break;
 
         }
         return parametros;
     }
 
-    public void girarGrafico(int deslocamento) throws ParseException {
+    public void girarGrafico(int deslocamento) {
         try {
             setPrimeiraData(getPrimeiraData()-deslocamento*ManipuladorDataTempo.tempoStringToTempoInt("24:00"));
             desenharGrafico();
-        } catch (ParseException e) {
+        } catch (Exception e) {
             e.printStackTrace();
         }
     }
@@ -233,10 +250,6 @@ public class DesenharGraficoCaloriasDiarias {
         return imageViewGrafico;
     }
 
-    public void setImageViewGrafico(ImageView imageViewGrafico) {
-        this.imageViewGrafico = imageViewGrafico;
-    }
-
     public View getGraficoContainer() {
         return graficoContainer;
     }
@@ -244,6 +257,17 @@ public class DesenharGraficoCaloriasDiarias {
     public void setGraficoContainer(View graficoContainer) {
         this.graficoContainer = graficoContainer;
     }
+    View.OnTouchListener touchListener = new View.OnTouchListener() {
+        @Override
+        public boolean onTouch(View v, MotionEvent event) {
+            try {
+                girarGrafico(gestureListener.getDeslocamentos());
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+            return detector.onTouchEvent(event);
+        }
+    };
 
     public DBGeneric getDbGeneric() {
         return dbGeneric;
@@ -277,22 +301,6 @@ public class DesenharGraficoCaloriasDiarias {
         this.primeiraData = primeiraData;
     }
 
-    View.OnTouchListener touchListener = new View.OnTouchListener() {
-        @Override
-        public boolean onTouch(View v, MotionEvent event) {
-            try {
-                girarGrafico(gestureListener.getDeslocamentos());
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
-            return detector.onTouchEvent(event);
-        }
-    };
-
-    public int getNumPontos() {
-        return numPontos;
-    }
-
     public void setNumPontos(int numPontos) {
         this.numPontos = numPontos;
     }
@@ -313,28 +321,40 @@ public class DesenharGraficoCaloriasDiarias {
         this.windowManager = windowManager;
     }
 
-    public int getAltura() {
-        return altura;
+    public int getTamanhoPontos() {
+        return tamanhoPontos;
     }
 
-    public void setAltura(int altura) {
-        this.altura = altura;
+    public void setTamanhoPontos(int tamanhoPontos) {
+        this.tamanhoPontos = tamanhoPontos;
     }
 
-    public int getAlturaVelha() {
-        return alturaVelha;
+    public int getTamanhoTexto() {
+        return tamanhoTexto;
     }
 
-    public void setAlturaVelha(int alturaVelha) {
-        this.alturaVelha = alturaVelha;
+    public void setTamanhoTexto(int tamanhoTexto) {
+        this.tamanhoTexto = tamanhoTexto;
     }
 
-    public boolean isEscondido() {
-        return escondido;
+    public int getTempoGrafico() {
+        return tempoGrafico;
     }
 
-    public void setEscondido(boolean escondido) {
-        this.escondido = escondido;
+    public void setTempoGrafico(int tempoGrafico) {
+        this.tempoGrafico = tempoGrafico;
+    }
+
+    public int getRolamentoSens() {
+        return rolamentoSens;
+    }
+
+    public void setRolamentoSens(int rolamentoSens) {
+        this.rolamentoSens = rolamentoSens;
+    }
+
+    public int getNumPontos() {
+        return numPontos;
     }
 }
 
@@ -351,45 +371,13 @@ class MyGestureListener extends GestureDetector.SimpleOnGestureListener {
     @Override
     public boolean onDown(MotionEvent event) {
         Log.d("TAG","onDown: ");
-
-        // don't return false here or else none of the other
-        // gestures will work
         return true;
     }
-
-    @Override
-    public boolean onSingleTapConfirmed(MotionEvent e) {
-        Log.i("TAG", "onSingleTapConfirmed: ");
-        return true;
-    }
-
-    @Override
-    public void onLongPress(MotionEvent e) {
-        Log.i("TAG", "onLongPress: ");
-    }
-
-    @Override
-    public boolean onDoubleTap(MotionEvent e) {
-        Log.i("TAG", "onDoubleTap: ");
-        return true;
-    }
-
     @Override
     public boolean onScroll(MotionEvent e1, MotionEvent e2, float distanceX, float distanceY) {
         Log.i("TAG", "onScroll: ");
         deslocamentos = -(int)distanceX/divisor;
         return true;
-    }
-
-    @Override
-    public boolean onFling(MotionEvent event1, MotionEvent event2, float velocityX, float velocityY) {
-        Log.d("TAG", "onFling: ");
-        setFling(true);
-        return true;
-    }
-
-    public int getDivisor() {
-        return divisor;
     }
 
     public void setDivisor(int divisor) {
@@ -398,14 +386,6 @@ class MyGestureListener extends GestureDetector.SimpleOnGestureListener {
 
     public int getDeslocamentos() {
         return deslocamentos;
-    }
-
-    public void setDeslocamentos(int deslocamentos) {
-        this.deslocamentos = deslocamentos;
-    }
-
-    public boolean isFling() {
-        return isFling;
     }
 
     private void setFling(boolean fling) {

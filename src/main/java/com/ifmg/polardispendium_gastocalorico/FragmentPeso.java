@@ -66,8 +66,6 @@ public class FragmentPeso extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-
-        final ManipuladorDataTempo dataTempo;
         setDbGeneric(new DBGeneric(getContext()));
         // Inflate the layout for this fragment
         final View inflate = inflater.inflate(R.layout.fragment_peso, container, false);
@@ -87,26 +85,33 @@ public class FragmentPeso extends Fragment {
                     ManipuladorDataTempo manipuladorDataTempo = new ManipuladorDataTempo(new Date());
                     ContentValues values = new ContentValues();
                     values.put("Data",manipuladorDataTempo.getDataInt());
-                    values.put("Peso",Integer.parseInt(getEdMeuPeso().getText().toString()));
+                    values.put("Peso",Double.parseDouble(getEdMeuPeso().getText().toString()));
                     values.put("_idUsuario",getUsuario().getId());
                     List<List<String>> pesos = dbGeneric.buscar("Peso",new String[]{"_id"},"_idUsuario = ? AND Data = ?",new String[]{Integer.toString(getUsuario().getId()),Long.toString(manipuladorDataTempo.getDataInt())});
                     if(pesos.size()==0)
                         dbGeneric.inserir(values,"Peso");
                     else{
                         values = new ContentValues();
-                        values.put("Peso",Integer.parseInt(getEdMeuPeso().getText().toString()));
+                        values.put("Peso",Double.parseDouble(getEdMeuPeso().getText().toString()));
                         dbGeneric.atualizar("Peso",values,"_id = ?",new String[]{pesos.get(0).get(0)});
 
                     }
-                    getUsuario().setMassaCorporal(Integer.parseInt(getEdMeuPeso().getText().toString()));
+                    getUsuario().setMassaCorporal(Double.parseDouble(getEdMeuPeso().getText().toString()));
                     values = new ContentValues();
-                    values.put("MassaCorporal",Integer.parseInt(getEdMeuPeso().getText().toString()));
+                    values.put("MassaCorporal",Double.parseDouble(getEdMeuPeso().getText().toString()));
+                    if(getUsuario().getPesoMinimo()>=getUsuario().getMassaCorporal()){
+                        usuario.setPesoMinimo(getUsuario().getMassaCorporal());
+                        values.put("PesoMinimo",usuario.getPesoMinimo());
+                    }else if(getUsuario().getPesoMaximo()<=getUsuario().getMassaCorporal()){
+                        usuario.setPesoMaximo(usuario.getMassaCorporal());
+                        values.put("PesoMaximo",usuario.getPesoMaximo());
+                    }
                     dbGeneric.atualizar("Usuarios",values,"_id = ?",new String[]{Integer.toString(getUsuario().getId())});
-                    DialogConstrutor dialogConstrutor = new DialogConstrutor(getContext(),"Peso atualizado","Você atualizou sua massa corporal com sucesso","Ok");
-                    DesenharGraficoPeso desenharGraficoPeso = new DesenharGraficoPeso(getContext(),getIvGrafico(),getGraficoContainer(),getUsuario(),getWindowManager());
+                    new DialogConstrutor(getContext(),"Peso atualizado","Você atualizou sua massa corporal com sucesso","Ok");
+                    new DesenharGraficoPeso(getContext(),getIvGrafico(),getGraficoContainer(),getUsuario(),getWindowManager());
                 } catch (Exception e) {
                     e.printStackTrace();
-                    DialogConstrutor dialogConstrutor = new DialogConstrutor(getContext(),"Erro ao atualizar o peso","Não foi possivel atualizar a massa corporal","Ok");
+                    new DialogConstrutor(getContext(),"Erro ao atualizar o peso","Não foi possivel atualizar a massa corporal","Ok");
                 }
                 TelaPrincipal.hideKeyboard(getActivity());
             }
@@ -170,22 +175,6 @@ public class FragmentPeso extends Fragment {
 
     public void setDbGeneric(DBGeneric dbGeneric) {
         this.dbGeneric = dbGeneric;
-    }
-
-    public double getMediaGastoCalorico() {
-        return mediaGastoCalorico;
-    }
-
-    public void setMediaGastoCalorico(double mediaGastoCalorico) {
-        this.mediaGastoCalorico = mediaGastoCalorico;
-    }
-
-    public TextView getTvGastoMedio() {
-        return tvGastoMedio;
-    }
-
-    public void setTvGastoMedio(TextView tvGastoMedio) {
-        this.tvGastoMedio = tvGastoMedio;
     }
 
     public EditText getEdMeuPeso() {

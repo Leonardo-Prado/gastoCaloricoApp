@@ -4,17 +4,22 @@
     tools:context="com.ifmg.test.TelaPrincipal">
     <item
         android:id="@+id/imSobre"
-        android:orderInCategory="100"
-        android:title="Sobre"
+        android:orderInCategory="110"
+        android:title="@string/menu_item_sobre"
         app:showAsAction="never" />
     <item
         android:id="@+id/imSair"
         android:orderInCategory="200"
-        android:title="Sair"
+        android:title="@string/menu_item_sair"
         app:showAsAction="never" />
     <item
         android:id="@+id/imLogOut"
         android:orderInCategory="150"
-        android:title="Logout"
+        android:title="@string/menu_item_desconectar"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/imConfiguracoes"
+        android:orderInCategory="100"
+        android:title="@string/menu_item_configuracoes"
         app:showAsAction="never" />
 </menu>

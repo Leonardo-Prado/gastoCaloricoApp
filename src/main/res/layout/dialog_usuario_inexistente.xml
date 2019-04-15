@@ -14,7 +14,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Repitir" />
+            android:text="@string/dialog_usuario_inexistente_btnrepetir_texto" />
 
         <Button
             android:id="@+id/btnRegistrar"
@@ -22,7 +22,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Registrar" />
+            android:text="@string/dialog_usuario_inexistente_btnregistrar_texto" />
     </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>

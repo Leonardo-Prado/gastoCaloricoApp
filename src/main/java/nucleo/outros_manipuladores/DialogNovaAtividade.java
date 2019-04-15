@@ -2,6 +2,7 @@ package nucleo.outros_manipuladores;
 
 import android.app.TimePickerDialog;
 import android.content.Context;
+import android.content.res.Resources;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.widget.AppCompatAutoCompleteTextView;
 import android.text.InputType;
@@ -25,6 +26,7 @@ import java.util.Calendar;
 import java.util.List;
 
 import database.DBGeneric;
+import listeners.DialogNovaAtividadeInterface;
 import nucleo.entidades_do_nucleo.AtividadesRealizadas;
 import nucleo.entidades_do_nucleo.Usuario;
 import nucleo.listviews_manipuladores.AtualizadorLista;
@@ -44,6 +46,8 @@ public class DialogNovaAtividade {
     private long horaFimAtual;
     private int atividadeAtualId;
     private int atividadeRealizadaAtualId;
+    Resources res;
+    private final List<DialogNovaAtividadeInterface> observadores = new ArrayList<>();
 
     public DialogNovaAtividade(Context context, Usuario usuario, Long data,View view) {
         this.context = context;
@@ -51,6 +55,7 @@ public class DialogNovaAtividade {
         this.data = data;
         this.setLayoutPai(view);
         dbGeneric = new DBGeneric(getContext());
+        res = getContext().getResources();
         dialogInserirAtividadesRealizadas(this.data);
     }
     public DialogNovaAtividade(Context context, Usuario usuario, Long data,View view,long horaInicioAtual,long horaFimAtual,int atividadeAtualId,int atividadeRealizadaAtualId) {
@@ -63,7 +68,17 @@ public class DialogNovaAtividade {
         this.setAtividadeAtualId(atividadeAtualId);
         this.atividadeRealizadaAtualId = atividadeRealizadaAtualId;
         dbGeneric = new DBGeneric(getContext());
+        res = getContext().getResources();
         dialogEditarAtividadesRealizadas(this.data, this.getHoraFimAtual(), this.getHoraInicioAtual(),atividadeAtualId);
+    }
+
+    private void notificarObservadores(){
+        for (DialogNovaAtividadeInterface observador : observadores) {
+            observador.notificarConcluir(this);
+        }
+    }
+    public void adicionarObservador(DialogNovaAtividadeInterface obs) { //também chamado de addListener(...)
+        observadores.add(obs); //"obs" passará a ser notificado sobre mudanças em this
     }
 
     private void dialogInserirAtividadesRealizadas(final Long data) {
@@ -135,7 +150,7 @@ public class DialogNovaAtividade {
                             j++;
                         }
                     } else {
-                        new DialogConstrutor(view.getContext(), "Item selecionado invalido", "Item selecionado invalido", "ok");
+                        new DialogConstrutor(view.getContext(),res.getString(R.string.dialog_nova_atividade_autocomplete_item_invalido_dialog_titulo) , res.getString(R.string.dialog_nova_atividade_autocomplete_item_invalido_dialog_menssagem), res.getString(R.string.dialog_positive_button_texto_padrao));
                     }
 
                 }catch (Exception e){
@@ -192,7 +207,7 @@ public class DialogNovaAtividade {
                         edHoraInicio.setText(horaString + ":" + minutoString);
                     }
                 }, hora, minuto, true);
-                timePickerDialog.setTitle("Inicio");
+                timePickerDialog.setTitle(res.getString(R.string.dialog_nova_atividade_edhorainicio_titulo));
                 timePickerDialog.show();
             }
         });
@@ -219,7 +234,7 @@ public class DialogNovaAtividade {
                         edHorafim.setText(horaString + ":" + minutoString);
                     }
                 }, hora, minuto, true);
-                timePickerDialog.setTitle("Inicio");
+                timePickerDialog.setTitle(res.getString(R.string.dialog_nova_atividade_edhorafim_titulo));
                 timePickerDialog.show();
             }
         });
@@ -241,17 +256,18 @@ public class DialogNovaAtividade {
                             atividadesRealizadas.setIdAtividade(Integer.parseInt(getDbGeneric().buscar("AtividadesFisicas", new String[]{"_id"}, "Atividades = ?", new String[]{spAtividade.getSelectedItem().toString()}).get(0).get(0)));
                             atividadesRealizadas.setIdCategotia(Integer.parseInt(getDbGeneric().buscar("Categorias", new String[]{"_id"}, "Categoria = ?", new String[]{spCategoria.getSelectedItem().toString()}).get(0).get(0)));
                             atividadesRealizadas.setIdUsuario(getUsuario().getId());
-                            AtividadeRealizadaCriador atividadeRealizadaCriador = new AtividadeRealizadaCriador(getContext(),getData(),atividadesRealizadas);
+                            new AtividadeRealizadaCriador(getContext(),getData(),atividadesRealizadas);
                             List<AtividadesRealizadas> atividadesRealizadasList = TelaPrincipal.buscarAtividadesRealizadas(data, getUsuario(),context);
                             new AtualizadorLista(getContext(),getData(),getUsuario(),atividadesRealizadasList, getLayoutPai());
+                            notificarObservadores();
                             alerta.dismiss();
                         }else {
-                            DialogConstrutor dialogConstrutor = new DialogConstrutor(view.getContext(),"Valores inadequados","O tempo inicial deve ser menor que a tempo final","OK");
+                            new DialogConstrutor(view.getContext(),res.getString(R.string.dialog_nova_atividade_btnconfirmar_valores_inadequados_dialog_titulo),res.getString(R.string.dialog_nova_atividade_btnconfirmar_valores_inadequados_dialog_menssagem),res.getString(R.string.dialog_positive_button_texto_padrao));
                         }
                     } catch (Exception e) { e.printStackTrace(); }
 
                 } else {
-                    DialogConstrutor dialogConstrutor = new DialogConstrutor(view.getContext(),"Campos necessarios vazios","Os campos hora inicial e final devem ser preenchido","OK");
+                    new DialogConstrutor(view.getContext(),res.getString(R.string.dialog_nova_atividade_btnconfirmar_campos_necessarios_vasios_dialog_titulo),res.getString(R.string.dialog_nova_atividade_btnconfirmar_campos_necessarios_vasios_dialog_menssagem),res.getString(R.string.dialog_positive_button_texto_padrao));
                 }
             }
         });
@@ -334,7 +350,7 @@ public class DialogNovaAtividade {
                             j++;
                         }
                     } else {
-                        new DialogConstrutor(view.getContext(), "Item selecionado invalido", "Item selecionado invalido", "ok");
+                        new DialogConstrutor(view.getContext(), res.getString(R.string.dialog_nova_atividade_autocomplete_item_invalido_dialog_titulo), res.getString(R.string.dialog_nova_atividade_autocomplete_item_invalido_dialog_menssagem), res.getString(R.string.dialog_positive_button_texto_padrao));
                     }
 
                 }catch (Exception e){
@@ -391,7 +407,7 @@ public class DialogNovaAtividade {
                         edHoraInicio.setText(horaString + ":" + minutoString);
                     }
                 }, hora, minuto, true);
-                timePickerDialog.setTitle("Inicio");
+                timePickerDialog.setTitle(res.getString(R.string.dialog_nova_atividade_edhorainicio_titulo));
                 timePickerDialog.show();
             }
         });
@@ -418,7 +434,7 @@ public class DialogNovaAtividade {
                         edHorafim.setText(horaString + ":" + minutoString);
                     }
                 }, hora, minuto, true);
-                timePickerDialog.setTitle("Inicio");
+                timePickerDialog.setTitle(res.getString(R.string.dialog_nova_atividade_edhorafim_titulo));
                 timePickerDialog.show();
             }
         });
@@ -447,12 +463,12 @@ public class DialogNovaAtividade {
                             new AtualizadorLista(getContext(),getData(),getUsuario(),atividadesRealizadasList, getLayoutPai());
                             alerta.dismiss();
                         }else {
-                            DialogConstrutor dialogConstrutor = new DialogConstrutor(view.getContext(),"Valores inadequados","O tempo inicial deve ser menor que a tempo final","OK");
+                            new DialogConstrutor(view.getContext(),res.getString(R.string.dialog_nova_atividade_btnconfirmar_valores_inadequados_dialog_titulo),res.getString(R.string.dialog_nova_atividade_btnconfirmar_valores_inadequados_dialog_menssagem),res.getString(R.string.dialog_positive_button_texto_padrao));
                         }
                     } catch (Exception e) { e.printStackTrace(); }
 
                 } else {
-                    DialogConstrutor dialogConstrutor = new DialogConstrutor(view.getContext(),"Campos necessarios vazios","Os campos hora inicial e final devem ser preenchido","OK");
+                    new DialogConstrutor(view.getContext(),res.getString(R.string.dialog_nova_atividade_btnconfirmar_campos_necessarios_vasios_dialog_titulo),res.getString(R.string.dialog_nova_atividade_btnconfirmar_campos_necessarios_vasios_dialog_menssagem),res.getString(R.string.dialog_positive_button_texto_padrao));
                 }
             }
 
@@ -572,4 +588,5 @@ public class DialogNovaAtividade {
     private void setHoraFimAtual(long horaFimAtual) {
         this.horaFimAtual = horaFimAtual;
     }
+
 }

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Raiz>
 	<Atividade>
 		<Id>1009</Id>
@@ -10,7 +10,7 @@
 		<Id>1010</Id>
 		<MET>4.0</MET>
 		<Categoria>Ciclismo</Categoria>
-		<AtividadeEspecifica>Ciclismo, &lt; 16 km/h, geral, lazer, para trabalho ou prazer (cód. 115 de Taylor)</AtividadeEspecifica>
+		<AtividadeEspecifica>Ciclismo, &lt; 16 km/h, geral, lazer, para trabalho ou prazer</AtividadeEspecifica>
 	</Atividade>
 	<Atividade>
 		<Id>1015</Id>
@@ -100,7 +100,7 @@
 		<Id>2030</Id>
 		<MET>3.5</MET>
 		<Categoria>Exercício de Condicionamento</Categoria>
-		<AtividadeEspecifica>Calistenia, exercício em casa, esforço leve ou moderado, geral (ex: exercícios para as costas),levantar e deitar no chão (cód. 150 de Taylor)</AtividadeEspecifica>
+		<AtividadeEspecifica>Calistenia, exercício em casa, esforço leve ou moderado, geral (ex: exercícios para as costas),levantar e deitar no chão</AtividadeEspecifica>
 	</Atividade>
 	<Atividade>
 		<Id>2040</Id>
@@ -112,13 +112,13 @@
 		<Id>2050</Id>
 		<MET>6.0</MET>
 		<Categoria>Exercício de Condicionamento</Categoria>
-		<AtividadeEspecifica>Levantamento de peso (pesos livres, Nautilus ou modulados universais), power-lifting ou fisicullturismo, esforço vigoroso (cód. 210 de Taylor)</AtividadeEspecifica>
+		<AtividadeEspecifica>Levantamento de peso (pesos livres, Nautilus ou modulados universais), power-lifting ou fisicullturismo, esforço vigoroso</AtividadeEspecifica>
 	</Atividade>
 	<Atividade>
 		<Id>2060</Id>
 		<MET>5.5</MET>
 		<Categoria>Exercício de Condicionamento</Categoria>
-		<AtividadeEspecifica>Exercícios em centros de saúde (fitness, academias etc.), geral (cód. 160 de Taylor)</AtividadeEspecifica>
+		<AtividadeEspecifica>Exercícios em centros de saúde (fitness, academias etc.), geral</AtividadeEspecifica>
 	</Atividade>
 	<Atividade>
 		<Id>2065</Id>
@@ -250,7 +250,7 @@
 		<Id>3030</Id>
 		<MET>5.5</MET>
 		<Categoria>Dança</Categoria>
-		<AtividadeEspecifica>Dança de salão, rápido (cód. 125 de Taylor)</AtividadeEspecifica>
+		<AtividadeEspecifica>Dança de salão, rápido</AtividadeEspecifica>
 	</Atividade>
 	<Atividade>
 		<Id>3031</Id>
@@ -298,13 +298,13 @@
 		<Id>4040</Id>
 		<MET>3.5</MET>
 		<Categoria>Caça e Pesca</Categoria>
-		<AtividadeEspecifica>Pesca de beira de rio, em pé (cód. 660 de Taylor)</AtividadeEspecifica>
+		<AtividadeEspecifica>Pesca de beira de rio, em pé</AtividadeEspecifica>
 	</Atividade>
 	<Atividade>
 		<Id>4050</Id>
 		<MET>6.0</MET>
 		<Categoria>Caça e Pesca</Categoria>
-		<AtividadeEspecifica>Pesca em correnteza, com botas de pescador (cód. 670 de Taylor)</AtividadeEspecifica>
+		<AtividadeEspecifica>Pesca em correnteza, com botas de pescador</AtividadeEspecifica>
 	</Atividade>
 	<Atividade>
 		<Id>4060</Id>
@@ -322,7 +322,7 @@
 		<Id>4080</Id>
 		<MET>6.0</MET>
 		<Categoria>Caça e Pesca</Categoria>
-		<AtividadeEspecifica>Caça, cervo, alce, animais silvestres de grande porte (cód. 170 de Taylor)</AtividadeEspecifica>
+		<AtividadeEspecifica>Caça, cervo, alce, animais silvestres de grande porte</AtividadeEspecifica>
 	</Atividade>
 	<Atividade>
 		<Id>4090</Id>
@@ -340,13 +340,13 @@
 		<Id>4110</Id>
 		<MET>6.0</MET>
 		<Categoria>Caça e Pesca</Categoria>
-		<AtividadeEspecifica>Caça, faisão ou galo silvestre (cód. 680 de Taylor)</AtividadeEspecifica>
+		<AtividadeEspecifica>Caça, faisão ou galo silvestre</AtividadeEspecifica>
 	</Atividade>
 	<Atividade>
 		<Id>4120</Id>
 		<MET>5.0</MET>
 		<Categoria>Caça e Pesca</Categoria>
-		<AtividadeEspecifica>Caça, coelho/lebre, esquilo, aves silvestres, gambá, animais silvestres de pequeno porte (cód. 690 de Taylor)</AtividadeEspecifica>
+		<AtividadeEspecifica>Caça, coelho/lebre, esquilo, aves silvestres, gambá, animais silvestres de pequeno porte</AtividadeEspecifica>
 	</Atividade>
 	<Atividade>
 		<Id>4130</Id>
@@ -688,13 +688,13 @@
 		<Id>6040</Id>
 		<MET>3.0</MET>
 		<Categoria>Reparos Domésticos</Categoria>
-		<AtividadeEspecifica>Carpintaria, geral, em ateliê (cód. 620 de Taylor)</AtividadeEspecifica>
+		<AtividadeEspecifica>Carpintaria, geral, em ateliê</AtividadeEspecifica>
 	</Atividade>
 	<Atividade>
 		<Id>6050</Id>
 		<MET>6.0</MET>
 		<Categoria>Reparos Domésticos</Categoria>
-		<AtividadeEspecifica>Carpintaria, exterior da casa, instalar calhas, construir uma cerca (cód. 640 de Taylor)</AtividadeEspecifica>
+		<AtividadeEspecifica>Carpintaria, exterior da casa, instalar calhas, construir uma cerca</AtividadeEspecifica>
 	</Atividade>
 	<Atividade>
 		<Id>6060</Id>
@@ -754,7 +754,7 @@
 		<Id>6150</Id>
 		<MET>5.0</MET>
 		<Categoria>Reparos Domésticos</Categoria>
-		<AtividadeEspecifica>Pintar, exterior da casa (cód. 650 de Taylor)</AtividadeEspecifica>
+		<AtividadeEspecifica>Pintar, exterior da casa</AtividadeEspecifica>
 	</Atividade>
 	<Atividade>
 		<Id>6160</Id>
@@ -766,7 +766,7 @@
 		<Id>6165</Id>
 		<MET>4.5</MET>
 		<Categoria>Reparos Domésticos</Categoria>
-		<AtividadeEspecifica>Pintar (cód. 630 de Taylor)</AtividadeEspecifica>
+		<AtividadeEspecifica>Pintar</AtividadeEspecifica>
 	</Atividade>
 	<Atividade>
 		<Id>6170</Id>
@@ -904,7 +904,7 @@
 		<Id>8050</Id>
 		<MET>5.0</MET>
 		<Categoria>Gramado e jardim</Categoria>
-		<AtividadeEspecifica>Cavar, remover terra, renovar terra do jardim (cód. 590 de Taylor)</AtividadeEspecifica>
+		<AtividadeEspecifica>Cavar, remover terra, renovar terra do jardim</AtividadeEspecifica>
 	</Atividade>
 	<Atividade>
 		<Id>8060</Id>
@@ -934,13 +934,13 @@
 		<Id>8100</Id>
 		<MET>2.5</MET>
 		<Categoria>Gramado e jardim</Categoria>
-		<AtividadeEspecifica>Aparar gramado, dirigindo um aparador/cortador (cód. 550 de Taylor)</AtividadeEspecifica>
+		<AtividadeEspecifica>Aparar gramado, dirigindo um aparador/cortador</AtividadeEspecifica>
 	</Atividade>
 	<Atividade>
 		<Id>8110</Id>
 		<MET>6.0</MET>
 		<Categoria>Gramado e jardim</Categoria>
-		<AtividadeEspecifica>Aparar gramado, andando, aparador/cortador manual (cód. 570 de Taylor)</AtividadeEspecifica>
+		<AtividadeEspecifica>Aparar gramado, andando, aparador/cortador manual</AtividadeEspecifica>
 	</Atividade>
 	<Atividade>
 		<Id>8120</Id>
@@ -952,7 +952,7 @@
 		<Id>8125</Id>
 		<MET>4.5</MET>
 		<Categoria>Gramado e jardim</Categoria>
-		<AtividadeEspecifica>Aparar gramado, cortador com motor (cód. 590 de Taylor)</AtividadeEspecifica>
+		<AtividadeEspecifica>Aparar gramado, cortador com motor</AtividadeEspecifica>
 	</Atividade>
 	<Atividade>
 		<Id>8130</Id>
@@ -982,7 +982,7 @@
 		<Id>8165</Id>
 		<MET>4.0</MET>
 		<Categoria>Gramado e jardim</Categoria>
-		<AtividadeEspecifica>Varrer folhas com ancinho (Taylor Code 600)</AtividadeEspecifica>
+		<AtividadeEspecifica>Varrer folhas com ancinho</AtividadeEspecifica>
 	</Atividade>
 	<Atividade>
 		<Id>8170</Id>
@@ -1006,7 +1006,7 @@
 		<Id>8200</Id>
 		<MET>6.0</MET>
 		<Categoria>Gramado e jardim</Categoria>
-		<AtividadeEspecifica>Cavando, neve, com as mãos (cód. 610 de Taylor)</AtividadeEspecifica>
+		<AtividadeEspecifica>Cavando, neve, com as mãos</AtividadeEspecifica>
 	</Atividade>
 	<Atividade>
 		<Id>8210</Id>
@@ -1036,7 +1036,7 @@
 		<Id>8240</Id>
 		<MET>4.5</MET>
 		<Categoria>Gramado e jardim</Categoria>
-		<AtividadeEspecifica>Retirar erva daninha, cultivar jardim (cód. 580 de Taylor)</AtividadeEspecifica>
+		<AtividadeEspecifica>Retirar erva daninha, cultivar jardim</AtividadeEspecifica>
 	</Atividade>
 	<Atividade>
 		<Id>8245</Id>
@@ -1654,7 +1654,7 @@
 		<Id>11480</Id>
 		<MET>7.0</MET>
 		<Categoria>Atividades Ocupacionais</Categoria>
-		<AtividadeEspecifica>Maçonaria, concreto</AtividadeEspecifica>
+		<AtividadeEspecifica>Marcenaria, concreto</AtividadeEspecifica>
 	</Atividade>
 	<Atividade>
 		<Id>11485</Id>
@@ -1792,7 +1792,7 @@
 		<Id>11630</Id>
 		<MET>4.0</MET>
 		<Categoria>Atividades Ocupacionais</Categoria>
-		<AtividadeEspecifica>De pé, moderado/ pesado (levantar pesos &gt; 22 Kg, maçonaria, pitura, colocar papel de parede)</AtividadeEspecifica>
+		<AtividadeEspecifica>De pé, moderado/ pesado (levantar pesos &gt; 22 Kg, marcenaria, pitura, colocar papel de parede)</AtividadeEspecifica>
 	</Atividade>
 	<Atividade>
 		<Id>11640</Id>
@@ -1996,7 +1996,7 @@
 		<Id>12010</Id>
 		<MET>6.0</MET>
 		<Categoria>Correr</Categoria>
-		<AtividadeEspecifica>Combinação de caminhada e atividades laborais (componente laboral com menos de 10 minutos) (Cód. 180 de Taylor)</AtividadeEspecifica>
+		<AtividadeEspecifica>Combinação de caminhada e atividades laborais (componente laboral com menos de 10 minutos)</AtividadeEspecifica>
 	</Atividade>
 	<Atividade>
 		<Id>12020</Id>
@@ -2092,7 +2092,7 @@
 		<Id>12150</Id>
 		<MET>8.0</MET>
 		<Categoria>Correr</Categoria>
-		<AtividadeEspecifica>Correr (Cód. 200 de Taylor)</AtividadeEspecifica>
+		<AtividadeEspecifica>Correr </AtividadeEspecifica>
 	</Atividade>
 	<Atividade>
 		<Id>12170</Id>
@@ -2206,7 +2206,7 @@
 		<Id>15020</Id>
 		<MET>7.0</MET>
 		<Categoria>Esportes</Categoria>
-		<AtividadeEspecifica>Badminton, competitivo (Cód. 450 de Taylor)</AtividadeEspecifica>
+		<AtividadeEspecifica>Badminton, competitivo</AtividadeEspecifica>
 	</Atividade>
 	<Atividade>
 		<Id>15030</Id>
@@ -2218,19 +2218,19 @@
 		<Id>15040</Id>
 		<MET>8.0</MET>
 		<Categoria>Esportes</Categoria>
-		<AtividadeEspecifica>Basquetebol, jogo (Cód. 490 de Taylor)</AtividadeEspecifica>
+		<AtividadeEspecifica>Basquetebol, jogo</AtividadeEspecifica>
 	</Atividade>
 	<Atividade>
 		<Id>15050</Id>
 		<MET>6.0</MET>
 		<Categoria>Esportes</Categoria>
-		<AtividadeEspecifica>Basquetebol, sem ser jogo, em geral (Cód. 480 de Taylor)</AtividadeEspecifica>
+		<AtividadeEspecifica>Basquetebol, sem ser jogo, em geral</AtividadeEspecifica>
 	</Atividade>
 	<Atividade>
 		<Id>15060</Id>
 		<MET>7.0</MET>
 		<Categoria>Esportes</Categoria>
-		<AtividadeEspecifica>Basquetebol, oficial (Cód. 500 de Taylor)</AtividadeEspecifica>
+		<AtividadeEspecifica>Basquetebol, oficial</AtividadeEspecifica>
 	</Atividade>
 	<Atividade>
 		<Id>15070</Id>
@@ -2254,7 +2254,7 @@
 		<Id>15090</Id>
 		<MET>3.0</MET>
 		<Categoria>Esportes</Categoria>
-		<AtividadeEspecifica>Boliche (Cód. 390 de Taylor)</AtividadeEspecifica>
+		<AtividadeEspecifica>Boliche</AtividadeEspecifica>
 	</Atividade>
 	<Atividade>
 		<Id>15100</Id>
@@ -2338,7 +2338,7 @@
 		<Id>15230</Id>
 		<MET>8.0</MET>
 		<Categoria>Esportes</Categoria>
-		<AtividadeEspecifica>Futebol americano, geral (Cód. 510 de Taylor)</AtividadeEspecifica>
+		<AtividadeEspecifica>Futebol americano, geral</AtividadeEspecifica>
 	</Atividade>
 	<Atividade>
 		<Id>15235</Id>
@@ -2386,7 +2386,7 @@
 		<Id>15290</Id>
 		<MET>3.5</MET>
 		<Categoria>Esportes</Categoria>
-		<AtividadeEspecifica>Golfe, usando carrinhos elétricos (trollers) (Cód. 070 de Taylor)</AtividadeEspecifica>
+		<AtividadeEspecifica>Golfe, usando carrinhos elétricos (trollers)</AtividadeEspecifica>
 	</Atividade>
 	<Atividade>
 		<Id>15300</Id>
@@ -2404,7 +2404,7 @@
 		<Id>15320</Id>
 		<MET>12.0</MET>
 		<Categoria>Esportes</Categoria>
-		<AtividadeEspecifica>Andebol, geral (Cód. 520 de Taylor)</AtividadeEspecifica>
+		<AtividadeEspecifica>Andebol, geral</AtividadeEspecifica>
 	</Atividade>
 	<Atividade>
 		<Id>15330</Id>
@@ -2512,7 +2512,7 @@
 		<Id>15500</Id>
 		<MET>6.0</MET>
 		<Categoria>Esportes</Categoria>
-		<AtividadeEspecifica>Paddleball, casual em geral (Cód. 460 de Taylor)</AtividadeEspecifica>
+		<AtividadeEspecifica>Paddleball, casual em geral</AtividadeEspecifica>
 	</Atividade>
 	<Atividade>
 		<Id>15510</Id>
@@ -2530,7 +2530,7 @@
 		<Id>15530</Id>
 		<MET>7.0</MET>
 		<Categoria>Esportes</Categoria>
-		<AtividadeEspecifica>Racketball, casual, geral (Cód. 470 de Taylor)</AtividadeEspecifica>
+		<AtividadeEspecifica>Racketball, casual, geral</AtividadeEspecifica>
 	</Atividade>
 	<Atividade>
 		<Id>15535</Id>
@@ -2578,13 +2578,13 @@
 		<Id>15580</Id>
 		<MET>5.0</MET>
 		<Categoria>Esportes</Categoria>
-		<AtividadeEspecifica>Anadr de skate</AtividadeEspecifica>
+		<AtividadeEspecifica>Andar de skate</AtividadeEspecifica>
 	</Atividade>
 	<Atividade>
 		<Id>15590</Id>
 		<MET>7.0</MET>
 		<Categoria>Esportes</Categoria>
-		<AtividadeEspecifica>Patinação (Cód. 360 de Taylor)</AtividadeEspecifica>
+		<AtividadeEspecifica>Patinação</AtividadeEspecifica>
 	</Atividade>
 	<Atividade>
 		<Id>15591</Id>
@@ -2608,13 +2608,13 @@
 		<Id>15610</Id>
 		<MET>7.0</MET>
 		<Categoria>Esportes</Categoria>
-		<AtividadeEspecifica>Futebol casual, geral (Cód. 540 de Taylor)</AtividadeEspecifica>
+		<AtividadeEspecifica>Futebol casual, geral</AtividadeEspecifica>
 	</Atividade>
 	<Atividade>
 		<Id>15620</Id>
 		<MET>5.0</MET>
 		<Categoria>Esportes</Categoria>
-		<AtividadeEspecifica>Softball ou beisebol, velocidade rápida ou lenta, geral (Cód. 440 de Taylor)</AtividadeEspecifica>
+		<AtividadeEspecifica>Softball ou beisebol, velocidade rápida ou lenta, geral</AtividadeEspecifica>
 	</Atividade>
 	<Atividade>
 		<Id>15630</Id>
@@ -2632,13 +2632,13 @@
 		<Id>15650</Id>
 		<MET>12.0</MET>
 		<Categoria>Esportes</Categoria>
-		<AtividadeEspecifica>Squash (Cód. 530 de Taylor)</AtividadeEspecifica>
+		<AtividadeEspecifica>Squash</AtividadeEspecifica>
 	</Atividade>
 	<Atividade>
 		<Id>15660</Id>
 		<MET>4.0</MET>
 		<Categoria>Esportes</Categoria>
-		<AtividadeEspecifica>Tênis de mesa, pingue-pongue (Cód. 410 de Taylor)</AtividadeEspecifica>
+		<AtividadeEspecifica>Tênis de mesa, pingue-pongue</AtividadeEspecifica>
 	</Atividade>
 	<Atividade>
 		<Id>15670</Id>
@@ -2656,7 +2656,7 @@
 		<Id>15680</Id>
 		<MET>6.0</MET>
 		<Categoria>Esportes</Categoria>
-		<AtividadeEspecifica>Tênis, duplas (Cód.430 de Taylor)</AtividadeEspecifica>
+		<AtividadeEspecifica>Tênis, duplas</AtividadeEspecifica>
 	</Atividade>
 	<Atividade>
 		<Id>15685</Id>
@@ -2668,7 +2668,7 @@
 		<Id>15690</Id>
 		<MET>8.0</MET>
 		<Categoria>Esportes</Categoria>
-		<AtividadeEspecifica>Tênis simples (Cód. 420 de Taylor)</AtividadeEspecifica>
+		<AtividadeEspecifica>Tênis simples</AtividadeEspecifica>
 	</Atividade>
 	<Atividade>
 		<Id>15700</Id>
@@ -2680,7 +2680,7 @@
 		<Id>15710</Id>
 		<MET>4.0</MET>
 		<Categoria>Esportes</Categoria>
-		<AtividadeEspecifica>Voleibol (Cód. 400 de Taylor)</AtividadeEspecifica>
+		<AtividadeEspecifica>Voleibol</AtividadeEspecifica>
 	</Atividade>
 	<Atividade>
 		<Id>15711</Id>
@@ -2776,7 +2776,7 @@
 		<Id>17010</Id>
 		<MET>7.0</MET>
 		<Categoria>Caminhar</Categoria>
-		<AtividadeEspecifica>Carregar mochila de viagem (backpacking ou, na gíria brasileira 'mochileiro') (Cód. 050 de Taylor)</AtividadeEspecifica>
+		<AtividadeEspecifica>Carregar mochila de viagem (backpacking ou, na gíria brasileira 'mochileiro')</AtividadeEspecifica>
 	</Atividade>
 	<Atividade>
 		<Id>17020</Id>
@@ -2860,7 +2860,7 @@
 		<Id>17080</Id>
 		<MET>6.0</MET>
 		<Categoria>Caminhar</Categoria>
-		<AtividadeEspecifica>Caminhadas longas em trilhas ou florestas (Cód. 040 de Taylor)</AtividadeEspecifica>
+		<AtividadeEspecifica>Caminhadas longas em trilhas ou florestas</AtividadeEspecifica>
 	</Atividade>
 	<Atividade>
 		<Id>17085</Id>
@@ -2896,13 +2896,13 @@
 		<Id>17120</Id>
 		<MET>8.0</MET>
 		<Categoria>Caminhar</Categoria>
-		<AtividadeEspecifica>Escalar rochas ou montanhas (Cód. 060 de Taylor)</AtividadeEspecifica>
+		<AtividadeEspecifica>Escalar rochas ou montanhas</AtividadeEspecifica>
 	</Atividade>
 	<Atividade>
 		<Id>17130</Id>
 		<MET>8.0</MET>
 		<Categoria>Caminhar</Categoria>
-		<AtividadeEspecifica>Subir escadas, usando ou subindo uma escada de mão (Cód. 030 de Taylor)</AtividadeEspecifica>
+		<AtividadeEspecifica>Subir escadas, usando ou subindo uma escada de mão</AtividadeEspecifica>
 	</Atividade>
 	<Atividade>
 		<Id>17140</Id>
@@ -2932,7 +2932,7 @@
 		<Id>17160</Id>
 		<MET>3.5</MET>
 		<Categoria>Caminhar</Categoria>
-		<AtividadeEspecifica>Caminhar por prazer (Cód. 010 de Taylor)</AtividadeEspecifica>
+		<AtividadeEspecifica>Caminhar por prazer</AtividadeEspecifica>
 	</Atividade>
 	<Atividade>
 		<Id>17161</Id>
@@ -3016,7 +3016,7 @@
 		<Id>17270</Id>
 		<MET>4.0</MET>
 		<Categoria>Caminhar</Categoria>
-		<AtividadeEspecifica>Caminhar para o trabalho ou para aula (Cód. 015 de Taylor)</AtividadeEspecifica>
+		<AtividadeEspecifica>Caminhar para o trabalho ou para aula</AtividadeEspecifica>
 	</Atividade>
 	<Atividade>
 		<Id>17280</Id>
@@ -3034,7 +3034,7 @@
 		<Id>18020</Id>
 		<MET>4.0</MET>
 		<Categoria>Atividades Aquáticas</Categoria>
-		<AtividadeEspecifica>Canoagem, em viagem de acampamento (Cód. 270 de Taylor)</AtividadeEspecifica>
+		<AtividadeEspecifica>Canoagem, em viagem de acampamento</AtividadeEspecifica>
 	</Atividade>
 	<Atividade>
 		<Id>18025</Id>
@@ -3070,13 +3070,13 @@
 		<Id>18070</Id>
 		<MET>3.5</MET>
 		<Categoria>Atividades Aquáticas</Categoria>
-		<AtividadeEspecifica>Canoagem , remando por prazer, geral (Cód. 250 de Taylor)</AtividadeEspecifica>
+		<AtividadeEspecifica>Canoagem , remando por prazer, geral</AtividadeEspecifica>
 	</Atividade>
 	<Atividade>
 		<Id>18080</Id>
 		<MET>12.0</MET>
 		<Categoria>Atividades Aquáticas</Categoria>
-		<AtividadeEspecifica>Canoagem, remando em competição, em equipe ou duplas (Cód. 260 de Taylor)</AtividadeEspecifica>
+		<AtividadeEspecifica>Canoagem, remando em competição, em equipe ou duplas</AtividadeEspecifica>
 	</Atividade>
 	<Atividade>
 		<Id>18090</Id>
@@ -3100,7 +3100,7 @@
 		<Id>18120</Id>
 		<MET>3.0</MET>
 		<Categoria>Atividades Aquáticas</Categoria>
-		<AtividadeEspecifica>Velejar, windsurf, velejar no gelo, geral (Cód. 235 de Taylor)</AtividadeEspecifica>
+		<AtividadeEspecifica>Velejar, windsurf, velejar no gelo, geral</AtividadeEspecifica>
 	</Atividade>
 	<Atividade>
 		<Id>18130</Id>
@@ -3118,7 +3118,7 @@
 		<Id>18150</Id>
 		<MET>6.0</MET>
 		<Categoria>Atividades Aquáticas</Categoria>
-		<AtividadeEspecifica>Esqui aquático 9Cód. 220 de Taylor)</AtividadeEspecifica>
+		<AtividadeEspecifica>Esqui aquático</AtividadeEspecifica>
 	</Atividade>
 	<Atividade>
 		<Id>18160</Id>
@@ -3142,13 +3142,13 @@
 		<Id>18200</Id>
 		<MET>7.0</MET>
 		<Categoria>Atividades Aquáticas</Categoria>
-		<AtividadeEspecifica>Mergulho (Skindiving), scuba diving (com garrafa), geral (Cód. 310 de Taylor)</AtividadeEspecifica>
+		<AtividadeEspecifica>Mergulho (Skindiving), scuba diving (com garrafa), geral</AtividadeEspecifica>
 	</Atividade>
 	<Atividade>
 		<Id>18210</Id>
 		<MET>5.0</MET>
 		<Categoria>Atividades Aquáticas</Categoria>
-		<AtividadeEspecifica>Mergulhar com snorkel (Cód. 320 de Taylor) (mergulho sem garrafas, em apnéia)</AtividadeEspecifica>
+		<AtividadeEspecifica>Mergulhar com snorkel (mergulho sem garrafas, em apnéia)</AtividadeEspecifica>
 	</Atividade>
 	<Atividade>
 		<Id>18220</Id>
@@ -3202,7 +3202,7 @@
 		<Id>18300</Id>
 		<MET>6.0</MET>
 		<Categoria>Atividades Aquáticas</Categoria>
-		<AtividadeEspecifica>Nadar, em lago, oceano ou rio (Cód. 280 e 295 de Taylor</AtividadeEspecifica>
+		<AtividadeEspecifica>Nadar, em lago, oceano ou rio</AtividadeEspecifica>
 	</Atividade>
 	<Atividade>
 		<Id>18310</Id>
@@ -3280,7 +3280,7 @@
 		<Id>19030</Id>
 		<MET>7.0</MET>
 		<Categoria>Atividades De Inverno</Categoria>
-		<AtividadeEspecifica>Patinar no gelo, geral (Cód. 360 de Taylor)</AtividadeEspecifica>
+		<AtividadeEspecifica>Patinar no gelo, geral</AtividadeEspecifica>
 	</Atividade>
 	<Atividade>
 		<Id>19040</Id>
@@ -3358,7 +3358,7 @@
 		<Id>19180</Id>
 		<MET>7.0</MET>
 		<Categoria>Atividades De Inverno</Categoria>
-		<AtividadeEspecifica>Sledding (plataforma onde corredores se movem rapidamente no gelo), descer de tobogã no gelo, bobsledding (plataforma com freio e motor e com dois corredores), andar de trenó (luge) (Cód. 370 de Taylor)</AtividadeEspecifica>
+		<AtividadeEspecifica>Sledding (plataforma onde corredores se movem rapidamente no gelo), descer de tobogã no gelo, bobsledding (plataforma com freio e motor e com dois corredores), andar de trenó (luge)</AtividadeEspecifica>
 	</Atividade>
 	<Atividade>
 		<Id>19190</Id>

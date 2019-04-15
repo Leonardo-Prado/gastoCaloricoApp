@@ -58,7 +58,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
                 android:layout_weight="1"
-                android:text="Peso Inicial:" />
+                android:text="@string/fragment_informacoes_usuario_tvpesoinicial_texto" />
         </LinearLayout>
 
         <LinearLayout
@@ -151,6 +151,7 @@
                 android:text="@string/tv_imc" />
 
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -162,7 +163,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:layout_weight="8"
-                android:src="@drawable/ic_gasto_calorico" />
+                android:src="@drawable/ic_gasto_calorico_medio" />
 
             <TextView
                 android:id="@+id/tvMediaGastoCalorias"
@@ -173,9 +174,63 @@
                 android:layout_marginRight="15dp"
                 android:layout_marginBottom="10dp"
                 android:layout_weight="1"
-                android:text="Gasto medio de calorias:" />
+                android:text="@string/fragment_informacoes_usuario_tvmediagastoscalorias_texto" />
 
         </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_weight="8"
+                android:src="@drawable/ic_gasto_calorico" />
+
+            <TextView
+                android:id="@+id/tvMaximoGastoCalorias"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:text="@string/fragment_informacoes_usuario_tvmaximogastoscalorias_texto" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_weight="8"
+                android:src="@drawable/ic_gasto_calorico_minimo" />
+
+            <TextView
+                android:id="@+id/tvMinimoGastoCalorias"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:text="@string/fragment_informacoes_usuario_tvminimogastoscalorias_texto" />
+
+        </LinearLayout>
+
+
     </LinearLayout>
 
 </FrameLayout>

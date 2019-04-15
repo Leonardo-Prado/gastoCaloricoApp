@@ -84,7 +84,6 @@ public class SpAdapterCategoria extends ArrayAdapter<String> {
         imvImagemCategoria.setImageDrawable(drawable);
         return view;
     }
-
 }
 
 

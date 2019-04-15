@@ -42,8 +42,8 @@ public class DialogConstrutor extends AlertDialog.Builder {
 
     public DialogConstrutor(@NonNull Context context) {
         super(context);
-        this.tituloCustomizado("Alerta");
-        this.setMenssagem("Menssagem de alerta");
+        this.tituloCustomizado(" ");
+        this.setMenssagem("   ");
         setDialog(this.create());
     }
     public DialogConstrutor(@NonNull Context context, View view,String titulo,String menssagem) {
@@ -54,6 +54,13 @@ public class DialogConstrutor extends AlertDialog.Builder {
         setDialog(this.create());
         getDialog().show();
         menssagemCustomizada();
+    }
+
+    public DialogConstrutor(Context context,View view) {
+        super(context);
+        this.setView(view);
+        setDialog(this.create());
+        getDialog().show();
     }
 
     public String getTitulo() {

@@ -5,20 +5,20 @@
     tools:showIn="navigation_view">
     <group android:checkableBehavior="single">
     <item
-        android:title="Inicio"
+        android:title="@string/menu_bottom_menu_item_inicio"
         android:icon="@drawable/ic_home"
         android:id="@+id/menu_item_home"
         android:checked="true">
 
     </item>
     <item
-        android:title="Peso"
+        android:title="@string/menu_bottom_menu_item_peso"
         android:icon="@drawable/ic_balanca"
         android:id="@+id/menu_item_peso">
 
     </item>
         <item
-            android:title="Eu"
+            android:title="@string/menu_bottom_menu_item_eu"
             android:icon="@drawable/ic_perfil"
             android:id="@+id/menu_item_eu">
 
