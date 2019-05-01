@@ -6,6 +6,8 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.res.Resources;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -49,6 +51,7 @@ public class TelaPrincipal extends AppCompatActivity implements BottomNavigation
     private WindowManager windowManager;
     FragmentSobre fragmentSobre;
     Resources res;
+    private boolean online = false;
 
     //TODO: criar area clicavel no canvas para selecionar data.
     //TODO: Criar opção de duplicar atividade
@@ -72,6 +75,10 @@ public class TelaPrincipal extends AppCompatActivity implements BottomNavigation
             //cria a barra de navegação inferior
             BottomNavigationView bnvMenuInferior = findViewById(R.id.bnvMenuInferior);
             bnvMenuInferior.setOnNavigationItemSelectedListener(this);
+            //testa se esta online
+            final ConnectivityManager conMgr = (ConnectivityManager) getSystemService(CONNECTIVITY_SERVICE);
+            final NetworkInfo activeNetwork = conMgr.getActiveNetworkInfo();
+            online =  (activeNetwork != null && activeNetwork.isConnected())?true:false;
 
             //inicializa variaveis
             windowManager = getWindowManager();
@@ -81,62 +88,69 @@ public class TelaPrincipal extends AppCompatActivity implements BottomNavigation
             final ManipuladorDataTempo dataTempo = new ManipuladorDataTempo(new Date());//Cria o manipulador de datas e tempo
             //busca um usuario no banco de dados
             final List<List<String>> listUsuarios = getDbGeneric().buscar("Usuarios",new String[]{"_id","MassaCorporal","Nome","Altura"},"Logado = ?",new String[]{"1"});
-            if(listUsuarios.size()==0) {              //testa se o usuario está logado
+            boolean fb = false;
+            for (List<String> s : listUsuarios) {
+                fb = (Integer.parseInt(getDbGeneric().buscar("Usuarios",new String[]{"Metodo"},"_id = ?",new String[]{s.get(0)}).get(0).get(0))==Usuario.FIREBASE)?true:false;
+            }
+            if(listUsuarios.size()==0||(online&&!fb)) {              //testa se o usuario está logado
                 Intent intent = new Intent(TelaPrincipal.this,LoginActivity.class);
+                if(listUsuarios.size()>0)
+                    intent.putExtra("userId",Integer.parseInt(listUsuarios.get(0).get(0)));
                 startActivity(intent);
                 finish();
-            }else {//se usuario logado implementa logica principal do app
-                //pega dados do usuario logado
-                if(listUsuarios.get(0).size()<=3){
-                    final LayoutInflater inflater = (LayoutInflater) this.getSystemService(LAYOUT_INFLATER_SERVICE);
-                    final View dadosDoUsuario = inflater.inflate(R.layout.dialog_dados_do_usuario, null);
-                    final EditText edPeso = dadosDoUsuario.findViewById(R.id.edPeso);
-                    final EditText edAltura = dadosDoUsuario.findViewById(R.id.edAltura);
-                    Button btnDadosDoUsuario = dadosDoUsuario.findViewById(R.id.btnDadoDoUsuario);
-                    final DialogConstrutor dialogDadosUsuario = new DialogConstrutor(this,dadosDoUsuario,res.getString(R.string.tela_principal_dialog_dados_do_usuario_titulo),res.getString(R.string.tela_principal_dialog_dados_do_usuario_menssagem));
-                    dialogDadosUsuario.getDialog().setCanceledOnTouchOutside(false);
-                    dialogDadosUsuario.getDialog().setCancelable(false);
-                    btnDadosDoUsuario.setOnClickListener(new View.OnClickListener() {
-                        @Override
-                        public void onClick(View view) {
-                            if(!edAltura.getText().toString().isEmpty()&&!edPeso.getText().toString().isEmpty()){
-                                usuario.setMassaCorporal(edPeso.getText().toString());
-                                usuario.setAltura(edAltura.getText().toString());
-                                usuario.setNome(listUsuarios.get(0).get(1));
-                                usuario.setId(Integer.parseInt(listUsuarios.get(0).get(0)));
-                                usuario.setPesoMaximo(usuario.getMassaCorporal());
-                                usuario.setPesoMinimo(usuario.getMassaCorporal());
-                                ContentValues values = new ContentValues();
-                                values.put("MassaCorporal",usuario.getMassaCorporal());
-                                values.put("Altura",usuario.getAltura());
-                                values.put("PesoMinimo",usuario.getPesoMinimo());
-                                values.put("PesoMaximo",usuario.getPesoMaximo());
-                                dbGeneric.atualizar("Usuarios",values,"_id = ?",new String[]{listUsuarios.get(0).get(0)});
-                                long data = dataTempo.getDataInt();
-                                values = new ContentValues();
-                                values.put("Data",data);
-                                values.put("Peso",usuario.getMassaCorporal());
-                                values.put("_idUsuario",usuario.getId());
-                                values.put("Inicial",1);
-                                dbGeneric.inserir(values,"Peso");
-                                dialogDadosUsuario.fechar();
-                                recreate();
-                            }else{
-                                new DialogConstrutor(view.getContext(),res.getString(R.string.tela_principal_dialog_campos_necessarios_titulo),res.getString(R.string.tela_principal_dialog_campos_necessarios_menssagem),res.getString(R.string.dialog_positive_button_texto_padrao));
+            }else{
+                    //se usuario logado implementa logica principal do app
+                    //pega dados do usuario logado
+                    if(listUsuarios.get(0).size()<=3){
+                        final LayoutInflater inflater = (LayoutInflater) this.getSystemService(LAYOUT_INFLATER_SERVICE);
+                        final View dadosDoUsuario = inflater.inflate(R.layout.dialog_dados_do_usuario, null);
+                        final EditText edPeso = dadosDoUsuario.findViewById(R.id.edPeso);
+                        final EditText edAltura = dadosDoUsuario.findViewById(R.id.edAltura);
+                        Button btnDadosDoUsuario = dadosDoUsuario.findViewById(R.id.btnDadoDoUsuario);
+                        final DialogConstrutor dialogDadosUsuario = new DialogConstrutor(this,dadosDoUsuario,res.getString(R.string.tela_principal_dialog_dados_do_usuario_titulo),res.getString(R.string.tela_principal_dialog_dados_do_usuario_menssagem));
+                        dialogDadosUsuario.getDialog().setCanceledOnTouchOutside(false);
+                        dialogDadosUsuario.getDialog().setCancelable(false);
+                        btnDadosDoUsuario.setOnClickListener(new View.OnClickListener() {
+                            @Override
+                            public void onClick(View view) {
+                                if(!edAltura.getText().toString().isEmpty()&&!edPeso.getText().toString().isEmpty()){
+                                    usuario.setMassaCorporal(edPeso.getText().toString());
+                                    usuario.setAltura(edAltura.getText().toString());
+                                    usuario.setNome(listUsuarios.get(0).get(1));
+                                    usuario.setId(Integer.parseInt(listUsuarios.get(0).get(0)));
+                                    usuario.setPesoMaximo(usuario.getMassaCorporal());
+                                    usuario.setPesoMinimo(usuario.getMassaCorporal());
+                                    ContentValues values = new ContentValues();
+                                    values.put("MassaCorporal",usuario.getMassaCorporal());
+                                    values.put("Altura",usuario.getAltura());
+                                    values.put("PesoMinimo",usuario.getPesoMinimo());
+                                    values.put("PesoMaximo",usuario.getPesoMaximo());
+                                    dbGeneric.atualizar("Usuarios",values,"_id = ?",new String[]{listUsuarios.get(0).get(0)});
+                                    long data = dataTempo.getDataInt();
+                                    values = new ContentValues();
+                                    values.put("Data",data);
+                                    values.put("Peso",usuario.getMassaCorporal());
+                                    values.put("_idUsuario",usuario.getId());
+                                    values.put("Inicial",1);
+                                    dbGeneric.inserir(values,"Peso");
+                                    dialogDadosUsuario.fechar();
+                                    recreate();
+                                }else{
+                                    new DialogConstrutor(view.getContext(),res.getString(R.string.tela_principal_dialog_campos_necessarios_titulo),res.getString(R.string.tela_principal_dialog_campos_necessarios_menssagem),res.getString(R.string.dialog_positive_button_texto_padrao));
+                                }
                             }
-                        }
-                    });
+                        });
 
 
-                }else {
-                    usuario.setId(Integer.parseInt(listUsuarios.get(0).get(0)));
-                    usuario.setMassaCorporal(Double.parseDouble(listUsuarios.get(0).get(1)));
-                    usuario.setNome(listUsuarios.get(0).get(2));
-                    usuario.setAltura(Double.parseDouble(listUsuarios.get(0).get(3)));
-                    UserPreferences userPreferences = new UserPreferences(this,usuario);
-                }
-                Fragment fragmentInicio = FragmentInicio.newInstance(usuario,windowManager);
-                openFragment(fragmentInicio);
+                    }else {
+                        usuario.setId(Integer.parseInt(listUsuarios.get(0).get(0)));
+                        usuario.setMassaCorporal(Double.parseDouble(listUsuarios.get(0).get(1)));
+                        usuario.setNome(listUsuarios.get(0).get(2));
+                        usuario.setAltura(Double.parseDouble(listUsuarios.get(0).get(3)));
+                        UserPreferences userPreferences = new UserPreferences(this,usuario);
+                    }
+                    Fragment fragmentInicio = FragmentInicio.newInstance(usuario,windowManager);
+                    openFragment(fragmentInicio);
             }
             //pega as falhas
         } catch (Exception e) {
