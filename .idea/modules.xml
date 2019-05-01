@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/../PolardispendiumGastocalorico.iml" filepath="$PROJECT_DIR$/../PolardispendiumGastocalorico.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../PolarDispendiumGastoCalorico.iml" filepath="$PROJECT_DIR$/../PolarDispendiumGastoCalorico.iml" />
       <module fileurl="file://$PROJECT_DIR$/app.iml" filepath="$PROJECT_DIR$/app.iml" />
     </modules>
   </component>

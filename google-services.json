@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "453805640003-6lql4gc0eu4emnu2clssd42348stvfbv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ifmg.polardispendium_gastocalorico",
+            "certificate_hash": "e88ad1f72a8299dc442a64576301e1a9aab72be4"
+          }
+        },
+        {
           "client_id": "453805640003-i9da0uertrf7cke01hmnbs7g2ui4n62q.apps.googleusercontent.com",
           "client_type": 3
         }
@@ -25,15 +33,13 @@
         }
       ],
       "services": {
-        "analytics_service": {
-          "status": 1
-        },
         "appinvite_service": {
-          "status": 1,
-          "other_platform_oauth_client": []
-        },
-        "ads_service": {
-          "status": 2
+          "other_platform_oauth_client": [
+            {
+              "client_id": "453805640003-i9da0uertrf7cke01hmnbs7g2ui4n62q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         }
       }
     }
