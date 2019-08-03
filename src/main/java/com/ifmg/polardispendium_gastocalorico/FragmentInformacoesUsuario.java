@@ -15,6 +15,8 @@ import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.TextView;
 
 import java.util.Date;
@@ -68,16 +70,33 @@ public class FragmentInformacoesUsuario extends Fragment {
         TextView tvPesoInicial = inflate.findViewById(R.id.tvPesoInicial);
         final TextView tvIMC = inflate.findViewById(R.id.tvIMC);
         final TextView tvAltura = inflate.findViewById(R.id.tvAltura);
+        final TextView tvIdade = inflate.findViewById(R.id.tvIdade);
+        final TextView tvGenero = inflate.findViewById(R.id.tvGenero);
         TextView tvMediaGastoCalorias = inflate.findViewById(R.id.tvMediaGastoCalorias);
         TextView tvMaximoGastoCalorias = inflate.findViewById(R.id.tvMaximoGastoCalorias);
         TextView tvMinimoGastoCalorias = inflate.findViewById(R.id.tvMinimoGastoCalorias);
         ImageButton ibtnEditarPeso = inflate.findViewById(R.id.ibtnEditPeso);
         ImageButton ibtnEditarAltura = inflate.findViewById(R.id.ibtnEditAltura);
+        ImageButton ibtnEditarIdade = inflate.findViewById(R.id.ibtnEditIdade);
+        ImageButton ibtnEditarGenero = inflate.findViewById(R.id.ibtnEditGenero);
         dbGeneric = new DBGeneric(getContext());
         List<List<String>> lists = dbGeneric.buscar("Peso",new String[]{"Peso"},"_idUsuario = ? AND Inicial = ?",new String[]{Integer.toString(usuario.getId()),"1"});
         tvPesoInicial.setText(tvPesoInicial.getText().toString() + " " +FormatNum.casasDecimais(Double.parseDouble(lists.get(0).get(0)),1)+" "+res.getString(R.string.fragment_informacoes_usuarios_tvpeso_unidade));
         tvPesoAtual.setText(tvPesoAtual.getText().toString() + " " + Double.toString(FormatNum.casasDecimais(getUsuario().getMassaCorporal(),1))+" "+res.getString(R.string.fragment_informacoes_usuarios_tvpeso_unidade));
         tvAltura.setText(tvAltura.getText().toString()+" "+Double.toString(FormatNum.casasDecimais(usuario.getAltura(),2)) + " "+res.getString(R.string.fragment_informacoes_usuarios_tvaltura_unidade));
+        if(getUsuario().getIdade() == 0)
+            tvIdade.setText(tvIdade.getText().toString()+" "+res.getString(R.string.fragment_informacoes_usuario_tvIdade_texto_nao_informado));
+        else
+            tvIdade.setText(tvIdade.getText().toString()+" "+getUsuario().getIdade());
+
+        if(getUsuario().getSexo() == 0)
+            tvGenero.setText(tvGenero.getText().toString()+" "+res.getString(R.string.fragment_informacoes_usuario_tvGenero_texto_nao_informado));
+        else
+            if(getUsuario().getSexo()==Usuario.MASCULINO)
+                tvGenero.setText(tvGenero.getText().toString()+" "+res.getString(R.string.dialog_dados_usuario_rbMasculino_hint));
+            else
+                tvGenero.setText(tvGenero.getText().toString()+" "+res.getString(R.string.dialog_dados_usuario_rbFeminino_hint));
+
         defineImc(tvIMC);
         //gera media de calorias do usuario e passa para o tvgastomedio
         usuario.setGastoMedio(Double.parseDouble(dbGeneric.buscar("Usuarios",new String[]{"GastoMedio"},"_id = ?",new String[]{Integer.toString(usuario.getId())}).get(0).get(0)));
@@ -150,6 +169,60 @@ public class FragmentInformacoesUsuario extends Fragment {
                     Log.e("erro ao criar dialog",e.getMessage());
                 }
 
+            }
+        });
+
+        ibtnEditarIdade.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                View v = inflater.inflate(R.layout.dialog_editar_valor,null);
+                final EditText edAtualizarValor = v.findViewById(R.id.edAtualizarValor);
+                Button btnAtualizar = v.findViewById(R.id.btnAtualizar);
+                edAtualizarValor.setHint(res.getString(R.string.fragment_informacoes_usuarios_dialog_editar_idade_edatualizarvalor_hint));
+                final DialogConstrutor dialogConstrutor = new DialogConstrutor(getContext(),v,res.getString(R.string.fragment_informacoes_usuarios_dialog_editar_idade_titulo),res.getString(R.string.fragment_informacoes_usuarios_dialog_editar_idade_menssagem));
+                btnAtualizar.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        getUsuario().setIdade(Integer.parseInt(edAtualizarValor.getText().toString()));
+                        tvIdade.setText(Double.toString(getUsuario().getIdade()));
+                        ContentValues values = new ContentValues();
+                        values.put("Idade",Integer.parseInt(edAtualizarValor.getText().toString()));
+                        dbGeneric.atualizar("Usuarios",values,"_id = ?",new String[]{Integer.toString(getUsuario().getId())});
+                        dialogConstrutor.fechar();
+                    }
+                });
+            }
+        });
+
+        ibtnEditarGenero.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                View v = inflater.inflate(R.layout.dialog_editar_genero,null);
+                final RadioGroup rgGenero = v.findViewById(R.id.rgGenero);
+                final RadioButton rbMasc = v.findViewById(R.id.rbMasc);
+                final RadioButton rbFem = v.findViewById(R.id.rbFem);
+                Button btnAtualizar = v.findViewById(R.id.btnAtualizar);
+                final DialogConstrutor dialogConstrutor = new DialogConstrutor(getContext(),v,res.getString(R.string.fragment_informacoes_usuarios_dialog_editar_genero_titulo),res.getString(R.string.fragment_informacoes_usuarios_dialog_editar_genero_menssagem));
+                btnAtualizar.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        int genero;
+                        String generoString;
+                        if(rgGenero.getCheckedRadioButtonId() == rbMasc.getId()) {
+                            generoString = res.getString(R.string.dialog_dados_usuario_rbMasculino_hint);
+                            genero = Usuario.MASCULINO;
+                        }else {
+                            generoString = res.getString(R.string.dialog_dados_usuario_rbFeminino_hint);
+                            genero = Usuario.FEMININO;
+                        }
+                        getUsuario().setSexo(genero);
+                        tvGenero.setText(generoString);
+                        ContentValues values = new ContentValues();
+                        values.put("Sexo",genero);
+                        dbGeneric.atualizar("Usuarios",values,"_id = ?",new String[]{Integer.toString(getUsuario().getId())});
+                        dialogConstrutor.fechar();
+                    }
+                });
             }
         });
 

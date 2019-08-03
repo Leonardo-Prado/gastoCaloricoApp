@@ -25,6 +25,8 @@
 
     <string name="tv_peso_atual">Peso atual:</string>
     <string name="tv_altura">Altura:</string>
+    <string name="tv_idade">Idade:</string>
+    <string name="tv_genero">Genero:</string>
     <string name="tv_imc" translatable="false">IMC:</string>
     <string name="btn_atualizar_text">Atualizar</string>
 
@@ -121,6 +123,15 @@
     <string name="fragment_informacoes_usuarios_dialog_editar_peso_titulo">Altere o peso</string>
     <string name="fragment_informacoes_usuarios_dialog_editar_peso_menssagem">Modificar valor do peso</string>
 
+    <string name="fragment_informacoes_usuarios_dialog_editar_idade_edatualizarvalor_hint">Atualizar idade…</string>
+    <string name="fragment_informacoes_usuarios_dialog_editar_idade_titulo">Altere a idade</string>
+    <string name="fragment_informacoes_usuarios_dialog_editar_idade_menssagem">Modificar a idade</string>
+
+    <string name="fragment_informacoes_usuarios_dialog_editar_genero_edatualizarvalor_hint">Atualizar genero…</string>
+    <string name="fragment_informacoes_usuarios_dialog_editar_genero_titulo">Altere o genero</string>
+    <string name="fragment_informacoes_usuarios_dialog_editar_genero_menssagem">Modificar valor do genero</string>
+
+
     <!--Dialog Nova Atividade-->
 
     <string name="dialog_nova_atividade_autocomplete_item_invalido_dialog_titulo">Item selecionado inválido</string>
@@ -136,6 +147,9 @@
 
     <string name="dialog_dados_usuarios_edpeso_hint">Massa corporal (Kg)…</string>
     <string name="dialog_dados_usuario_edaltura_hint">Altura…</string>
+    <string name="dialog_dados_usuario_edidade_hint">Idade…</string>
+    <string name="dialog_dados_usuario_rbMasculino_hint">Masculino</string>
+    <string name="dialog_dados_usuario_rbFeminino_hint">Feminino</string>
     <string name="dialog_dados_usuario_btndadosdousuario_texto">Inserir Dados</string>
 
     <!--layout dialog nova atividade-->
@@ -160,6 +174,8 @@
     <string name="fragment_informacoes_usuario_tvmediagastoscalorias_texto">Gasto médio de calorias:</string>
     <string name="fragment_informacoes_usuario_tvmaximogastoscalorias_texto">Gasto máximo de calorias em um dia:</string>
     <string name="fragment_informacoes_usuario_tvminimogastoscalorias_texto">Gasto mínimo de calorias em um dia:</string>
+    <string name="fragment_informacoes_usuario_tvIdade_texto_nao_informado">Idade não informada</string>
+    <string name="fragment_informacoes_usuario_tvGenero_texto_nao_informado">Genero não informado</string>
 
     <!--layout fragment peso-->
 

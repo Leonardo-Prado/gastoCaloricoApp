@@ -2,10 +2,12 @@ package nucleo.entidades_do_nucleo;
 
 import android.util.Log;
 
+import com.google.firebase.database.Exclude;
+
 import objetos_auxiliares.FormatNum;
 
 public class Usuario {
-    public static int MASCULINO = 0;
+    public static int MASCULINO = 2;
     public static int FEMININO = 1;
     public static int INTERNO = 0;
     public static int FIREBASE = 1;
@@ -84,13 +86,13 @@ public class Usuario {
     public double getMassaCorporal() {
         return massaCorporal;
     }
-
+    @Exclude
     public void setMassaCorporal(double massaCorporal) {
         this.massaCorporal =FormatNum.casasDecimais( massaCorporal,2);
     }
 
     public double getAltura() { return altura; }
-
+    @Exclude
     public void setAltura(double altura) {
         if(altura>=0.4 && altura<=3)
             this.altura = FormatNum.casasDecimais(altura,2);
@@ -109,7 +111,7 @@ public class Usuario {
     public void setEmail(String email) {
         this.email = email;
     }
-
+    @Exclude
     public void setMassaCorporal(String massaCorporal) {
         try{
             this.massaCorporal = FormatNum.casasDecimais(Double.parseDouble(massaCorporal),2);
@@ -118,7 +120,7 @@ public class Usuario {
         }
 
     }
-
+    @Exclude
     public void setAltura(String altura) {
         double a = Double.parseDouble(altura);
         if(a>=0.01 && a<=3)

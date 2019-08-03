@@ -35,7 +35,7 @@
                                             <option name="values">
                                               <map>
                                                 <entry key="color" value="000000" />
-                                                <entry key="paddingPercent" value="30" />
+                                                <entry key="paddingPercent" value="10" />
                                               </map>
                                             </option>
                                           </PersistentState>
@@ -46,8 +46,8 @@
                                   <option name="values">
                                     <map>
                                       <entry key="assetType" value="IMAGE" />
-                                      <entry key="imageAsset" value="$USER_HOME$/Área de Trabalho/ic_gasto_calorico_minimo.png" />
-                                      <entry key="outputName" value="ic_gasto_calorico_minimo" />
+                                      <entry key="imageAsset" value="$USER_HOME$/Downloads/icons8-age-208.png" />
+                                      <entry key="outputName" value="ic_idade" />
                                       <entry key="themeColor" value="ffffff" />
                                     </map>
                                   </option>

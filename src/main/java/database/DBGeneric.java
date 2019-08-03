@@ -156,7 +156,7 @@ public class DBGeneric {
                     while (k < j) {
                         switch (cursor.getType(k)) {
                             case 1:
-                                strings.add(Integer.toString(cursor.getInt(k)));
+                                strings.add(Long.toString(cursor.getLong(k)));
                                 break;
                             case 2:
                                 strings.add(Double.toString(cursor.getFloat(k)));

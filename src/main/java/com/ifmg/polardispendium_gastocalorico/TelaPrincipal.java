@@ -27,6 +27,8 @@ import android.view.WindowManager;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
 
 
 import java.util.ArrayList;
@@ -87,7 +89,7 @@ public class TelaPrincipal extends AppCompatActivity implements BottomNavigation
             usuario = new Usuario();//inicializa usuario
             final ManipuladorDataTempo dataTempo = new ManipuladorDataTempo(new Date());//Cria o manipulador de datas e tempo
             //busca um usuario no banco de dados
-            final List<List<String>> listUsuarios = getDbGeneric().buscar("Usuarios",new String[]{"_id","MassaCorporal","Nome","Altura"},"Logado = ?",new String[]{"1"});
+            final List<List<String>> listUsuarios = getDbGeneric().buscar("Usuarios",new String[]{"_id","MassaCorporal","Nome","Altura","Idade","Sexo"},"Logado = ?",new String[]{"1"});
             boolean fb = false;
             for (List<String> s : listUsuarios) {
                 fb = (Integer.parseInt(getDbGeneric().buscar("Usuarios",new String[]{"Metodo"},"_id = ?",new String[]{s.get(0)}).get(0).get(0))==Usuario.FIREBASE)?true:false;
@@ -106,6 +108,15 @@ public class TelaPrincipal extends AppCompatActivity implements BottomNavigation
                         final View dadosDoUsuario = inflater.inflate(R.layout.dialog_dados_do_usuario, null);
                         final EditText edPeso = dadosDoUsuario.findViewById(R.id.edPeso);
                         final EditText edAltura = dadosDoUsuario.findViewById(R.id.edAltura);
+                        final EditText edIdade = dadosDoUsuario.findViewById(R.id.edIdade);
+                        final RadioGroup rgGenero = dadosDoUsuario.findViewById(R.id.rgGenero);
+                        final RadioButton rbMasc = dadosDoUsuario.findViewById(R.id.rbMasculino);
+                        final RadioButton rbfem = dadosDoUsuario.findViewById(R.id.rbFeminino);
+                        final int genero;
+                        if(rgGenero.getCheckedRadioButtonId() == rbfem.getId())
+                            genero = Usuario.FEMININO;
+                        else
+                            genero = Usuario.MASCULINO;
                         Button btnDadosDoUsuario = dadosDoUsuario.findViewById(R.id.btnDadoDoUsuario);
                         final DialogConstrutor dialogDadosUsuario = new DialogConstrutor(this,dadosDoUsuario,res.getString(R.string.tela_principal_dialog_dados_do_usuario_titulo),res.getString(R.string.tela_principal_dialog_dados_do_usuario_menssagem));
                         dialogDadosUsuario.getDialog().setCanceledOnTouchOutside(false);
@@ -120,11 +131,15 @@ public class TelaPrincipal extends AppCompatActivity implements BottomNavigation
                                     usuario.setId(Integer.parseInt(listUsuarios.get(0).get(0)));
                                     usuario.setPesoMaximo(usuario.getMassaCorporal());
                                     usuario.setPesoMinimo(usuario.getMassaCorporal());
+                                    usuario.setSexo(genero);
+                                    usuario.setIdade(Integer.parseInt(edIdade.getText().toString()));
                                     ContentValues values = new ContentValues();
                                     values.put("MassaCorporal",usuario.getMassaCorporal());
                                     values.put("Altura",usuario.getAltura());
                                     values.put("PesoMinimo",usuario.getPesoMinimo());
                                     values.put("PesoMaximo",usuario.getPesoMaximo());
+                                    values.put("Sexo",usuario.getSexo());
+                                    values.put("Idade",usuario.getIdade());
                                     dbGeneric.atualizar("Usuarios",values,"_id = ?",new String[]{listUsuarios.get(0).get(0)});
                                     long data = dataTempo.getDataInt();
                                     values = new ContentValues();
@@ -147,6 +162,16 @@ public class TelaPrincipal extends AppCompatActivity implements BottomNavigation
                         usuario.setMassaCorporal(Double.parseDouble(listUsuarios.get(0).get(1)));
                         usuario.setNome(listUsuarios.get(0).get(2));
                         usuario.setAltura(Double.parseDouble(listUsuarios.get(0).get(3)));
+                        try{
+                            usuario.setIdade(Integer.parseInt(listUsuarios.get(0).get(4)));
+                        }catch (Exception e) {
+                            usuario.setIdade(0);
+                        }
+                        try{
+                            usuario.setSexo(Integer.parseInt(listUsuarios.get(0).get(5)));
+                        }catch (Exception e) {
+                            usuario.setSexo(0);
+                        }
                         UserPreferences userPreferences = new UserPreferences(this,usuario);
                     }
                     Fragment fragmentInicio = FragmentInicio.newInstance(usuario,windowManager);

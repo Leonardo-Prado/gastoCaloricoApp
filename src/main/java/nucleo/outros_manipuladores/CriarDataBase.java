@@ -3,15 +3,21 @@ package nucleo.outros_manipuladores;
 import android.content.ContentValues;
 import android.content.Context;
 
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
 import org.xml.sax.SAXException;
 
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.xml.parsers.ParserConfigurationException;
 
 import database.CarregarXML;
 import database.DBGeneric;
+import nucleo.entidades_do_nucleo.AtividadesFisicas;
+import nucleo.entidades_do_nucleo.Categoria;
 
 public class CriarDataBase {
 
@@ -26,7 +32,7 @@ public class CriarDataBase {
     public boolean criar() throws ParserConfigurationException, SAXException, IOException {
         boolean foiCriado = false;
         try {
-            List<List<String>> cat = getDbGeneric().buscar("Categorias", new String[]{"_id"});//busca as categorias no banco de dados
+            List<List<String>> cat = getDbGeneric().buscar("Categorias", new String[]{"_id","Categoria","Descricao"});//busca as categorias no banco de dados
             if (!(cat.size() > 0)) { //se a busca não retornar nada carrega apartir do xml(somente na primeira execução)
                 CarregarXML carregarXML = new CarregarXML();
                 List<List<String>> strings = carregarXML.XML(getContext(), "Categorias.xml", "Categorias");
@@ -41,7 +47,8 @@ public class CriarDataBase {
                     }
                 }
             }
-            cat = getDbGeneric().buscar("AtividadesFisicas", new String[]{"_id"});//busca as atividades no banco de dados
+
+            cat = getDbGeneric().buscar("AtividadesFisicas", new String[]{"_id","MET","_idCategoria","Atividades"});//busca as atividades no banco de dados
             if (!(cat.size() > 0)) {//se a busca não retornar nada carrega apartir do xml
                 CarregarXML carregarXML = new CarregarXML();
                 List<List<String>> strings = carregarXML.XML(getContext(), "AtividadesFisicas.xml", "Atividade");

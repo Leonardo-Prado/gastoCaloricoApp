@@ -261,6 +261,7 @@ public class DialogNovaAtividade {
                             new AtualizadorLista(getContext(),getData(),getUsuario(),atividadesRealizadasList, getLayoutPai());
                             notificarObservadores();
                             alerta.dismiss();
+                            sincronizar(usuario.getId());
                         }else {
                             new DialogConstrutor(view.getContext(),res.getString(R.string.dialog_nova_atividade_btnconfirmar_valores_inadequados_dialog_titulo),res.getString(R.string.dialog_nova_atividade_btnconfirmar_valores_inadequados_dialog_menssagem),res.getString(R.string.dialog_positive_button_texto_padrao));
                         }
@@ -275,6 +276,8 @@ public class DialogNovaAtividade {
         Window window = alerta.getWindow();
         window.setLayout(WindowManager.LayoutParams.MATCH_PARENT, WindowManager.LayoutParams.WRAP_CONTENT );
     }
+
+
 
     private void dialogEditarAtividadesRealizadas(final Long data, final long horaFimAtual, final long horaInicioAtual, int atividadeAtualId) {
         LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
@@ -587,6 +590,11 @@ public class DialogNovaAtividade {
 
     private void setHoraFimAtual(long horaFimAtual) {
         this.horaFimAtual = horaFimAtual;
+    }
+
+    private void sincronizar(int id) {
+        Sincronizador sinc = new Sincronizador(getContext());
+        sinc.sincronizar(id);
     }
 
 }

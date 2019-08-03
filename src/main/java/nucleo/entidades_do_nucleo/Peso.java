@@ -3,7 +3,7 @@ package nucleo.entidades_do_nucleo;
 public class Peso extends Usuario {
     private int id;
     private double massaCorporal;
-    private int data;
+    private long data;
     private int idUsuario;
 
     public Peso() {
@@ -50,11 +50,11 @@ public class Peso extends Usuario {
         this.massaCorporal = massaCorporal;
     }
 
-    public int getData() {
+    public long getData() {
         return data;
     }
 
-    public void setData(int data) {
+    public void setData(long data) {
         this.data = data;
     }
 

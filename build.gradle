@@ -6,8 +6,8 @@ android {
         applicationId "com.ifmg.polardispendium_gastocalorico"
         minSdkVersion 16
         targetSdkVersion 27
-        versionCode 4
-        versionName "1.03"
+        versionCode 5
+        versionName "1.05"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
